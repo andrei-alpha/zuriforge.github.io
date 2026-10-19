@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZuriForge — Feine Holzhandwerkskunst &amp; Werkstatt-Journal</title>
+  <meta name="description" content="Ein Zürcher Werkstatt-Journal für anspruchsvolle Holzhandwerkskunst. Dokumentation von Handwerk, Geometrie, Vorrichtungen und Schritt-für-Schritt-Prozessen handgefertigter Stirnholz-Schneidebretter, optischer 3D-Illusionen und feiner Holzarbeiten.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css?v=1.1">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/images/favicon-64x64.png">
+  <link rel="apple-touch-icon" href="../assets/images/logo.png">
+  <style>#workshop-drawer:not(.active),#drawer-backdrop:not(.active){display:none!important;}</style>
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="ZuriForge Startseite">
+        <img src="../assets/images/logo.png" alt="ZuriForge Logo" class="brand-icon" width="40" height="40">
+        <span class="brand-name">ZuriForge<span class="brand-sub">ZRH</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Projekte</a></li>
+          <li><a href="#timber" class="nav-link">Holzbibliothek</a></li>
+          <li><a href="#craft" class="nav-link">Prinzipien</a></li>
+          <li><a href="about.html" class="nav-link">Über uns</a></li>
+          <li>
+            <button class="nav-drawer-btn open-drawer-btn" aria-label="Werkstatt-Journal öffnen">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>Journal</span>
+              <span class="drawer-pill">5</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="navigation" aria-label="Sprachauswahl">
+          <svg class="lang-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <a href="index.html" class="lang-btn active" hreflang="de" data-lang="de" aria-current="page" title="Deutsch">DE</a>
+          <span class="lang-divider"></span>
+          <a href="../fr/index.html" class="lang-btn" hreflang="fr" data-lang="fr" title="Français">FR</a>
+          <span class="lang-divider"></span>
+          <a href="../it/index.html" class="lang-btn" hreflang="it" data-lang="it" title="Italiano">IT</a>
+          <span class="lang-divider"></span>
+          <a href="../index.html" class="lang-btn" hreflang="en" data-lang="en" title="English">EN</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Navigationsmenü umschalten" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-meta">
+        <span>Handgefertigt in Zürich</span>
+        <span>•</span>
+        <span>Werkstatt-Journal</span>
+      </div>
+      <h1 class="hero-title">
+        Die Geometrie der <em>Maserung</em> &amp; feines Holzhandwerk
+      </h1>
+      <p class="hero-lead">
+        Dokumentation von Geduld, Präzisionsvorrichtungen und Materialkunde hinter massgefertigten geometrischen Schneidebrettern und feinen Holzarbeiten. Ein reines Werkstatt-Tagebuch über jeden Schnitt, jede Zwinge und das Anfeuern der Maserung durch edle Öle.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          Projekte ansehen
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="about.html" class="btn btn-outline">Werkstatt-Philosophie</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Non-Commercial Maker Manifesto -->
+  <div class="manifesto-banner">
+    <div class="container manifesto-content">
+      <div class="manifesto-tag">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+        <span>Werkstatt-Notiz</span>
+      </div>
+      <div>
+        Diese Website ist ein persönliches Holzhandwerks-Journal und kein Online-Shop. Alle Stücke entstehen zur Erkundung neuer Techniken, für präzise Problemlösungen und aus purer Freude am Schaffen in der Werkstatt.
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Werkstatt-Werkschau</span>
+        <h2 class="section-title">Handgefertigte Projekte</h2>
+        <p>Dokumentation von Entwurf, Präzisionsverbindungen und der handwerklichen Vollendung einzigartiger Holzunikate.</p>
+      </div>
+
+      <!-- Project 01: Beech & Purpleheart Grid Board -->
+      <div class="project-card-featured" style="margin-bottom: 3.5rem;">
+        <div class="project-media-wrapper">
+          <span class="project-media-badge">Projekt 01 • Vollendetes Werk</span>
+          <img src="../assets/images/projects/beech-purpleheart/13-finished-oil-pop.jpg" 
+               alt="Handgefertigtes diagonales Rauten-Schneidebrett aus Rotbuche und Amaranth" 
+               class="project-hero-img"
+               data-lightbox 
+               data-caption="Fertiges Rauten-Schneidebrett aus Rotbuche &amp; Amaranth (19 cm × 28 cm × 2,0 cm) mit tiefem violettem und goldgelbem Kontrast nach dem Finish mit lebensmittelechtem Mineralöl.">
+        </div>
+
+        <div class="project-content">
+          <div>
+            <div class="project-category">Hirnholz-Matrix / Kulinarisches Handwerk</div>
+            <h3 class="project-title">Rauten-Schneidebrett aus Europäischer Rotbuche &amp; Amaranth</h3>
+            <p class="project-excerpt">
+              Ein kontrastreiches Schachbrett-Schneidebrett mit 45°-Rautenausrichtung. Gefertigt aus Europäischer Rotbuche (<em>Fagus sylvatica</em>) und tropischem Amaranth/Purpleheart (<em>Peltogyne</em>), gehobelt auf 30 mm × 22 mm, auf der Kappsäge auf 30 mm abgelängt (30 × 30 × 22 mm) und auf exakt plane 20 mm Endstärke kalibriert.
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Masse</span>
+                <span class="spec-value">19 cm × 28 cm × 2,0 cm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Muster</span>
+                <span class="spec-value">45° Diagonales Rautenraster</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Holzauswahl</span>
+                <span class="spec-value">Rotbuche &amp; Amaranth</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Oberflächenbehandlung</span>
+                <span class="spec-value">Lebensmittelechtes Mineralöl (USP) &amp; Bio-Bienenwachs</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="projects/beech-purpleheart-cutting-board.html" class="btn btn-primary" style="width: 100%;">
+              Vollständigen Schritt-für-Schritt-Baubericht lesen
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 02: 3D Cubes Optical Illusion Board -->
+      <div class="project-card-featured">
+        <div class="project-media-wrapper">
+          <span class="project-media-badge">Projekt 02 • Geometrische Illusion</span>
+          <img src="../assets/images/projects/3d-cubes/11-finished-board-desk.jpg" 
+               alt="3D-Würfel optisches Täuschungs-Schneidebrett" 
+               class="project-hero-img"
+               data-lightbox 
+               data-caption="3D-Würfel-Illusion-Brett (45 cm × 24 cm × 2,5 cm): Isometrische Parkettierung aus Schweizer Nussbaum, Europäischer Rotbuche und Alpiner Fichte, die schwebende dreidimensionale Würfel simuliert.">
+        </div>
+
+        <div class="project-content">
+          <div>
+            <div class="project-category">Optische Parkettierung / Präsentationsbrett</div>
+            <h3 class="project-title">3D-Würfel Optisches Täuschungsbrett</h3>
+            <p class="project-excerpt">
+              Ein 45 cm × 24 cm × 2,5 cm grosses Schneide- und Servierbrett, das die faszinierende optische Täuschung taumelnder Würfel erzeugt. Konstruiert mit einem strengen Dreiton-Helligkeitsgradienten: dunkler Schweizer Nussbaum für die Schattenfacette, warme Europäische Rotbuche für den Halbton und strahlende Alpine Fichte für das Glanzlicht auf der Oberseite.
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Masse</span>
+                <span class="spec-value">45 cm × 24 cm × 2,5 cm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Geometrie</span>
+                <span class="spec-value">60° Isometrische Rauten-Matrix</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Holz-Triade</span>
+                <span class="spec-value">Nussbaum, Rotbuche &amp; Fichte</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Funktion</span>
+                <span class="spec-value">Charcuterie- &amp; Servierbrett</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="projects/3d-cubes-board.html" class="btn btn-primary" style="width: 100%;">
+              3D-Würfel-Geometrie &amp; Technik entdecken
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 03: Purpleheart Heart Serving Board -->
+      <div class="project-card-featured" style="margin-top: 3.5rem;">
+        <div class="project-media-wrapper">
+          <span class="project-media-badge">Projekt 03 • Massivholz-Unikat</span>
+          <img src="../assets/images/projects/purpleheart-heart/06-finished-heart-board.jpg" 
+               alt="Herzförmiges Servierbrett aus massivem Amaranth aus einem Stück" 
+               class="project-hero-img"
+               data-lightbox 
+               data-caption="Massives Amaranth-Herzbrett (25 cm × 15 cm) aus einem Stück mit am Frästisch kurvengefrästen Kanten, 140 °C thermischer Oxidation und Schweizer Holz-Butter Bienenwachs-Finish.">
+        </div>
+
+        <div class="project-content">
+          <div>
+            <div class="project-category">Skulpturales Handwerk / Servierbrett</div>
+            <h3 class="project-title">Massives Amaranth-Herzbrett aus einem Stück</h3>
+            <p class="project-excerpt">
+              Ein 25 cm × 15 cm grosses herzförmiges Servierbrett, gearbeitet aus einem einzigen massiven Stück hochdichtem Amaranth / Purpleheart (<em>Peltogyne</em>). Mit elegant gerundeten Kantenprofilen vom Frästisch, einer Ofenaktivierung bei 120 °C–150 °C für bis zu 60 Minuten zur Entfaltung elektrisierender Violetttöne und versiegelt mit original Schweizer <em>Holz-Butter</em> auf Bienenwachsbasis.
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Masse</span>
+                <span class="spec-value">25 cm × 15 cm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Konstruktion</span>
+                <span class="spec-value">Aus einem massiven Stück (leimfrei)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Kantenprofil</span>
+                <span class="spec-value">Am Frästisch kurvengefräst</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Thermische Aktivierung</span>
+                <span class="spec-value">120 °C–150 °C Ofenaktivierung (60 Min.)</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="projects/purpleheart-heart-serving-board.html" class="btn btn-primary" style="width: 100%;">
+              Vollständigen Baubericht &amp; Ofen-Technik lesen
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 04: Live-Edge Olive & Blue Mica River Board -->
+      <div class="project-card-featured" style="margin-top: 3.5rem;">
+        <div class="project-media-wrapper">
+          <span class="project-media-badge">Projekt 04 • Naturkante &amp; Epoxidharz</span>
+          <img src="../assets/images/projects/epoxy-olive-board/10-finished-olive-epoxy-board.jpg" 
+               alt="River-Board aus Naturkanten-Olivenholz und blauem Glimmer-Epoxidharz" 
+               class="project-hero-img"
+               data-lightbox 
+               data-caption="Naturkanten-Olivenholz- &amp; Blauglimmer-Epoxidharz-River-Board (40 cm × 30 cm × 2,5 cm) mit 5-Schichten-3D-Guss, 1500er-Nassschliff und Schweizer Holz-Butter-Finish.">
+        </div>
+
+        <div class="project-content">
+          <div>
+            <div class="project-category">Harz-Holz-Hybrid / River-Board</div>
+            <h3 class="project-title">River-Board aus Naturkanten-Olive &amp; Blauglimmer-Epoxid</h3>
+            <p class="project-excerpt">
+              Ein 40 cm × 30 cm × 2,5 cm grosses Hybrid-River-Board aus massiven mediterranen Olivenholz-Bohlen (<em>Olea europaea</em>) mit erhaltener natürlicher Baumkante. Gegossen in einer massgefertigten Melaminform in fünf separaten Güssen (vom schimmernden blauen Micapulver-Grund bis zu kristallklaren Deckschichten) für einen dreidimensionalen Flusseffekt. Nass geschliffen bis Körnung 1500, auf Hochglanz poliert und mit Schweizer <em>Holz-Butter</em> veredelt.
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Masse</span>
+                <span class="spec-value">40 cm × 30 cm × 2,5 cm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Materialien</span>
+                <span class="spec-value">Olivenholz &amp; Blauglimmer-Epoxidharz</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Gusstechnik</span>
+                <span class="spec-value">5 Güsse (Blauer Grund bis Klarlack-Tiefe)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Oberflächenfinish</span>
+                <span class="spec-value">1500er Nassschliff &amp; Holz-Butter</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="projects/epoxy-olive-board.html" class="btn btn-primary" style="width: 100%;">
+              Vollständigen Baubericht &amp; 5-Schichten-Gusstechnik lesen
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 05: Solid Walnut End Grain Cutting Board -->
+      <div class="project-card-featured" style="margin-top: 3.5rem;">
+        <div class="project-media-wrapper">
+          <span class="project-media-badge">Projekt 05 • Echtes Hirnholz-Erbstück</span>
+          <img src="../assets/images/projects/walnut-endgrain/07-walnut-cutting-board-knife.jpg" 
+               alt="Massives Nussbaum-Hirnholz-Schneidebrett (45 cm x 27 cm x 2,5 cm) mit japanischem Santoku-Messer" 
+               class="project-hero-img"
+               data-lightbox 
+               data-caption="Massives europäisches Nussbaum-Hirnholz-Schneidebrett (45 cm × 27 cm × 2,5 cm) mit gefräster Saftrille, 'Handmade in Zürich' Lasergravur und tiefer Sättigung mit lebensmittelechtem Mineralöl.">
+        </div>
+
+        <div class="project-content">
+          <div>
+            <div class="project-category">Traditionelle Hirnholz-Matrix / Profi-Hackblock</div>
+            <h3 class="project-title">Massives Nussbaum-Hirnholz-Schneidebrett</h3>
+            <p class="project-excerpt">
+              Ein stattlicher, 45 cm × 27 cm × 2,5 cm grosser Hirnholz-Hackblock, handgefertigt aus 135 einzelnen Klötzen aus europäischem Nussbaum (<em>Juglans regia</em>). Die stehenden Holzfasern federn Messerklingen sanft ab und schonen hochwertige Kochmesser. Gefertigt mit Verleimzulagen für perfekte Flucht, ausgestattet mit umlaufender Saftrille und dem gelaserten Atelier-Siegel «Handmade in Zürich».
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Masse</span>
+                <span class="spec-value">45 cm × 27 cm × 2,5 cm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Konstruktion</span>
+                <span class="spec-value">Echtes Hirnholz (15×9 Klötze)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Saftrille &amp; Signatur</span>
+                <span class="spec-value">Saftrille &amp; Zürcher Siegel</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Schutzbehandlung</span>
+                <span class="spec-value">Lebensmittelechtes Mineralöl (USP) &amp; Bienenwachs</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="projects/walnut-endgrain-cutting-board.html" class="btn btn-primary" style="width: 100%;">
+              Vollständigen Baubericht, Video &amp; Fotos ansehen
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Timber Showcase -->
+  <section id="timber" class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Materialkunde</span>
+        <h2 class="section-title">Die Holzbibliothek</h2>
+        <p>Die Kombination sich ergänzender Holzarten erfordert tiefes Verständnis von Holzdichte, Schwindmassen und Faserstruktur bei Schnittbelastung.</p>
+      </div>
+
+      <div class="timber-grid">
+        <!-- European Beech -->
+        <div class="timber-card">
+          <div class="timber-accent-bar timber-accent-beech"></div>
+          <div class="timber-header">
+            <h3>Europäische Rotbuche</h3>
+            <div class="timber-scientific">Fagus sylvatica</div>
+          </div>
+          <p>
+            Heimisch in Mitteleuropa und der Schweiz. In der Küche geschätzt für ihren neutralen Geruch, die dichte, feinporige Struktur und natürliche antibakterielle Eigenschaften. Feuert unter Öl zu einem warmen Goldgelb an.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Janka-Härte</span>
+              <div class="spec-value">1'450 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Verwendet in</span>
+              <div class="spec-value">Rautenbrett &amp; 3D-Würfel</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Purpleheart -->
+        <div class="timber-card">
+          <div class="timber-accent-bar timber-accent-purpleheart"></div>
+          <div class="timber-header">
+            <h3>Purpleheart (Amaranth)</h3>
+            <div class="timber-scientific">Peltogyne spp.</div>
+          </div>
+          <p>
+            Ein aussergewöhnlich dichtes tropisches Hartholz. Bei Kontakt mit UV-Licht und Sauerstoff setzt eine natürliche fotochemische Oxidation ein, die das Holz in ein königliches Magenta-Violett verwandelt, das durch Ölen noch an Tiefe gewinnt.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Janka-Härte</span>
+              <div class="spec-value">2'520 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Verwendet in</span>
+              <div class="spec-value">Rautenbrett</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiss Walnut -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #422b22, #1c110b);"></div>
+          <div class="timber-header">
+            <h3>Schweizer Nussbaum</h3>
+            <div class="timber-scientific">Juglans regia</div>
+          </div>
+          <p>
+            Der Aristokrat unter den einheimischen Schweizer Hölzern. Zeichnet sich durch samtige, tiefschokoladenbraune Töne und ein formstabiles Verhalten aus. Bildet den unverzichtbaren tiefen Schattenwurf bei 3D-Illusionen.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Janka-Härte</span>
+              <div class="spec-value">1'010 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Verwendet in</span>
+              <div class="spec-value">3D-Würfel &amp; Nussbaum-Hirnholzbrett</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alpine Spruce -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #fbf8f2, #eee5d3);"></div>
+          <div class="timber-header">
+            <h3>Alpine Fichte</h3>
+            <div class="timber-scientific">Picea abies</div>
+          </div>
+          <p>
+            Heimisches alpines Nadelholz (Rottanne), berühmt als klangvolles Tonholz für den Instrumentenbau und durch seine strahlend cremeweisse Farbe. Dient als leuchtende Highlight-Ebene bei dreidimensionalen perspektivischen Arbeiten.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Janka-Härte</span>
+              <div class="spec-value">480 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Verwendet in</span>
+              <div class="spec-value">3D-Würfel &amp; Nussbaum-Hirnholzbrett</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mediterranean Olive -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #c49a45, #5a4521);"></div>
+          <div class="timber-header">
+            <h3>Mediterranes Olivenholz</h3>
+            <div class="timber-scientific">Olea europaea</div>
+          </div>
+          <p>
+            Berühmt für seine dramatisch wilde Maserung, den natürlichen Ölgehalt und warme Goldtöne mit tiefbraunen Streifen. Harmoniert perfekt mit tief gegossenen Epoxidharz-Flüssen und natürlichen Baumkanten.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Janka-Härte</span>
+              <div class="spec-value">2'710 lbf (Extrem dicht)</div>
+            </div>
+            <div>
+              <span class="spec-label">Verwendet in</span>
+              <div class="spec-value">Olive &amp; Epoxid River-Board</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craftsmanship Principles -->
+  <section id="craft" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Werkstatt-Techniken</span>
+        <h2 class="section-title">Die vier Säulen der Präzision</h2>
+        <p>Warum geometrische Hirnholzbretter sowohl eine technische Herausforderung als auch kulinarische Erbstücke sind.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-num">01</div>
+          <h3 class="pillar-title">Messerschonendes Hirnholz</h3>
+          <p>
+            Anders als bei Längsholzbrettern, bei denen Klingen die Holzfasern zerschneiden, stehen beim Hirnholz die Fasern vertikal wie die Borsten einer Bürste. Die Schneide gleitet sanft zwischen die Fasern, die sich von selbst wieder schliessen – das schont das Holz und hält Messer rasiermesserscharf.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-num">02</div>
+          <h3 class="pillar-title">Die 45°-Verleim-Herausforderung</h3>
+          <p>
+            Das Verpressen von Rauten über die Diagonale erzeugt laterale hydraulische Scherkräfte: Nasser Leim wirkt als Gleitmittel, wodurch die Reihen leicht verrutschen. Wir lösen dieses Problem durch schrittweise Vorverleimungen und eigens gefertigte Melamin-Verleimzulagen.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-num">03</div>
+          <h3 class="pillar-title">Submillimeter-Toleranzen</h3>
+          <p>
+            Jeder einzelne quadratische Holzklotz muss mit absolut null Toleranzabweichung abgelängt werden. Schon eine minimale Abweichung von 0,2 mm summiert sich über 8 Klötze zu einem Versatz von 1,6 mm und zerstört die perfekte Flucht des Musters.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-num">04</div>
+          <h3 class="pillar-title">Lebensmittelechte Ölsättigung</h3>
+          <p>
+            Hirnholzfasern saugen Flüssigkeiten auf wie winzige Trinkhalme. Wir tauchen das fertige Brett vollständig in reines lebensmittelechtes Mineralöl (USP), bis es lückenlos gesättigt ist, und versiegeln es mit warmer Bio-Bienenwachs-Holzbutter für maximale Wasserabweisung.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Concepts / In The Shop -->
+  <section class="section" style="border-top: 1px solid var(--border-subtle); background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Werkbank-Planung</span>
+        <h2 class="section-title">In Planung &amp; Prototypenbau</h2>
+        <p>Kommende Projekte in Entwurfsphase, Vorrichtungsbau und Holzauswahl.</p>
+      </div>
+
+      <div class="timber-grid">
+        <div class="timber-card">
+          <div class="project-category">Holzzuschnitt</div>
+          <h3 style="margin-bottom: 0.5rem;">Magnetische Naturkanten-Messerleiste</h3>
+          <p style="font-size: 0.95rem;">
+            Buchgespiegelte Bohle aus Schweizer Ulmenholz mit verdeckt eingelassenen Neodym-Magnetkammern und französischer Keilleisten-Aufhängung (French Cleat).
+          </p>
+          <span class="nav-badge">Holz vorgerichtet</span>
+        </div>
+
+        <div class="timber-card">
+          <div class="project-category">Vorrichtungsbau</div>
+          <h3 style="margin-bottom: 0.5rem;">Mehrachs-Spann- &amp; Ausrichtrahmen</h3>
+          <p style="font-size: 0.95rem;">
+            Ein werkstatteigener, CNC-gefräster Phenolharz-Spannrahmen mit Messinggewinden für das fehlerfreie Verleimen von gewinkelten Mustern und Fischgrät-Formationen.
+          </p>
+          <span class="nav-badge">Prototyping</span>
+        </div>
+
+        <div class="timber-card">
+          <div class="project-category">Entwurfsphase</div>
+          <h3 style="margin-bottom: 0.5rem;">Hirnholz-Fischgrät-Servierplatte</h3>
+          <p style="font-size: 0.95rem;">
+            Ein verschachteltes Fischgrät-Serviertablett aus Schweizer Esche und Räuchereiche mit bündig eingelassenen massiven Messinggriffen.
+          </p>
+          <span class="nav-badge">CAD-Entwurf fertig</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Container -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Bilder-Lightbox">
+    <button class="lightbox-close" aria-label="Bild schliessen">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Vorheriges Bild">&#10094;</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Nächstes Bild">&#10095;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo">
+            <img src="../assets/images/logo.png" alt="ZuriForge Logo" class="brand-icon" width="40" height="40">
+            <span class="brand-name">ZuriForge</span>
+          </a>
+          <p class="footer-brand-desc">
+            Ein Werkstatt-Journal zur Dokumentation massgefertigter Holzarbeiten, geometrischer Hirnholz-Laminierungen und feiner Holzbearbeitungstechniken in Zürich, Schweiz.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Dokumentation</h4>
+          <ul class="footer-links">
+            <li><a href="projects/beech-purpleheart-cutting-board.html">Rotbuche &amp; Amaranth Brett</a></li>
+            <li><a href="projects/3d-cubes-board.html">3D-Würfel-Illusion Brett</a></li>
+            <li><a href="projects/purpleheart-heart-serving-board.html">Amaranth-Herzbrett</a></li>
+            <li><a href="projects/epoxy-olive-board.html">Olive &amp; Epoxid River-Board</a></li>
+            <li><a href="projects/walnut-endgrain-cutting-board.html">Nussbaum-Hirnholzbrett</a></li>
+            <li><a href="#timber">Holzarten-Eigenschaften</a></li>
+            <li><a href="about.html">Über den Macher</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Werkstatt-Ethos</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-dim);">Rein nicht-kommerziell</span></li>
+            <li><span style="color: var(--text-dim);">Open-Source-Bauberichte</span></li>
+            <li><span style="color: var(--text-dim);">Nachhaltige Schweizer &amp; Edelhölzer</span></li>
+            <li><a href="https://github.com/andrei-alpha/andrei-alpha.github.io" target="_blank" rel="noopener">GitHub Repository</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZuriForge • Andrei Antonescu • Zürich, Schweiz</div>
+        <div>Gefertigt mit Präzision &amp; Hobelspänen</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js?v=1.1"></script>
+  <!-- Slide-Out Workshop Build Archive Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="workshop-drawer" id="workshop-drawer" aria-hidden="true" role="dialog" aria-labelledby="drawer-title">
+    <div class="drawer-header">
+      <div class="drawer-header-top">
+        <div class="drawer-title-group">
+          <span class="drawer-badge">Werkstatt-Index</span>
+          <h2 id="drawer-title" class="drawer-title">Werkstatt-Journal</h2>
+        </div>
+        <button class="drawer-close" id="drawer-close-btn" aria-label="Journal schliessen">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <p class="drawer-subtitle">
+        Dokumentation geometrischer Verbindungen, Vorrichtungen und Holzcharakteristika aus 5 Projekten der Werkstatt in Zürich.
+      </p>
+      <div class="drawer-filters">
+        <button class="drawer-filter-btn active" data-filter="all">Alle (5)</button>
+        <button class="drawer-filter-btn" data-filter="endgrain">Hirnholz (3)</button>
+        <button class="drawer-filter-btn" data-filter="epoxy">Naturkante / Epoxid (1)</button>
+        <button class="drawer-filter-btn" data-filter="art">Kunsthandwerk (1)</button>
+      </div>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Project 1: Walnut End-Grain -->
+      <a href="projects/walnut-endgrain-cutting-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../assets/images/projects/walnut-endgrain/07-walnut-cutting-board-knife.jpg" alt="Massives Nussbaum-Hirnholz-Schneidebrett" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Traditionelles Hirnholz</span>
+            <span class="drawer-date">Okt. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Massives Nussbaum-Hirnholzbrett</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Schweizer Nussbaum</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>450 × 270 × 25 mm</span>
+            <span>•</span>
+            <span>Saftrille</span>
+            <span>•</span>
+            <span>Mineralöl</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2: Beech & Purpleheart -->
+      <a href="projects/beech-purpleheart-cutting-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../assets/images/projects/beech-purpleheart/13-finished-oil-pop.jpg" alt="Geometrisches Rotbuchen- &amp; Amaranth-Brett" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Präzisionsraster</span>
+            <span class="drawer-date">Okt. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Rotbuche &amp; Amaranth Brett</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Europäische Rotbuche</span>
+            <span class="timber-chip">Amaranth</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>420 × 285 × 42 mm</span>
+            <span>•</span>
+            <span>Massiver Block</span>
+            <span>•</span>
+            <span>Bienenwachs-Politur</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 3: 3D Cubes Illusion -->
+      <a href="projects/3d-cubes-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../assets/images/projects/3d-cubes/raw/CBE460FA-1CD5-4886-A3C1-9EAA979465CC.JPG" alt="3D-Würfel-Illusion-Schneidebrett" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Optische Illusion</span>
+            <span class="drawer-date">Okt. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">3D-Würfel-Illusion Brett</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Nussbaum</span>
+            <span class="timber-chip">Fichte</span>
+            <span class="timber-chip">Rotbuche</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>380 × 260 × 38 mm</span>
+            <span>•</span>
+            <span>60°-Rauten</span>
+            <span>•</span>
+            <span>Walnussöl</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 4: Epoxy Olive Board -->
+      <a href="projects/epoxy-olive-board.html" class="drawer-project-card" data-category="epoxy">
+        <div class="drawer-thumb-wrap">
+          <img src="../assets/images/projects/epoxy-olive-board/10-finished-olive-epoxy-board.jpg" alt="Mediterranes Olivenholz &amp; Epoxid-River-Board" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Naturkanten-Hybrid</span>
+            <span class="drawer-date">Sep. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Olive &amp; Epoxid River-Board</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Hundertjährige Olive</span>
+            <span class="timber-chip">Cerulean-Harz</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>480 × 240 × 32 mm</span>
+            <span>•</span>
+            <span>12'000er Hochglanzpolitur</span>
+            <span>•</span>
+            <span>Odie's Oil</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 5: Purpleheart Heart -->
+      <a href="projects/purpleheart-heart-serving-board.html" class="drawer-project-card" data-category="art">
+        <div class="drawer-thumb-wrap">
+          <img src="../assets/images/projects/purpleheart-heart/06-finished-heart-board.jpg" alt="Amaranth-Herz-Servierbrett" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Individuelles Kunstwerk</span>
+            <span class="drawer-date">Okt. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Amaranth-Herzbrett</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Guyana-Amaranth</span>
+            <span class="timber-chip">Rotbuchen-Akzent</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>310 × 290 × 35 mm</span>
+            <span>•</span>
+            <span>Thermische Aktivierung</span>
+            <span>•</span>
+            <span>Holz-Butter</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-footer-stats">
+        <span>5 vollendete Projekte</span>
+        <span>•</span>
+        <span>Werkstatt Zürich</span>
+      </div>
+      <a href="index.html#projects" class="btn btn-outline drawer-view-all-btn">
+        <span>Gesamte Werkschau ansehen</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </aside>
+
+</body>
+</html>

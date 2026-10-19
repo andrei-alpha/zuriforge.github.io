@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZuriForge — Falegnameria d'eccellenza &amp; Diario di laboratorio</title>
+  <meta name="description" content="Il diario di falegnameria di un artigiano a Zurigo. Documentazione di artigianato, geometria, dime di lavorazione e processi passo dopo passo per taglieri in legno di testa, illusioni ottiche 3D e creazioni in legni pregiati.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css?v=1.1">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="../assets/images/favicon-64x64.png">
+  <link rel="apple-touch-icon" href="../assets/images/logo.png">
+  <style>#workshop-drawer:not(.active),#drawer-backdrop:not(.active){display:none!important;}</style>
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Home ZuriForge">
+        <img src="../assets/images/logo.png" alt="Logo ZuriForge" class="brand-icon" width="40" height="40">
+        <span class="brand-name">ZuriForge<span class="brand-sub">ZRH</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link active">Progetti</a></li>
+          <li><a href="#timber" class="nav-link">Libreria delle essenze</a></li>
+          <li><a href="#craft" class="nav-link">Principi</a></li>
+          <li><a href="about.html" class="nav-link">Chi siamo</a></li>
+          <li>
+            <button class="nav-drawer-btn open-drawer-btn" aria-label="Apri il diario di laboratorio">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>Diario</span>
+              <span class="drawer-pill">5</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="navigation" aria-label="Selettore della lingua">
+          <svg class="lang-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <a href="../de/index.html" class="lang-btn" hreflang="de" data-lang="de" title="Deutsch">DE</a>
+          <span class="lang-divider"></span>
+          <a href="../fr/index.html" class="lang-btn" hreflang="fr" data-lang="fr" title="Français">FR</a>
+          <span class="lang-divider"></span>
+          <a href="index.html" class="lang-btn active" hreflang="it" data-lang="it" aria-current="page" title="Italiano">IT</a>
+          <span class="lang-divider"></span>
+          <a href="../index.html" class="lang-btn" hreflang="en" data-lang="en" title="English">EN</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Attiva o disattiva menu di navigazione" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-meta">
+        <span>Fatto a mano a Zurigo</span>
+        <span>•</span>
+        <span>Diario di laboratorio</span>
+      </div>
+      <h1 class="hero-title">
+        La geometria delle <em>venature</em> &amp; falegnameria su misura
+      </h1>
+      <p class="hero-lead">
+        Documentiamo la pazienza, le dime di precisione e la scienza dei materiali dietro taglieri geometrici su misura e creazioni in legni pregiati. Il diario di un artigiano che esplora ogni taglio, morsettatura e finitura a olio.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          Esplora i progetti
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+        </a>
+        <a href="about.html" class="btn btn-outline">Filosofia dell'Atelier</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Non-Commercial Maker Manifesto -->
+  <div class="manifesto-banner">
+    <div class="container manifesto-content">
+      <div class="manifesto-tag">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+        <span>Nota dell'artigiano</span>
+      </div>
+      <div>
+        Questo sito è il diario personale di un falegname, non un negozio online. Ogni pezzo è realizzato per pura ricerca tecnica, sperimentazione ed entusiasmo per il lavoro di bottega.
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Vetrina di laboratorio</span>
+        <h2 class="section-title">Progetti realizzati a mano</h2>
+        <p>Documentazione di progettazione, incastri di precisione e trasformazione della materia prima in taglieri unici.</p>
+      </div>
+
+      <!-- Project 01: Beech & Purpleheart Grid Board -->
+      <div class="project-card-featured" style="margin-bottom: 3.5rem;">
+        <div class="project-media-wrapper">
+          <span class="project-media-badge">Progetto 01 • Pezzo finito</span>
+          <img src="../assets/images/projects/beech-purpleheart/13-finished-oil-pop.jpg" 
+               alt="Tagliere a scacchiera diagonale in faggio e amaranto" 
+               class="project-hero-img"
+               data-lightbox 
+               data-caption="Tagliere a griglia diagonale in faggio europeo e amaranto (19 cm × 28 cm × 2,0 cm): risalto del profondo contrasto tra il viola intenso e l'ambra dorata dopo la finitura con olio minerale.">
+        </div>
+
+        <div class="project-content">
+          <div>
+            <div class="project-category">Matrice in legno di testa / Alta cucina</div>
+            <h3 class="project-title">Tagliere a griglia in faggio europeo e amaranto</h3>
+            <p class="project-excerpt">
+              Un tagliere a scacchiera ad alto contrasto con orientamento a rombo a 45°. Realizzato in faggio europeo (<em>Fagus sylvatica</em>) e amaranto tropicale (<em>Peltogyne</em>) piallati a 30 mm × 22 mm, tagliati a 30 mm di lunghezza con la troncatrice radiale (30 × 30 × 22 mm) e levigati a un perfetto spessore finale di 20 mm.
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Dimensioni</span>
+                <span class="spec-value">19 cm × 28 cm × 2,0 cm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Motivo</span>
+                <span class="spec-value">Griglia a rombi diagonale a 45°</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Selezione legni</span>
+                <span class="spec-value">Faggio &amp; Amaranto</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Finitura superficiale</span>
+                <span class="spec-value">Olio minerale alimentare USP &amp; Cera d'api biologica</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="projects/beech-purpleheart-cutting-board.html" class="btn btn-primary" style="width: 100%;">
+              Leggi il diario di fabbricazione passo dopo passo
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 02: 3D Cubes Optical Illusion Board -->
+      <div class="project-card-featured">
+        <div class="project-media-wrapper">
+          <span class="project-media-badge">Progetto 02 • Illusione geometrica</span>
+          <img src="../assets/images/projects/3d-cubes/11-finished-board-desk.jpg" 
+               alt="Tagliere a illusione ottica cubi 3D" 
+               class="project-hero-img"
+               data-lightbox 
+               data-caption="Tagliere a illusione ottica cubi 3D (45 cm × 24 cm × 2,5 cm): tassellatura isometrica in noce svizzero, faggio europeo e abete rosso alpino che simula cubi tridimensionali sospesi.">
+        </div>
+
+        <div class="project-content">
+          <div>
+            <div class="project-category">Tassellatura ottica / Tagliere da portata</div>
+            <h3 class="project-title">Tagliere a illusione ottica cubi 3D</h3>
+            <p class="project-excerpt">
+              Un tagliere da portata di 45 cm × 24 cm × 2,5 cm che genera un'ipnotica illusione ottica di cubi in caduta. Sfrutta una rigorosa scala di luminosità a tre tonalità: scuro noce svizzero per la faccetta d'ombra, caldo faggio europeo per il mezzotono e luminoso abete rosso alpino per il punto luce superiore.
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Dimensioni</span>
+                <span class="spec-value">45 cm × 24 cm × 2,5 cm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Geometria</span>
+                <span class="spec-value">Matrice romboidale isometrica a 60°</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Triade di legni</span>
+                <span class="spec-value">Noce, Faggio &amp; Abete rosso</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Funzione</span>
+                <span class="spec-value">Tagliere da portata &amp; salumi</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="projects/3d-cubes-board.html" class="btn btn-primary" style="width: 100%;">
+              Esplora la geometria dei cubi 3D &amp; la tecnica
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 03: Purpleheart Heart Serving Board -->
+      <div class="project-card-featured" style="margin-top: 3.5rem;">
+        <div class="project-media-wrapper">
+          <span class="project-media-badge">Progetto 03 • Massello monoblocco</span>
+          <img src="../assets/images/projects/purpleheart-heart/06-finished-heart-board.jpg" 
+               alt="Tagliere da portata a forma di cuore ricavato da un unico pezzo di amaranto" 
+               class="project-hero-img"
+               data-lightbox 
+               data-caption="Tagliere a cuore in amaranto massiccio (25 cm × 15 cm) con bordi sagomati al banco fresa, ossidazione termica a 140°C e finitura svizzera Holz-Butter alla cera d'api.">
+        </div>
+
+        <div class="project-content">
+          <div>
+            <div class="project-category">Artigianato scultoreo / Vassoio da portata</div>
+            <h3 class="project-title">Tagliere a cuore in amaranto monoblocco</h3>
+            <p class="project-excerpt">
+              Un vassoio da portata a forma di cuore di 25 cm × 15 cm intagliato da un unico pezzo massiccio di denso amaranto (<em>Peltogyne</em>). Caratterizzato da bordi profondamente raccordati al banco fresa, una cottura in forno tra 120°C e 150°C fino a 60 minuti per risvegliare le tonalità viola elettrico, e sigillato con burro per legno svizzero <em>Holz-Butter</em> alla cera d'api.
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Dimensioni</span>
+                <span class="spec-value">25 cm × 15 cm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Costruzione</span>
+                <span class="spec-value">Pezzo unico in massello (senza colla)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Sagomatura bordi</span>
+                <span class="spec-value">Profilo curvo al banco fresa</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Attivazione termica</span>
+                <span class="spec-value">Cottura in forno a 120°C–150°C (60 min)</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="projects/purpleheart-heart-serving-board.html" class="btn btn-primary" style="width: 100%;">
+              Leggi il diario di lavorazione &amp; la tecnica di cottura in forno
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 04: Live-Edge Olive & Blue Mica River Board -->
+      <div class="project-card-featured" style="margin-top: 3.5rem;">
+        <div class="project-media-wrapper">
+          <span class="project-media-badge">Progetto 04 • Bordo naturale &amp; Resina</span>
+          <img src="../assets/images/projects/epoxy-olive-board/10-finished-olive-epoxy-board.jpg" 
+               alt="Tagliere river in olivo a bordo naturale e resina epossidica blu mica" 
+               class="project-hero-img"
+               data-lightbox 
+               data-caption="Tagliere river in olivo a bordo naturale e resina epossidica blu mica (40 cm × 30 cm × 2,5 cm) con colata 3D in 5 strati, levigatura a umido a grana 1500 e finitura svizzera Holz-Butter.">
+        </div>
+
+        <div class="project-content">
+          <div>
+            <div class="project-category">Ibrido resina / Tagliere river</div>
+            <h3 class="project-title">Tagliere river in olivo a bordo naturale &amp; resina blu mica</h3>
+            <p class="project-excerpt">
+              Un tagliere river ibrido di 40 cm × 30 cm × 2,5 cm ricavato da tavole di olivo mediterraneo (<em>Olea europaea</em>) con bordi naturali intatti. Colato in uno stampo su misura in nobilitato attraverso cinque colate distinte (dalla base blu vorticosa ai livelli trasparenti superiori) per un effetto fluviale tridimensionale, levigato a umido fino a grana 1500, lucidato con paste abrasive fini e sigillato con <em>Holz-Butter</em> svizzero.
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Dimensioni</span>
+                <span class="spec-value">40 cm × 30 cm × 2,5 cm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Materiali</span>
+                <span class="spec-value">Legno d'olivo &amp; Resina epossidica blu mica</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Tecnica di colata</span>
+                <span class="spec-value">5 colate (da base blu a trasparente)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Finitura</span>
+                <span class="spec-value">Levigatura a umido 1500 &amp; Holz-Butter</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="projects/epoxy-olive-board.html" class="btn btn-primary" style="width: 100%;">
+              Leggi il diario di fabbricazione &amp; la tecnica a 5 colate
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 05: Solid Walnut End Grain Cutting Board -->
+      <div class="project-card-featured" style="margin-top: 3.5rem;">
+        <div class="project-media-wrapper">
+          <span class="project-media-badge">Progetto 05 • Tradizione in legno di testa</span>
+          <img src="../assets/images/projects/walnut-endgrain/07-walnut-cutting-board-knife.jpg" 
+               alt="Ceppo da cucina in legno di testa di noce massiccio (45 cm x 27 cm x 2,5 cm) con coltello Santoku giapponese" 
+               class="project-hero-img"
+               data-lightbox 
+               data-caption="Ceppo da cucina in legno di testa in noce europeo massiccio (45 cm × 27 cm × 2,5 cm) con scanalatura raccoglisugo perimetrale fresata, marchio a laser 'Handmade in Zürich' e saturazione in olio minerale alimentare.">
+        </div>
+
+        <div class="project-content">
+          <div>
+            <div class="project-category">Matrice d'eccellenza in legno di testa / Ceppo da macellaio</div>
+            <h3 class="project-title">Ceppo da cucina in legno di testa in noce massiccio</h3>
+            <p class="project-excerpt">
+              Un robusto ceppo da cucina di 45 cm × 27 cm × 2,5 cm realizzato a mano con 135 tasselli individuali di noce europeo (<em>Juglans regia</em>). Le fibre verticali del legno ammortizzano e preservano il filo dei coltelli da chef più pregiati; presenta incollaggio con cale di allineamento, scanalatura raccoglisugo fresata lungo il perimetro e il marchio a laser dell'atelier "Handmade in Zürich".
+            </p>
+
+            <div class="specs-grid">
+              <div class="spec-item">
+                <span class="spec-label">Dimensioni</span>
+                <span class="spec-value">45 cm × 27 cm × 2,5 cm</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Costruzione</span>
+                <span class="spec-value">Puro legno di testa (15×9 tasselli)</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Scolo &amp; Marchio</span>
+                <span class="spec-value">Canale raccoglisugo &amp; Marchio Zurigo</span>
+              </div>
+              <div class="spec-item">
+                <span class="spec-label">Protezione</span>
+                <span class="spec-value">Olio minerale USP &amp; Cera d'api</span>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <a href="projects/walnut-endgrain-cutting-board.html" class="btn btn-primary" style="width: 100%;">
+              Leggi il diario di lavorazione, guarda video &amp; foto
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Timber Showcase -->
+  <section id="timber" class="section" style="background: var(--bg-surface); border-top: 1px solid var(--border-subtle); border-bottom: 1px solid var(--border-subtle);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Scienza dei materiali</span>
+        <h2 class="section-title">La libreria delle essenze</h2>
+        <p>Accostare specie legnose complementari richiede una profonda comprensione di densità, coefficienti di ritiro e struttura cellulare sotto l'impatto della lama.</p>
+      </div>
+
+      <div class="timber-grid">
+        <!-- European Beech -->
+        <div class="timber-card">
+          <div class="timber-accent-bar timber-accent-beech"></div>
+          <div class="timber-header">
+            <h3>Faggio europeo</h3>
+            <div class="timber-scientific">Fagus sylvatica</div>
+          </div>
+          <p>
+            Autoctono dell'Europa centrale e della Svizzera. Molto apprezzato nell'arte culinaria per il profumo neutro, la grana fine priva di pori aperti e le naturali proprietà antibatteriche. All'applicazione dell'olio assume una calda tonalità ambrata dorata.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Durezza Janka</span>
+              <div class="spec-value">1.450 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Utilizzato in</span>
+              <div class="spec-value">Tagliere a griglia &amp; Cubi 3D</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Purpleheart -->
+        <div class="timber-card">
+          <div class="timber-accent-bar timber-accent-purpleheart"></div>
+          <div class="timber-header">
+            <h3>Amaranto (Purpleheart)</h3>
+            <div class="timber-scientific">Peltogyne spp.</div>
+          </div>
+          <p>
+            Un legno duro esotico straordinariamente denso. L'esposizione all'aria e ai raggi UV innesca una naturale ossidazione fotochimica, che sboccia in uno spettacolare color porpora-magenta regale, ulteriormente intensificato dalla finitura a olio.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Durezza Janka</span>
+              <div class="spec-value">2.520 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Utilizzato in</span>
+              <div class="spec-value">Tagliere a griglia</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Swiss Walnut -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #422b22, #1c110b);"></div>
+          <div class="timber-header">
+            <h3>Noce svizzero</h3>
+            <div class="timber-scientific">Juglans regia</div>
+          </div>
+          <p>
+            Il principe dei legni autoctoni svizzeri. Vanta tonalità calde e vellutate color cioccolato fondente e una notevole stabilità dimensionale. Fornisce l'ombra scura indispensabile nelle illusioni tridimensionali.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Durezza Janka</span>
+              <div class="spec-value">1.010 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Utilizzato in</span>
+              <div class="spec-value">Cubi 3D &amp; Ceppo in legno di testa</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alpine Spruce -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #fbf8f2, #eee5d3);"></div>
+          <div class="timber-header">
+            <h3>Abete rosso alpino</h3>
+            <div class="timber-scientific">Picea abies</div>
+          </div>
+          <p>
+            Legno dolce alpino autoctono (peccio) rinomato come legno di risonanza per liuteria e per le sue luminose sfumature avorio crema. Funge da piano di massima luce e riflesso nei pezzi a prospettiva 3D.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Durezza Janka</span>
+              <div class="spec-value">480 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Utilizzato in</span>
+              <div class="spec-value">Cubi 3D &amp; Ceppo in legno di testa</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mediterranean Olive -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #c49a45, #5a4521);"></div>
+          <div class="timber-header">
+            <h3>Olivo mediterraneo</h3>
+            <div class="timber-scientific">Olea europaea</div>
+          </div>
+          <p>
+            Celebre per le spettacolari fiammature e venature contorte, la naturale oleosità e le calde sfumature dorate con striature bruno scuro. Si abbina in modo straordinario alla resina epossidica da colata e ai bordi rustici naturali.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Durezza Janka</span>
+              <div class="spec-value">2.710 lbf (Ultra denso)</div>
+            </div>
+            <div>
+              <span class="spec-label">Utilizzato in</span>
+              <div class="spec-value">Tagliere river olivo &amp; resina</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Craftsmanship Principles -->
+  <section id="craft" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Tecniche di bottega</span>
+        <h2 class="section-title">I quattro pilastri della precisione</h2>
+        <p>Perché i taglieri geometrici in legno di testa rappresentano sia una sfida tecnica sia un patrimonio culinario duraturo.</p>
+      </div>
+
+      <div class="pillars-grid">
+        <div class="pillar-card">
+          <div class="pillar-num">01</div>
+          <h3 class="pillar-title">Rispetto della lama: legno di testa</h3>
+          <p>
+            A differenza dei taglieri in legno di filo dove la lama recide le fibre legnose, nel legno di testa le fibre sono orientate verticalmente come le setole di un pennello. Il filo del coltello penetra tra le fibre senza intaccarle, preservando l'affilatura dei coltelli da cucina.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-num">02</div>
+          <h3 class="pillar-title">La sfida della morsettatura a 45°</h3>
+          <p>
+            Morsettare rombi disposti in diagonale innesca uno scorrimento idraulico laterale: la colla fresca agisce da lubrificante, facendo slittare i corsi fuori squadro. Superiamo questo ostacolo mediante sotto-assemblaggi a stadi e robuste dime di allineamento in nobilitato.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-num">03</div>
+          <h3 class="pillar-title">Tolleranze sub-millimetriche</h3>
+          <p>
+            Ciascun singolo tassello quadrato deve essere troncato senza alcuna discrepanza. Anche una deviazione di appena 0,2 mm su una sequenza di 8 tasselli genera un disallineamento a cascata di 1,6 mm, distruggendo la nitidezza della scacchiera.
+          </p>
+        </div>
+
+        <div class="pillar-card">
+          <div class="pillar-num">04</div>
+          <h3 class="pillar-title">Saturazione con oli alimentari</h3>
+          <p>
+            Le fibre di testa del legno si comportano come una miriade di cannucce verticali. Immergiamo il pezzo finito in purissimo olio minerale alimentare USP fino a totale saturazione, sigillando poi la superficie con burro per legno a base di cera d'api biologica per garantire idrorepellenza.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Concepts / In The Shop -->
+  <section class="section" style="border-top: 1px solid var(--border-subtle); background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Sul banco da lavoro</span>
+        <h2 class="section-title">In fase di studio &amp; prototipazione</h2>
+        <p>Progetti in corso di elaborazione: design, studio delle dime e selezione delle essenze.</p>
+      </div>
+
+      <div class="timber-grid">
+        <div class="timber-card">
+          <div class="project-category">Lavorazione legname</div>
+          <h3 style="margin-bottom: 0.5rem;">Portacoltelli magnetico a bordo naturale</h3>
+          <p style="font-size: 0.95rem;">
+            Tavola in olmo svizzero locale lavorata a libro aperto con sedi cieche per potenti magneti al neodimio e sistema di fissaggio a parete a cuneo (French cleat).
+          </p>
+          <span class="nav-badge">Legname piallato</span>
+        </div>
+
+        <div class="timber-card">
+          <div class="project-category">Costruzione dime</div>
+          <h3 style="margin-bottom: 0.5rem;">Dima di morsettatura &amp; squadratura multiasse</h3>
+          <p style="font-size: 0.95rem;">
+            Telaio di squadratura d'atelier fresato a CNC in resina fenolica con inserti filettati in ottone per agevolare l'incollaggio di taglieri angolari e a spina di pesce.
+          </p>
+          <span class="nav-badge">In prototipazione</span>
+        </div>
+
+        <div class="timber-card">
+          <div class="project-category">Fase di design</div>
+          <h3 style="margin-bottom: 0.5rem;">Vassoio a spina di pesce in legno di testa</h3>
+          <p style="font-size: 0.95rem;">
+            Vassoio da portata a motivo spina di pesce concentrico che unisce frassino svizzero e rovere europeo affumicato con maniglie a filo in ottone massiccio.
+          </p>
+          <span class="nav-badge">Progetto CAD ultimato</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Container -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Ingrandimento immagine">
+    <button class="lightbox-close" aria-label="Chiudi immagine">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Immagine precedente">&#10094;</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Immagine successiva">&#10095;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="index.html" class="brand-logo">
+            <img src="../assets/images/logo.png" alt="Logo ZuriForge" class="brand-icon" width="40" height="40">
+            <span class="brand-name">ZuriForge</span>
+          </a>
+          <p class="footer-brand-desc">
+            Un diario di falegnameria che documenta creazioni su misura, laminazioni geometriche in legno di testa e tecniche di bottega a Zurigo, Svizzera.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Documentazione</h4>
+          <ul class="footer-links">
+            <li><a href="projects/beech-purpleheart-cutting-board.html">Tagliere faggio &amp; amaranto</a></li>
+            <li><a href="projects/3d-cubes-board.html">Tagliere illusione cubi 3D</a></li>
+            <li><a href="projects/purpleheart-heart-serving-board.html">Tagliere cuore in amaranto</a></li>
+            <li><a href="projects/epoxy-olive-board.html">Tagliere river olivo &amp; resina</a></li>
+            <li><a href="projects/walnut-endgrain-cutting-board.html">Ceppo in legno di testa in noce</a></li>
+            <li><a href="#timber">Caratteristiche delle essenze</a></li>
+            <li><a href="about.html">L'Artigiano &amp; l'Atelier</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Etica d'Atelier</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-dim);">Rigorosamente non commerciale</span></li>
+            <li><span style="color: var(--text-dim);">Diari di fabbricazione open source</span></li>
+            <li><span style="color: var(--text-dim);">Legni svizzeri e pregiati sostenibili</span></li>
+            <li><a href="https://github.com/andrei-alpha/andrei-alpha.github.io" target="_blank" rel="noopener">Repository GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZuriForge • Andrei Antonescu • Zurigo, Svizzera</div>
+        <div>Creato con precisione &amp; trucioli di legno</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js?v=1.1"></script>
+  <!-- Slide-Out Workshop Build Archive Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="workshop-drawer" id="workshop-drawer" aria-hidden="true" role="dialog" aria-labelledby="drawer-title">
+    <div class="drawer-header">
+      <div class="drawer-header-top">
+        <div class="drawer-title-group">
+          <span class="drawer-badge">Indice del laboratorio</span>
+          <h2 id="drawer-title" class="drawer-title">Diario di laboratorio</h2>
+        </div>
+        <button class="drawer-close" id="drawer-close-btn" aria-label="Chiudi diario">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <p class="drawer-subtitle">
+        Documentazione di incastri geometrici, dime e proprietà delle essenze legnose in 5 progetti dell'atelier di Zurigo.
+      </p>
+      <div class="drawer-filters">
+        <button class="drawer-filter-btn active" data-filter="all">Tutti (5)</button>
+        <button class="drawer-filter-btn" data-filter="endgrain">Legno di testa (3)</button>
+        <button class="drawer-filter-btn" data-filter="epoxy">Bordo naturale / Resina epossidica (1)</button>
+        <button class="drawer-filter-btn" data-filter="art">Opera d'arte (1)</button>
+      </div>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Project 1: Walnut End-Grain -->
+      <a href="projects/walnut-endgrain-cutting-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../assets/images/projects/walnut-endgrain/07-walnut-cutting-board-knife.jpg" alt="Ceppo in legno di testa in noce massiccio" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Pregiato legno di testa</span>
+            <span class="drawer-date">Ott 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Ceppo in legno di testa in noce</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Noce svizzero</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>450 × 270 × 25 mm</span>
+            <span>•</span>
+            <span>Canale raccoglisugo</span>
+            <span>•</span>
+            <span>Olio minerale</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2: Beech & Purpleheart -->
+      <a href="projects/beech-purpleheart-cutting-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../assets/images/projects/beech-purpleheart/13-finished-oil-pop.jpg" alt="Tagliere geometrico in faggio e amaranto" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Griglia di precisione</span>
+            <span class="drawer-date">Ott 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Tagliere faggio &amp; amaranto</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Faggio europeo</span>
+            <span class="timber-chip">Amaranto</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>420 × 285 × 42 mm</span>
+            <span>•</span>
+            <span>Blocco massiccio</span>
+            <span>•</span>
+            <span>Cera d'api</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 3: 3D Cubes Illusion -->
+      <a href="projects/3d-cubes-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../assets/images/projects/3d-cubes/raw/CBE460FA-1CD5-4886-A3C1-9EAA979465CC.JPG" alt="Tagliere a illusione ottica cubi 3D" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Illusione ottica</span>
+            <span class="drawer-date">Ott 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Tagliere cubi 3D in caduta</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Noce</span>
+            <span class="timber-chip">Abete rosso</span>
+            <span class="timber-chip">Faggio</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>380 × 260 × 38 mm</span>
+            <span>•</span>
+            <span>Rombi a 60°</span>
+            <span>•</span>
+            <span>Olio di noce</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 4: Epoxy Olive Board -->
+      <a href="projects/epoxy-olive-board.html" class="drawer-project-card" data-category="epoxy">
+        <div class="drawer-thumb-wrap">
+          <img src="../assets/images/projects/epoxy-olive-board/10-finished-olive-epoxy-board.jpg" alt="Tagliere river in olivo mediterraneo e resina epossidica" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Ibrido bordo naturale</span>
+            <span class="drawer-date">Set 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Tagliere river olivo &amp; resina</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Olivo secolare</span>
+            <span class="timber-chip">Resina cerulea</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>480 × 240 × 32 mm</span>
+            <span>•</span>
+            <span>Lucidatura grana 12'000</span>
+            <span>•</span>
+            <span>Odie's Oil</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 5: Purpleheart Heart -->
+      <a href="projects/purpleheart-heart-serving-board.html" class="drawer-project-card" data-category="art">
+        <div class="drawer-thumb-wrap">
+          <img src="../assets/images/projects/purpleheart-heart/06-finished-heart-board.jpg" alt="Tagliere da portata a forma di cuore in amaranto" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Opera d'arte su misura</span>
+            <span class="drawer-date">Ott 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Tagliere cuore in amaranto</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Amaranto della Guyana</span>
+            <span class="timber-chip">Profilo in faggio</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>310 × 290 × 35 mm</span>
+            <span>•</span>
+            <span>Cottura termica</span>
+            <span>•</span>
+            <span>Holz-Butter</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-footer-stats">
+        <span>5 progetti completati</span>
+        <span>•</span>
+        <span>Atelier di Zurigo</span>
+      </div>
+      <a href="index.html#projects" class="btn btn-outline drawer-view-all-btn">
+        <span>Mostra l'intero catalogo d'atelier</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </aside>
+
+</body>
+</html>

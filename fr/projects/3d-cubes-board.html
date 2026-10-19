@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planche à illusion d'optique cubes 3D — ZuriForge</title>
+  <meta name="description" content="Documentation technique et journal de fabrication d'une planche à découper à illusion d'optique cubes 3D isométriques (45 × 24 × 2,5 cm) façonnée en noyer, hêtre et érable/épicéa à Zurich.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../../css/style.css?v=1.1">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="../../assets/images/favicon-64x64.png">
+  <link rel="apple-touch-icon" href="../../assets/images/logo.png">
+  <style>#workshop-drawer:not(.active),#drawer-backdrop:not(.active){display:none!important;}</style>
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-logo" aria-label="Accueil ZuriForge">
+        <img src="../../assets/images/logo.png" alt="Logo ZuriForge" class="brand-icon" width="40" height="40">
+        <span class="brand-name">ZuriForge<span class="brand-sub">ZRH</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Projets</a></li>
+          <li><a href="../index.html#timber" class="nav-link">Essences de bois</a></li>
+          <li><a href="../index.html#craft" class="nav-link">Principes</a></li>
+          <li><a href="../about.html" class="nav-link">À propos</a></li>
+          <li>
+            <button class="nav-drawer-btn open-drawer-btn" aria-label="Ouvrir le journal d'atelier">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>Journal</span>
+              <span class="drawer-pill">5</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="navigation" aria-label="Sélecteur de langue">
+          <svg class="lang-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <a href="../../de/projects/3d-cubes-board.html" class="lang-btn" hreflang="de" data-lang="de" title="Deutsch">DE</a>
+          <span class="lang-divider"></span>
+          <a href="3d-cubes-board.html" class="lang-btn active" hreflang="fr" data-lang="fr" aria-current="page" title="Français">FR</a>
+          <span class="lang-divider"></span>
+          <a href="../../it/projects/3d-cubes-board.html" class="lang-btn" hreflang="it" data-lang="it" title="Italiano">IT</a>
+          <span class="lang-divider"></span>
+          <a href="../../projects/3d-cubes-board.html" class="lang-btn" hreflang="en" data-lang="en" title="English">EN</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Basculer le menu de navigation" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Project Header Hero -->
+  <div class="project-header-hero">
+    <div class="container container-narrow">
+      <div class="breadcrumb">
+        <a href="../index.html">ZuriForge</a>
+        <span>/</span>
+        <a href="../index.html#projects">Projets</a>
+        <span>/</span>
+        <span>Planche à illusion d'optique cubes 3D</span>
+      </div>
+
+      <div class="project-category">Projet 02 • Illusion d'optique géométrique</div>
+      <h1 class="project-page-title">Planche à illusion d'optique cubes 3D</h1>
+      <p class="project-page-subtitle">
+        Une planche de 45 cm × 24 cm × 2,5 cm créant une saisissante illusion tridimensionnelle de cubes en cascade. Conçue à Zurich grâce à un pavage tricolore rigoureux à 60° mariant noyer suisse, hêtre européen et érable / épicéa alpin.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container container-narrow" style="padding-top: 3rem;">
+
+    <!-- Master Specifications -->
+    <div class="specs-table-wrapper">
+      <h3 style="font-size: 1.35rem; margin-bottom: 1.25rem;">Spécifications du projet &amp; paramètres techniques</h3>
+      <table class="specs-table">
+        <tbody>
+          <tr>
+            <th>Dimensions finales</th>
+            <td><strong>45,0 cm</strong> de longueur × <strong>24,0 cm</strong> de largeur × <strong>2,5 cm</strong> d'épaisseur</td>
+          </tr>
+          <tr>
+            <th>Effet visuel</th>
+            <td>Cubes isométriques 3D en cascade (illusion d'optique réversible du cube de Necker)</td>
+          </tr>
+          <tr>
+            <th>Motif géométrique</th>
+            <td>Pavage rhomboïdal à 60° / 120° (carrelage rhombille) disposé en trios hexagonaux</td>
+          </tr>
+          <tr>
+            <th>Essences &amp; rôles tonals</th>
+            <td>
+              <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+                <li><strong style="color: #f5ebe0;">• Érable alpin / Épicéa (<em>Acer / Picea</em>)</strong> — Face supérieure (Zone de haute lumière, captant la clarté zénithale ambiante)</li>
+                <li><strong style="color: #d4a373;">• Hêtre européen (<em>Fagus sylvatica</em>)</strong> — Face droite (Demi-teinte intermédiaire, corps ambré chaleureux)</li>
+                <li><strong style="color: #a47158;">• Noyer suisse (<em>Juglans regia</em>)</strong> — Face gauche (Plan d'ombre profonde, générant le relief isométrique)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Système adhésif</th>
+            <td>Titebond III Ultimate (résine aliphatique étanche, certifiée contact alimentaire indirect)</td>
+          </tr>
+          <tr>
+            <th>Machines principales &amp; gabarits</th>
+            <td>Scie sous table Festool TKS 80 EBS avec guide d'onglet &amp; chariot de tronçonnage, ponceuse à cylindre Jet, serre-joints parallèles &amp; dormants à tuyau Bessey, cales en bois dur, applicateur Glue-Bot</td>
+          </tr>
+          <tr>
+            <th>Protocole de ponçage</th>
+            <td>Ponçage orbital excentrique progressif : grains 80 → 120 → 180 → 240 (mouillage des fibres) avec plateaux rigides</td>
+          </tr>
+          <tr>
+            <th>Système de finition</th>
+            <td>Bain de saturation profonde à l'huile minérale blanche alimentaire USP suivi d'un baume nourrissant à la cire d'abeille bio</td>
+          </tr>
+          <tr>
+            <th>Fonction de la planche</th>
+            <td>Planche de présentation culinaire haut de gamme, découpe de charcuterie et pain d'artisan, ou pièce maîtresse de bureau</td>
+          </tr>
+          <tr>
+            <th>Origine de l'atelier</th>
+            <td>Zurich, Suisse</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Before / After Finish Comparison Slider -->
+    <div class="comparison-section">
+      <div class="comparison-header">
+        <span class="section-subtitle">Transformation interactive de la matière</span>
+        <h2 style="font-size: 1.85rem; margin-bottom: 0.5rem;">Assemblage brut à sec vs Révélation à l'huile minérale</h2>
+        <p style="font-size: 0.95rem; max-width: 650px; margin: 0 auto;">
+          Faites glisser le curseur central pour apprécier la spectaculaire métamorphose entre les losanges bruts non collés assemblés à sec sur l'établi et la planche à illusion d'optique 3D gorgée d'huile au lustre profond.
+        </p>
+      </div>
+
+      <div class="comparison-container" style="aspect-ratio: 3 / 4; max-width: 620px;">
+        <!-- After image (background): Fully saturated oiled surface -->
+        <img src="../../assets/images/projects/3d-cubes/10-full-surface-oil-pop.jpg" 
+             alt="Planche à illusion d'optique cubes 3D entièrement huilée" 
+             class="comparison-img">
+
+        <!-- Before image (foreground overlay): Raw dry-assembled cubes on the workbench -->
+        <div class="comparison-before">
+          <img src="../../assets/images/projects/3d-cubes/slider-before-raw-cubes.jpg" 
+               alt="Cubes 3D bruts assemblés à sec sur l'établi">
+        </div>
+
+        <!-- Slider input & UI handle -->
+        <input type="range" min="0" max="100" value="50" class="comparison-slider-input" aria-label="Curseur de comparaison avant et après finition">
+        <div class="comparison-handle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+
+        <span class="comparison-badge badge-left">Bois brut sec</span>
+        <span class="comparison-badge badge-right">Saturation totale à l'huile</span>
+      </div>
+    </div>
+
+    <!-- Technical Analysis & Geometric Theory -->
+    <section class="build-log-section" style="margin-top: 4rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Géométrie appliquée à l'ébénisterie</span>
+        <h2 class="section-title">L'anatomie de l'illusion des cubes 3D</h2>
+        <p>Pourquoi ce motif trompe la perception spatiale humaine et les tolérances géométriques strictes requises à l'atelier.</p>
+      </div>
+
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Phase 01</span>
+          <span class="step-phase">Physique optique &amp; valeurs tonales</span>
+        </div>
+        <h3 class="step-title">Le principe des trois valeurs d'éclairage &amp; le pavage rhombille</h3>
+        <p class="step-description">
+          L'illusion tridimensionnelle repose fondamentalement sur le contraste de valeurs lumineuses plutôt que sur le simple contraste de couleurs. Pour que le cortex visuel perçoive un volume 3D sur une surface plane, le cerveau requiert trois valeurs de lumière distinctes correspondant à une source d'éclairage directionnelle implicite :
+        </p>
+        <ul style="color: var(--text-muted); margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Plan supérieur (Érable / Épicéa) :</strong> Réfléchit le maximum de lumière incidente (~80 % de réflectance). Offre une surface claire et éclatante captant l'éclairage zénithal.</li>
+          <li><strong>Plan demi-teinte (Hêtre) :</strong> Représente la lumière diffuse ambiante (~45 % de réflectance). Le miel ambré et dense du hêtre européen sert de transition tonale entre haute lumière et ombre dense.</li>
+          <li><strong>Plan d'ombre (Noyer) :</strong> Simule la face occluse (~15 % de réflectance). Le noyer suisse apporte des teintes chocolat et espresso profondes, ancrant la face ombrée de chaque cube.</li>
+        </ul>
+        <p class="step-description">
+          Lorsqu'ils sont réunis en losanges à 60°/120° convergeant en un sommet unique, le cerveau reconstruit instinctivement un cube isométrique en suspension tridimensionnelle. Selon la focalisation du regard, les cubes semblent basculer vers l'avant ou s'éloigner en creux — le phénomène classique du cube réversible de Necker.
+        </p>
+
+        <!-- SVG Schematic Diagram -->
+        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-md); margin-top: 1.5rem;">
+          <img src="../../assets/images/projects/3d-cubes/3d-cubes-hero.svg" 
+               alt="Schéma vectoriel de l'illusion d'optique des cubes 3D" 
+               style="width: 100%; height: auto; display: block; cursor: pointer;"
+               data-lightbox
+               data-caption="Planche cubes 3D : Schéma du pavage isométrique rhombille montrant les facettes de haute lumière, demi-teinte et ombre se rejoignant à 120°.">
+          <div class="step-caption">
+            <span class="step-caption-text">Schéma vectoriel illustrant la géométrie rhomboïdale à 60°/120° avant le façonnage à l'atelier.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Phase 02</span>
+          <span class="step-phase">Tolérances trigonométriques</span>
+        </div>
+        <h3 class="step-title">Le défi des angles cumulatifs : La rigueur du 60°</h3>
+        <p class="step-description">
+          À la différence des planches à quadrillage orthogonal à 90 degrés (comme le damier hêtre et amarante), la planche à cubes 3D exige des coupes à <strong>60 degrés</strong> d'une exactitude absolue. Un écart minime de 0,1° par coupe se multiplie par six à chaque intersection hexagonale, générant une erreur d'ouverture de 0,6°. Multiplié sur 8 rangées, un guide d'onglet imprécis laissera des jours béants qu'aucune force de serrage ne pourra combler sans détruire les fibres du bois.
+        </p>
+        <div class="callout-box">
+          <div class="callout-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Stratégie d'atelier : La technique des bandes contrecollées en deux temps
+          </div>
+          <p>
+            Plutôt que de découper et tenter de coller laborieusement des centaines de petits losanges individuels, l'artisan encolle en parallèle de longs tasseaux de noyer, de hêtre et d'érable, puis tronçonne l'ensemble du panneau ainsi obtenu à travers le fil à exactement 60 degrés. Décaler chaque bande ainsi tranchée d'un segment aligne automatiquement les cubes en cascade, garantissant des lignes de joint parfaites et épargnant des dizaines d'heures d'un assemblage hasardeux.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Step by Step Build Log -->
+    <section class="build-log-section">
+      <div class="section-header" style="margin-top: 4rem; margin-bottom: 2.5rem;">
+        <span class="section-subtitle">Documentation du processus</span>
+        <h2 class="section-title">Le journal d'atelier complet étape par étape</h2>
+        <p>Un parcours photographique chronologique depuis le premier collage des bandes, le tronçonnage à 60°, l'ajustement à sec, le serrage sous cales, la mise à l'équerre, jusqu'à l'inoubliable révélation de la finition à l'huile.</p>
+      </div>
+
+      <!-- Step 01 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Étape 01</span>
+          <span class="step-phase">Premier collage</span>
+        </div>
+        <h3 class="step-title">Collage des bandes tri-essences &amp; préparation du panneau primaire</h3>
+        <p class="step-description">
+          L'illusion optique s'élabore d'abord en usinant de longs tasseaux parfaitement calibrés de noyer suisse, de hêtre européen et d'érable/épicéa clair. Chaque bande a été rabotée à épaisseur identique et dressée d'équerre sur chant. Les bandes ont ensuite été disposées selon la séquence tonale répétée — noyer (ombre), hêtre (demi-teinte) et érable (haute lumière) — puis encollées chant contre chant pour constituer le panneau rayé initial.
+        </p>
+        <p class="step-description">
+          Le serrage a été effectué à l'aide de serre-joints dormants à tuyau et de serre-joints parallèles Bessey disposés à intervalles serrés sur l'établi. Une pression uniforme sur toute la longueur était capitale pour prévenir tout tuilage ou affamement des joints, afin que chaque découpe ultérieure conserve une largeur strictement identique.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/01-initial-strip-glueup.jpg" 
+               alt="Premier collage des trois essences de bois maintenues dans les serre-joints Bessey" 
+               class="step-img"
+               data-lightbox
+               data-caption="Étape 01 : Collage initial des bandes tri-essences serrées dans des serre-joints dormants à tuyau Bessey sur l'établi.">
+          <div class="step-caption">
+            <span class="step-caption-text">Alternance des bandes de noyer, hêtre et érable sous pression de serrage uniforme pour former le panneau maître laminé.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+
+        <div class="callout-box">
+          <div class="callout-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Le mot de l'artisan : Étalonnage de la largeur des bandes
+          </div>
+          <p>
+            En projection isométrique, la hauteur d'un losange à 60° est liée à la largeur de coupe par le sinus de 60° (\(\sqrt{3}/2 \approx 0{,}866\)). Si la largeur de bande et l'épaisseur du tronçonnage angulaire ne respectent pas scrupuleusement ce ratio géométrique, les losanges se trouvent étirés ou aplatis, déformant les cubes 3D nets en prismes hexagonaux déséquilibrés.
+          </p>
+        </div>
+      </article>
+
+      <!-- Step 02 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Étape 02</span>
+          <span class="step-phase">Tronçonnage angulaire de précision</span>
+        </div>
+        <h3 class="step-title">Découpe angulaire à 60 degrés sur la scie sous table</h3>
+        <p class="step-description">
+          Une fois le panneau maître collé, polymérisé et raboté propre sur les deux faces, il a été acheminé vers la scie sous table pour être débité en tranches biseautées. Le guide d'onglet a été calibré avec précision à <strong>60 degrés</strong> par rapport à la lame. Un faux-guide sacrificiel et une butée de longueur ont assuré que chaque tranche ressorte avec une largeur rigoureusement constante et des arêtes parfaitement nettes, exemptes d'éclats.
+        </p>
+        <p class="step-description">
+          Chaque passage de la lame carbure à travers le panneau produit de longues bandes en parallélogramme où les sections de noyer, de hêtre et d'érable se transforment en losanges à 60°/120°. Des coupes nettes et sans vibrations sont ici essentielles : la moindre ondulation de la lame se traduirait par des creux lors du second collage.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/02-angle-crosscut-60deg.jpg" 
+               alt="Tronçonnage du panneau laminé à un angle de 60 degrés sur la scie sous table" 
+               class="step-img"
+               data-lightbox
+               data-caption="Étape 02 : Tronçonnage du panneau collé à exactement 60° à l'aide du guide d'onglet pour obtenir les segments en parallélogramme.">
+          <div class="step-caption">
+            <span class="step-caption-text">Les coupes d'onglets transforment les bandes linéaires en parallélogrammes aux facettes de losanges à 60°.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 03 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Étape 03</span>
+          <span class="step-phase">Assemblage à sec &amp; alignement</span>
+        </div>
+        <h3 class="step-title">Disposition à blanc du motif de cubes en cascade</h3>
+        <p class="step-description">
+          C'est le moment charnière de la fabrication : disposer les bandes découpées côte à côte sur l'établi d'assemblage. En décalant chaque bande consécutive le long de l'axe à 60 degrés d'exactement un segment de losange, les losanges individuels se réunissent pour composer des hexagones à trois facettes.
+        </p>
+        <p class="step-description">
+          Instantanément, les bandes diagonales bidimensionnelles s'effacent pour laisser place à la saisissante illusion de cubes 3D empilés flottant dans l'espace. Durant ce montage à blanc, les bandes ont été scrutées sous lumière rasante pour contrôler la continuité harmonieuse du fil du bois et vérifier qu'aucune bande n'avait été inversée par inadvertance.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/03-dry-fit-pattern-layout.jpg" 
+               alt="Montage à blanc des bandes en parallélogramme révélant l'illusion des cubes en cascade" 
+               class="step-img"
+               data-lightbox
+               data-caption="Étape 03 : Montage à blanc des bandes décalées sur l'établi, laissant émerger l'illusion des cubes 3D en cascade.">
+          <div class="step-caption">
+            <span class="step-caption-text">Le décalage d'un segment entre bandes adjacentes amène les trois essences à converger à des sommets à 120°.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 04 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Étape 04</span>
+          <span class="step-phase">Contrôle des tolérances</span>
+        </div>
+        <h3 class="step-title">Alignement des sommets &amp; vérification des joints</h3>
+        <p class="step-description">
+          Avant d'encoller, un contrôle minutieux de chaque intersection a été mené. Dans un pavage isométrique parfait, trois losanges distincts doivent se rencontrer exactement à chaque sommet partagé : un losange supérieur clair, un losange latéral demi-teinte et un losange inférieur d'ombre.
+        </p>
+        <p class="step-description">
+          La moindre déviation d'angle de sciage ou d'épaisseur de passe se manifesterait immédiatement par des désaffleurs ou des interstices à ces jonctions triples. De fins repères au crayon ont été tracés en travers des bandes pour garantir un calage longitudinal sans faille pendant le compte à rebours du temps d'ouverture de la colle.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/04-vertex-alignment-detail.jpg" 
+               alt="Gros plan sur l'alignement des sommets de losanges lors du montage à blanc" 
+               class="step-img"
+               data-lightbox
+               data-caption="Étape 04 : Examen macroscopique des sommets de losanges et des repères d'alignement sur la planche assemblée à blanc.">
+          <div class="step-caption">
+            <span class="step-caption-text">Vérification critique : s'assurer que les jonctions à trois facettes coïncident parfaitement sans glissement ni décalage.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 05 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Étape 05</span>
+          <span class="step-phase">Le premier collage</span>
+        </div>
+        <h3 class="step-title">Assemblage manuel des losanges en cubes hexagonaux</h3>
+        <p class="step-description">
+          Une fois tous les angles tronçonnés et les tolérances inspectées à sec, la première étape d'assemblage cruciale a débuté : coller les losanges rhomboïdaux individuels pour former des modules hexagonaux. Dans ce motif isométrique, chaque cube 3D est constitué de trois losanges à 60°/120° — un en épicéa alpin (haute lumière), un en hêtre européen (demi-teinte) et un en noyer suisse (ombre) — se rejoignant avec précision en un sommet central à 120 degrés.
+        </p>
+        <p class="step-description">
+          Serrer trois facettes en losange isolées avec des serre-joints classiques à vis ou parallèles relève du défi : les angles aigus à 60° agissent comme des coins, et la force de serrage mécanique fait immédiatement glisser et déraper les pièces hors d'alignement.
+        </p>
+        <p class="step-description">
+          Pour contourner cette difficulté, <strong>ce premier collage a été exécuté intégralement à la main</strong>. La colle Titebond III a été appliquée sur les chants à 60 degrés en contact. Chaque trio hexagonal a ensuite été fermement pressé entre les doigts, en maintenant une pression manuelle constante durant <strong>1 à 2 minutes par cube</strong>, jusqu'à ce que l'adhésif développe une prise initiale suffisante pour figer la géométrie sans décalage.
+        </p>
+        <p class="step-description">
+          Ce collage manuel a été réitéré bloc après bloc, unité après unité, pour chaque hexagone de la composition. Une entreprise particulièrement longue et éprouvante pour les doigts, exigeant une patience d'orfèvre — mais qui a permis des micro-ajustements tactiles pour garder les surfaces bien coplanaires et les arêtes des sommets parfaitement vives.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/04b-first-glueup-hand-hexagons.jpg" 
+               alt="Rangée de cubes hexagonaux collés à la main en cours de séchage sur l'établi" 
+               class="step-img"
+               data-lightbox
+               data-caption="Étape 05 : Le premier collage : Unités hexagonales de cubes 3D collées à la main séchant sur l'établi. Chaque ensemble de 3 losanges a été maintenu sous pression manuelle pendant 1 à 2 minutes.">
+          <div class="step-caption">
+            <span class="step-caption-text">Tous les hexagones assemblés à la main, maintenus sous pression digitale 1 à 2 minutes par bloc jusqu'à la prise de la colle.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+
+        <div class="callout-box">
+          <div class="callout-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Rétrospective de l'artisan : Techniques d'assemblage alternatives plus efficientes
+          </div>
+          <p>
+            Bien que le maintien manuel durant 1 à 2 minutes assure un calage parfait sans dérapage mécanique, cette approche s'avère indéniablement lente. Pour les réalisations futures, plusieurs méthodes de fabrication plus véloces existent :
+          </p>
+          <ul style="margin-top: 0.75rem; padding-left: 1.25rem; line-height: 1.7; color: var(--text-muted);">
+            <li><strong>Cerclage au ruban adhésif élastique :</strong> Poser les trois losanges à plat sur du ruban de masquage haute adhérence, encoller, replier en hexagone 3D et tendre le ruban en travers du joint. La tension élastique referme les trois arêtes de concert sous une pression radiale homogène — éliminant toute contention manuelle.</li>
+            <li><strong>Gabarit en V à 60° :</strong> Fabriquer une goulotte en V ouverte à 60 degrés doublée de ruban polypropylène, où un coin en bois serré par l'arrière plaque les facettes contre les parois.</li>
+            <li><strong>Tronçonnage de bandes pré-collées inclinées :</strong> Assembler au préalable les trois essences en lingots biseautés à 60° avant de les découper en tranches, formant ainsi des rangées de losanges solidaires en une passe de scie.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Step 06 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Étape 06</span>
+          <span class="step-phase">Deuxième collage</span>
+        </div>
+        <h3 class="step-title">Collage d'ensemble sous cales de serrage</h3>
+        <p class="step-description">
+          Une fois tous les hexagones individuels solidifiés après le premier collage, le projet est passé au <strong>deuxième collage</strong> : réunir l'ensemble des modules hexagonaux en un panneau monolithique unifié. Lorsque la force de serrage latérale s'exerce sur des joints biseautés à 60 degrés sur plusieurs rangées, l'effet de biseau pousse l'assemblage à glisser et à se soulever en toit de tente.
+        </p>
+        <p class="step-description">
+          Pour contrecarrer ce phénomène, de robustes cales de serrage en bois dur recouvertes de ruban d'emballage (pour empêcher l'adhérence de la colle) ont été disposées en travers des faces supérieure et inférieure du panneau. Des serre-joints à pompe verticaux ont bridé les cales à plat contre l'établi, tandis que les serre-joints parallèles Bessey appliquaient une poussée latérale progressive, refermant tous les joints en un panneau parfaitement plan et sans glissement.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/05-panel-clamping-cauls.jpg" 
+               alt="Deuxième collage avec serre-joints parallèles Bessey et cales en bois dur" 
+               class="step-img"
+               data-lightbox
+               data-caption="Étape 06 : Collage du panneau principal à l'aide de cales en bois dur scotchées et de serre-joints parallèles Bessey pour empêcher tout soulèvement.">
+          <div class="step-caption">
+            <span class="step-caption-text">Des cales rigides dessus-dessous maintiennent les bandes à 60° bien à plat sur l'établi pendant que le serrage latéral referme les joints.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 07 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Étape 07</span>
+          <span class="step-phase">Polymérisation &amp; contrôle</span>
+        </div>
+        <h3 class="step-title">Démoulage des cales &amp; examen des bourrelets de colle</h3>
+        <p class="step-description">
+          Après une polymérisation complète de 24 heures sous tension, les cales et les serre-joints ont été desserrés. Le panneau brut s'est dévoilé avec ses extrémités en gradins caractéristiques — conséquence naturelle du décalage des parallélogrammes à 60°.
+        </p>
+        <p class="step-description">
+          L'observation des cordons de colle expulsés le long de chaque joint a attesté d'un reflux régulier sur l'ensemble du panneau, preuve d'un mouillage parfait et de l'absence totale de manques d'adhésif. Ces bourrelets durcis ont été éliminés au racloir d'ébéniste avant tout usinage machine afin de préserver le tranchant des outils de coupe.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/06-cured-panel-squeezeout.jpg" 
+               alt="Panneau sorti des serre-joints montrant le reflux de colle et les extrémités crantées en zigzag" 
+               class="step-img"
+               data-lightbox
+               data-caption="Étape 07 : Panneau polymérisé libéré des serre-joints, révélant ses extrémités en escalier typiques et un reflux de colle homogène.">
+          <div class="step-caption">
+            <span class="step-caption-text">Bords périphériques crantés avant délignage, avec bourrelets de Titebond III prêts à être raclés.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 08 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Étape 08</span>
+          <span class="step-phase">Mise à l'équerre de précision</span>
+        </div>
+        <h3 class="step-title">Délignage et mise au format sur scie Festool</h3>
+        <p class="step-description">
+          Pour transformer ce panneau brut aux arêtes en gradins en une planche à découper rigoureusement rectangulaire, la pièce a été transférée vers le poste de sciage de précision : la scie sous table <strong>Festool TKS 80 EBS</strong> (équipée de la technologie de sécurité SawStop AIM).
+        </p>
+        <p class="step-description">
+          À l'aide du chariot coulissant et du guide d'onglet de précision, les extrémités en dents de scie ont été arasées pour établir un premier chant de référence droit à 90 degrés. La planche a ensuite été pivotée et refendue pour calibrer les chants opposés parallèles, fixant les dimensions extérieures définitives à <strong>45,0 cm × 24,0 cm</strong>. En arrière-plan de l'atelier se détache la ponceuse à cylindre Jet jaune, prête pour le calibrage d'épaisseur.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/07-squaring-table-saw.jpg" 
+               alt="Mise à l'équerre de la planche sur la scie sous table Festool TKS 80 EBS" 
+               class="step-img"
+               data-lightbox
+               data-caption="Étape 08 : Mise à l'équerre et délignage des rives sur la scie sous table Festool TKS 80 EBS munie de son guide de tronçonnage.">
+          <div class="step-caption">
+            <span class="step-caption-text">Scie sous table Festool TKS 80 dressant les chants crantés ; ponceuse à tambour Jet visible dans l'atelier en arrière-plan.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 09 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Étape 09</span>
+          <span class="step-phase">Calibrage &amp; préparation des arêtes</span>
+        </div>
+        <h3 class="step-title">Calibrage au cylindre, cales de chant &amp; finition de surface</h3>
+        <p class="step-description">
+          Une fois le périmètre équarri, la planche a fait l'objet d'un aplanissage et calibrage d'épaisseur sur la <strong>ponceuse à cylindre Jet</strong>. Plusieurs passes légères ont gommé les infimes différences de niveau entre bandes contiguës, amenant la planche à une épaisseur homogène de <strong>2,5 cm</strong> tout en préservant la netteté des arêtes géométriques.
+        </p>
+        <p class="step-description">
+          De retour sur l'établi, des cales de chant et des serre-joints parallèles Bessey ont été installés pour stabiliser et ajuster les rives. La planche a ensuite été poncée méthodiquement selon la suite de grains 80 → 120 → 180 → 240 à la ponceuse orbitale. Entre les grains 180 et 240, toute la surface a été mouillée (water-popping) à l'aide d'un chiffon microfibre humide pour faire redresser les fibres écrasées, puis poncée au grain 240 pour un toucher satiné d'une douceur absolue. Un fin chanfrein à 45° a été fraisé le long de tout le périmètre pour le confort ergonomique de prise en main.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/08-edge-alignment-clamping.jpg" 
+               alt="Alignement des chants et préparation sur établi avec applicateur Glue-Bot et serre-joints Bessey" 
+               class="step-img"
+               data-lightbox
+               data-caption="Étape 09 : Préparation sur l'établi et stabilisation des chants avec cales, applicateur Glue-Bot et serre-joints Bessey.">
+          <div class="step-caption">
+            <span class="step-caption-text">Installation d'atelier : bridage sous cales latérales aux côtés du distributeur Glue-Bot avant le ponçage abrasif final.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 10 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Étape 10</span>
+          <span class="step-phase">La révélation de la finition</span>
+        </div>
+        <h3 class="step-title">L'effet de contraste de l'huile — Le premier coup de pinceau central</h3>
+        <p class="step-description">
+          Après d'innombrables heures de conception géométrique, de débit, de collage méticuleux et de ponçage assidu, l'instant tant espéré de l'artisan est arrivé : l'application de la première passe de finition. À l'aide d'un pinceau propre en soies naturelles, de l'huile minérale pure USP de qualité alimentaire a été étalée en un trait continu le long de la ligne centrale de la planche brute et sèche.
+        </p>
+        <p class="step-description">
+          La métamorphose coupe le souffle. Le noyer terne et grisâtre explose instantanément en un riche espresso sombre ; le hêtre pâle s'illumine en un miel doré et chaleureux ; et les facettes d'épicéa prennent un éclat pur et lumineux. La frontière nette entre les flancs bruts poncés et le centre gorgé d'huile offre un spectacle visuel saisissant sur l'établi.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/09-oil-finish-first-pass.jpg" 
+               alt="Premier coup de pinceau d'huile minérale le long de la ligne médiane de la planche aux cubes 3D" 
+               class="step-img"
+               data-lightbox
+               data-caption="Étape 10 : La révélation à l'huile : le premier coup de pinceau d'huile minérale alimentaire appliqué le long de l'axe central de la planche poncée.">
+          <div class="step-caption">
+            <span class="step-caption-text">Contraste immédiat : le bois brut et sec sur les flancs face aux cubes éclatants saturés d'huile sur la colonne centrale.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 11 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Étape 11</span>
+          <span class="step-phase">Nutrition en profondeur</span>
+        </div>
+        <h3 class="step-title">Imprégnation complète &amp; profondeur du relief 3D</h3>
+        <p class="step-description">
+          L'huile minérale a été appliquée généreusement sur les deux faces et sur tous les chants, permettant au bois de bout et de fil de boire l'huile jusqu'à saturation complète. Après avoir essuyé l'excédent et laissé reposer une nuit, la planche a reçu un baume maison chaud à base de cire d'abeille et d'huiles végétales, lustré jusqu'à l'obtention d'un fini satiné et soyeux.
+        </p>
+        <p class="step-description">
+          Une fois la surface uniformément saturée, l'illusion d'optique prend toute son ampleur. Les plans d'ombre en noyer semblent s'enfoncer de plusieurs centimètres dans la matière, les facettes de hêtre apportent une densité chaleureuse et les facettes supérieures en érable captent la lumière comme sous un projecteur zénithal. Quelle que soit la lumière ambiante, la surface plane apparaît incontestablement comme un champ de cubes empilés en trois dimensions.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/10-full-surface-oil-pop.jpg" 
+               alt="Planche à découper aux cubes 3D entièrement huilée avec veinage profond et fort contraste" 
+               class="step-img"
+               data-lightbox
+               data-caption="Étape 11 : Saturation complète de la surface à l'huile minérale alimentaire, révélant toute la profondeur tridimensionnelle des cubes en cascade.">
+          <div class="step-caption">
+            <span class="step-caption-text">La planche finie de 45 cm × 24 cm mettant en scène les ombres profondes du noyer, la chaleur dorée du hêtre et l'éclat supérieur de l'érable.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 12 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Étape 12</span>
+          <span class="step-phase">Une pièce d'exception en service</span>
+        </div>
+        <h3 class="step-title">Le chef-d'œuvre achevé dans son cadre de vie</h3>
+        <p class="step-description">
+          Voici la planche à illusion d'optique cubes 3D dans son cadre du quotidien — photographiée sur un bureau contemporain à double écran à Zurich. Qu'elle serve de somptueux plateau de service pour des pains au levain d'artisan et des fromages suisses affinés, ou qu'elle trône comme sous-main de direction et sujet de conversation géométrique, la qualité d'exécution parle d'elle-même.
+        </p>
+        <p class="step-description">
+          Chaque joint est d'une étanchéité parfaite, la surface est plane comme un miroir et douce comme du velours, et la rigueur du pavage à 60° demeure le témoignage intemporel d'un travail du bois patient et passionné.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/11-finished-board-desk.jpg" 
+               alt="Planche à découper à cubes 3D finie au centre d'un bureau de direction" 
+               class="step-img"
+               data-lightbox
+               data-caption="Étape 12 : La planche cubes 3D achevée trônant au centre d'un bureau à Zurich, mettant en lumière sa finition impeccable et son illusion géométrique.">
+          <div class="step-caption">
+            <span class="step-caption-text">Finition soyeuse irréprochable : la planche terminée présentée en gros plan, valorisant les arêtes vives des cubes isométriques en cascade.</span>
+            <span class="step-zoom-hint">Cliquer pour agrandir</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Complete 12-Photo Build Gallery -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Chronique visuelle</span>
+        <h2 class="section-title">Galerie complète de la réalisation en 12 photos</h2>
+        <p>Découvrez les clichés haute résolution de chaque étape de confection de la planche cubes 3D.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-lightbox data-caption="01 : Collage initial des bandes tri-essences serrées dans des serre-joints Bessey haute résistance." data-full="../../assets/images/projects/3d-cubes/01-initial-strip-glueup.jpg">
+          <img src="../../assets/images/projects/3d-cubes/01-initial-strip-glueup.jpg" alt="Collage initial des bandes" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">01 • Collage des bandes</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="02 : Tronçonnage du panneau laminé à 60° sur le guide d'onglet de la scie sous table." data-full="../../assets/images/projects/3d-cubes/02-angle-crosscut-60deg.jpg">
+          <img src="../../assets/images/projects/3d-cubes/02-angle-crosscut-60deg.jpg" alt="Tronçonnage à angle de 60 degrés" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">02 • Tronçonnage à 60°</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="03 : Montage à blanc révélant le motif des cubes en cascade." data-full="../../assets/images/projects/3d-cubes/03-dry-fit-pattern-layout.jpg">
+          <img src="../../assets/images/projects/3d-cubes/03-dry-fit-pattern-layout.jpg" alt="Montage à blanc du motif" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">03 • Disposition à blanc</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="04 : Examen macroscopique des sommets de losanges." data-full="../../assets/images/projects/3d-cubes/04-vertex-alignment-detail.jpg">
+          <img src="../../assets/images/projects/3d-cubes/04-vertex-alignment-detail.jpg" alt="Détail de l'alignement des sommets" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">04 • Contrôle des sommets</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="05 : Le premier collage : Cubes hexagonaux collés à la main sous pression digitale 1 à 2 minutes par bloc." data-full="../../assets/images/projects/3d-cubes/04b-first-glueup-hand-hexagons.jpg">
+          <img src="../../assets/images/projects/3d-cubes/04b-first-glueup-hand-hexagons.jpg" alt="Assemblage manuel des cubes hexagonaux" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">05 • Premier collage</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="06 : Deuxième collage du panneau complet avec cales en bois dur et serre-joints parallèles Bessey." data-full="../../assets/images/projects/3d-cubes/05-panel-clamping-cauls.jpg">
+          <img src="../../assets/images/projects/3d-cubes/05-panel-clamping-cauls.jpg" alt="Collage du panneau principal sous cales" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">06 • Serrage sous cales</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="07 : Panneau polymérisé présentant ses bords crantés et le reflux de colle." data-full="../../assets/images/projects/3d-cubes/06-cured-panel-squeezeout.jpg">
+          <img src="../../assets/images/projects/3d-cubes/06-cured-panel-squeezeout.jpg" alt="Reflux de colle sur panneau polymérisé" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">07 • Panneau polymérisé</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="08 : Arasage des extrémités crantées sur la scie sous table Festool TKS 80 EBS." data-full="../../assets/images/projects/3d-cubes/07-squaring-table-saw.jpg">
+          <img src="../../assets/images/projects/3d-cubes/07-squaring-table-saw.jpg" alt="Mise à l'équerre sur scie sous table" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">08 • Mise à l'équerre sur scie</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="09 : Montage d'atelier avec cales de chant et applicateur Glue-Bot avant ponçage final." data-full="../../assets/images/projects/3d-cubes/08-edge-alignment-clamping.jpg">
+          <img src="../../assets/images/projects/3d-cubes/08-edge-alignment-clamping.jpg" alt="Montage de cales de chant sur établi" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">09 • Préparation des rives</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="10 : Premier trait d'huile le long de l'axe central révélant instantanément les teintes." data-full="../../assets/images/projects/3d-cubes/09-oil-finish-first-pass.jpg">
+          <img src="../../assets/images/projects/3d-cubes/09-oil-finish-first-pass.jpg" alt="Première passe d'huile minérale" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">10 • Premier trait d'huile</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="11 : Saturation complète de la surface révélant la profondeur de l'illusion 3D." data-full="../../assets/images/projects/3d-cubes/10-full-surface-oil-pop.jpg">
+          <img src="../../assets/images/projects/3d-cubes/10-full-surface-oil-pop.jpg" alt="Saturation totale de la surface à l'huile" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">11 • Révélation totale</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="12 : Planche cubes 3D terminée trônant au centre d'un bureau de direction." data-full="../../assets/images/projects/3d-cubes/11-finished-board-desk.jpg">
+          <img src="../../assets/images/projects/3d-cubes/11-finished-board-desk.jpg" alt="Planche finie mise en valeur sur bureau" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">12 • Présentation finale</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wood Species Deep Dive -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Essences de bois</span>
+        <h2 class="section-title">L'accord parfait des trois essences</h2>
+        <p>Une composition issue des forêts suisses et européennes sélectionnée pour ses nuances, sa densité et sa longévité.</p>
+      </div>
+
+      <div class="timber-grid">
+        <!-- Swiss Walnut -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #422b22, #1c110b);"></div>
+          <div class="timber-header">
+            <h3>Noyer suisse</h3>
+            <div class="timber-scientific">Juglans regia</div>
+          </div>
+          <p>
+            Prisé pour ses teintes chocolat fumé, son fil soyeux et son toucher velouté. Sur cette planche, le noyer ancre l'illusion 3D en projetant des ombres réalistes qui font jaillir chaque cube de la surface.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Dureté Janka</span>
+              <div class="spec-value">1 010 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Rôle dans l'illusion</span>
+              <div class="spec-value">Facette d'ombre</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- European Beech -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #d8a876, #b88450);"></div>
+          <div class="timber-header">
+            <h3>Hêtre européen</h3>
+            <div class="timber-scientific">Fagus sylvatica</div>
+          </div>
+          <p>
+            Dense, résistant et peu poreux. Issu de forêts tempérées d'Europe centrale gérées durablement. Sa demi-teinte miel doré assure l'indispensable équilibre chromatique entre ombre et haute lumière.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Dureté Janka</span>
+              <div class="spec-value">1 450 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Rôle dans l'illusion</span>
+              <div class="spec-value">Facette demi-teinte</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alpine Maple / Spruce -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #fbf8f2, #eee5d3);"></div>
+          <div class="timber-header">
+            <h3>Érable alpin / Épicéa</h3>
+            <div class="timber-scientific">Acer pseudoplatanus / Picea abies</div>
+          </div>
+          <p>
+            Reconnu pour sa clarté crémeuse lumineuse et son grain très fin. Il incarne la zone de haute lumière supérieure de chaque cube, simulant le faisceau zénithal baignant le paysage géométrique.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Dureté Janka</span>
+              <div class="spec-value">950 – 1 450 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Rôle dans l'illusion</span>
+              <div class="spec-value">Haute lumière supérieure</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Care & Maintenance Protocol -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Transmission culinaire</span>
+        <h2 class="section-title">Protocole d'entretien &amp; de soin</h2>
+        <p>Comment prendre soin d'une planche géométrique multi-essences pour qu'elle traverse les générations.</p>
+      </div>
+
+      <div class="care-grid">
+        <div class="care-card">
+          <h4>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Ce qu'il faut faire
+          </h4>
+          <ul>
+            <li>Laver les deux faces à la main avec une eau tiède et un savon doux immédiatement après usage.</li>
+            <li>Sécher soigneusement au torchon et ranger sur chant pour un séchage équilibré sur toutes les faces.</li>
+            <li>Appliquer de l'huile minérale de qualité alimentaire une fois par mois ou dès que le bois pâlit ou semble sec.</li>
+            <li>Renouveler l'application de beurre de bois (cire d'abeille et huiles végétales) tous les 3 à 4 mois pour une déperlance optimale.</li>
+          </ul>
+        </div>
+
+        <div class="care-card">
+          <h4>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e74c3c" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            Ce qu'il ne faut jamais faire
+          </h4>
+          <ul>
+            <li><strong>Ne jamais mettre au lave-vaisselle</strong> : La chaleur intense, les détergents agressifs et la vapeur détruiraient la colle et déformeraient irrémédiablement le bois.</li>
+            <li>Ne jamais laisser tremper dans l'évier.</li>
+            <li>Ne jamais faire sécher à plat sur le plan de travail (l'humidité emprisonnée au-dessous provoquerait tuilage et tensions sur les joints).</li>
+            <li>Ne jamais employer d'huiles de cuisine comme l'olive ou le colza (elles rancissent, deviennent poisseuses et dégagent de mauvaises odeurs).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation between projects -->
+    <div style="margin: 4rem 0 2rem; padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+      <div>
+        <span class="spec-label">Projet précédent</span>
+        <h4 style="font-size: 1.25rem;"><a href="beech-purpleheart-cutting-board.html" style="color: var(--text-highlight);">← Planche quadrillée hêtre &amp; amarante</a></h4>
+      </div>
+      <div>
+        <span class="spec-label">Projet suivant</span>
+        <h4 style="font-size: 1.25rem;"><a href="purpleheart-heart-serving-board.html" style="color: var(--text-highlight);">Planche de service cœur en amarante →</a></h4>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Lightbox Container -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Visionneuse d'image">
+    <button class="lightbox-close" aria-label="Fermer l'image">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Image précédente">&#10094;</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Image suivante">&#10095;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="../index.html" class="brand-logo">
+            <img src="../../assets/images/logo.png" alt="Logo ZuriForge" class="brand-icon" width="40" height="40">
+            <span class="brand-name">ZuriForge</span>
+          </a>
+          <p class="footer-brand-desc">
+            Ébénisterie d'art &amp; journal d'artisan. Documentation de planches à découper géométriques, gabarits de précision et exploration des essences de bois à Zurich.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Documentation</h4>
+          <ul class="footer-links">
+            <li><a href="beech-purpleheart-cutting-board.html">Planche hêtre &amp; amarante</a></li>
+            <li><a href="3d-cubes-board.html">Planche à illusion cubes 3D</a></li>
+            <li><a href="purpleheart-heart-serving-board.html">Planche cœur en amarante</a></li>
+            <li><a href="epoxy-olive-board.html">Planche rivière olivier &amp; résine époxy</a></li>
+            <li><a href="walnut-endgrain-cutting-board.html">Planche en bois de bout de noyer</a></li>
+            <li><a href="../index.html#timber">Essences de bois</a></li>
+            <li><a href="../about.html">L'atelier &amp; démarche</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Éthique d'atelier</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-dim);">Démarche strictement non commerciale</span></li>
+            <li><span style="color: var(--text-dim);">Journaux de fabrication en libre accès</span></li>
+            <li><span style="color: var(--text-dim);">Bois suisses durables et essences nobles</span></li>
+            <li><a href="https://github.com/andrei-alpha/andrei-alpha.github.io" target="_blank" rel="noopener">Dépôt GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZuriForge • Andrei Antonescu • Zurich, Suisse</div>
+        <div>Façonné avec précision &amp; copeaux de bois</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js?v=1.1"></script>
+  <!-- Slide-Out Workshop Build Archive Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="workshop-drawer" id="workshop-drawer" aria-hidden="true" role="dialog" aria-labelledby="drawer-title">
+    <div class="drawer-header">
+      <div class="drawer-header-top">
+        <div class="drawer-title-group">
+          <span class="drawer-badge">Index de l'atelier</span>
+          <h2 id="drawer-title" class="drawer-title">Journal de l'artisan</h2>
+        </div>
+        <button class="drawer-close" id="drawer-close-btn" aria-label="Fermer le journal">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <p class="drawer-subtitle">
+        Documentation des assemblages géométriques, gabarits et essences à travers 5 créations d'atelier à Zurich.
+      </p>
+      <div class="drawer-filters">
+        <button class="drawer-filter-btn active" data-filter="all">Tout (5)</button>
+        <button class="drawer-filter-btn" data-filter="endgrain">Bois de bout (3)</button>
+        <button class="drawer-filter-btn" data-filter="epoxy">Bord naturel / Époxy (1)</button>
+        <button class="drawer-filter-btn" data-filter="art">Pièce d'art (1)</button>
+      </div>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Project 1: Walnut End-Grain -->
+      <a href="walnut-endgrain-cutting-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/walnut-endgrain/07-walnut-cutting-board-knife.jpg" alt="Planche à découper en bois de bout de noyer massif" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Bois de bout patrimonial</span>
+            <span class="drawer-date">Oct. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Planche en noyer massif</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Noyer suisse</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>450 × 270 × 25 mm</span>
+            <span>•</span>
+            <span>Rainure à jus</span>
+            <span>•</span>
+            <span>Huile minérale</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2: Beech & Purpleheart -->
+      <a href="beech-purpleheart-cutting-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/beech-purpleheart/13-finished-oil-pop.jpg" alt="Planche géométrique hêtre et amarante" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Maillage de précision</span>
+            <span class="drawer-date">Oct. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Planche hêtre &amp; amarante</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Hêtre européen</span>
+            <span class="timber-chip">Amarante</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>420 × 285 × 42 mm</span>
+            <span>•</span>
+            <span>Bloc massif</span>
+            <span>•</span>
+            <span>Finition cire</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 3: 3D Cubes Illusion -->
+      <a href="3d-cubes-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/3d-cubes/raw/CBE460FA-1CD5-4886-A3C1-9EAA979465CC.JPG" alt="Planche à illusion d'optique cubes 3D en cascade" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Illusion d'optique</span>
+            <span class="drawer-date">Oct. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Planche cubes 3D en cascade</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Noyer</span>
+            <span class="timber-chip">Épicéa</span>
+            <span class="timber-chip">Hêtre</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>380 × 260 × 38 mm</span>
+            <span>•</span>
+            <span>Rhomboïde 60°</span>
+            <span>•</span>
+            <span>Huile de noix</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 4: Epoxy Olive Board -->
+      <a href="epoxy-olive-board.html" class="drawer-project-card" data-category="epoxy">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/epoxy-olive-board/10-finished-olive-epoxy-board.jpg" alt="Planche rivière en olivier de Méditerranée et époxy" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Hybride rive naturelle</span>
+            <span class="drawer-date">Sept. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Planche rivière olivier &amp; époxy</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Olivier centenaire</span>
+            <span class="timber-chip">Résine céruléenne</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>480 × 240 × 32 mm</span>
+            <span>•</span>
+            <span>Poli grain 12 000</span>
+            <span>•</span>
+            <span>Huile Odie's</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 5: Purpleheart Heart -->
+      <a href="purpleheart-heart-serving-board.html" class="drawer-project-card" data-category="art">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/purpleheart-heart/06-finished-heart-board.jpg" alt="Planche de service cœur en amarante et bois de bout" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Pièce d'art sur mesure</span>
+            <span class="drawer-date">Oct. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Planche cœur en amarante</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Amarante de Guyane</span>
+            <span class="timber-chip">Filet de hêtre</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>310 × 290 × 35 mm</span>
+            <span>•</span>
+            <span>Cuisson thermique</span>
+            <span>•</span>
+            <span>Beurre de bois</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-footer-stats">
+        <span>5 réalisations achevées</span>
+        <span>•</span>
+        <span>Atelier de Zurich</span>
+      </div>
+      <a href="../index.html#projects" class="btn btn-outline drawer-view-all-btn">
+        <span>Découvrir toutes les créations</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </aside>
+
+</body>
+</html>

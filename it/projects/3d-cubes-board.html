@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tagliere a illusione ottica cubi 3D — ZuriForge</title>
+  <meta name="description" content="Documentazione tecnica e diario di lavorazione artigianale di un tagliere a illusione ottica cubi 3D isometrici da 45×24×2,5 cm realizzato a Zurigo in noce, faggio e abete/acero.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../../css/style.css?v=1.1">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="../../assets/images/favicon-64x64.png">
+  <link rel="apple-touch-icon" href="../../assets/images/logo.png">
+  <style>#workshop-drawer:not(.active),#drawer-backdrop:not(.active){display:none!important;}</style>
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-logo" aria-label="ZuriForge Home">
+        <img src="../../assets/images/logo.png" alt="Logo ZuriForge" class="brand-icon" width="40" height="40">
+        <span class="brand-name">ZuriForge<span class="brand-sub">ZRH</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Progetti</a></li>
+          <li><a href="../index.html#timber" class="nav-link">Guida ai legni</a></li>
+          <li><a href="../index.html#craft" class="nav-link">Principi</a></li>
+          <li><a href="../about.html" class="nav-link">Chi siamo</a></li>
+          <li>
+            <button class="nav-drawer-btn open-drawer-btn" aria-label="Apri il diario di bottega">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>Diario</span>
+              <span class="drawer-pill">5</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="navigation" aria-label="Selettore lingua">
+          <svg class="lang-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <a href="../../de/projects/3d-cubes-board.html" class="lang-btn" hreflang="de" data-lang="de" title="Deutsch">DE</a>
+          <span class="lang-divider"></span>
+          <a href="../../fr/projects/3d-cubes-board.html" class="lang-btn" hreflang="fr" data-lang="fr" title="Français">FR</a>
+          <span class="lang-divider"></span>
+          <a href="3d-cubes-board.html" class="lang-btn active" hreflang="it" data-lang="it" aria-current="page" title="Italiano">IT</a>
+          <span class="lang-divider"></span>
+          <a href="../../projects/3d-cubes-board.html" class="lang-btn" hreflang="en" data-lang="en" title="English">EN</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Attiva menu di navigazione" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Project Header Hero -->
+  <div class="project-header-hero">
+    <div class="container container-narrow">
+      <div class="breadcrumb">
+        <a href="../index.html">ZuriForge</a>
+        <span>/</span>
+        <a href="../index.html#projects">Progetti</a>
+        <span>/</span>
+        <span>Tagliere a illusione ottica cubi 3D</span>
+      </div>
+
+      <div class="project-category">Progetto 02 • Illusione ottica geometrica</div>
+      <h1 class="project-page-title">Tagliere a illusione ottica cubi 3D</h1>
+      <p class="project-page-subtitle">
+        Un tagliere da 45 cm × 24 cm × 2,5 cm che genera una straordinaria illusione tridimensionale di cubi a cascata. Progettato a Zurigo attraverso una rigorosa tassellatura tritonale a 60° in noce svizzero, faggio europeo e acero alpino / abete.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container container-narrow" style="padding-top: 3rem;">
+
+    <!-- Master Specifications -->
+    <div class="specs-table-wrapper">
+      <h3 style="font-size: 1.35rem; margin-bottom: 1.25rem;">Specifiche del progetto e parametri tecnici</h3>
+      <table class="specs-table">
+        <tbody>
+          <tr>
+            <th>Dimensioni finali</th>
+            <td><strong>45,0 cm</strong> lunghezza × <strong>24,0 cm</strong> larghezza × <strong>2,5 cm</strong> spessore</td>
+          </tr>
+          <tr>
+            <th>Effetto visivo</th>
+            <td>Cubi isometrici 3D in caduta (Illusione ottica reversibile del cubo di Necker)</td>
+          </tr>
+          <tr>
+            <th>Pattern geometrico</th>
+            <td>Tassellatura romboidale a 60° / 120° (Rhombille tiling) disposta in triadi esagonali</td>
+          </tr>
+          <tr>
+            <th>Legnami e ruoli tonali</th>
+            <td>
+              <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+                <li><strong style="color: #f5ebe0;">• Acero alpino / Abete (<em>Acer / Picea</em>)</strong> — Faccia superiore (Punto luce chiaro, cattura la luce zenitale)</li>
+                <li><strong style="color: #d4a373;">• Faggio europeo (<em>Fagus sylvatica</em>)</strong> — Faccia destra (Mezzotono intermedio, corpo caldo dorato)</li>
+                <li><strong style="color: #a47158;">• Noce svizzero (<em>Juglans regia</em>)</strong> — Faccia sinistra (Piano d'ombra profonda, crea profondità isometrica)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Adesivo</th>
+            <td>Titebond III Ultimate (resina alifatica impermeabile approvata per contatto alimentare)</td>
+          </tr>
+          <tr>
+            <th>Macchinari principali e dime</th>
+            <td>Banco sega Festool TKS 80 EBS con guida goniometrica e slitta per tagli trasversali, levigatrice a tamburo Jet, morsetti paralleli e a tubo Bessey, cale in legno duro, applicatore Glue-Bot</td>
+          </tr>
+          <tr>
+            <th>Ciclo di levigatura</th>
+            <td>Levigatura rotorbitale sequenziale: grana 80 → 120 → 180 → 240 (con bagnatura delle fibre) con platorelli rigidi</td>
+          </tr>
+          <tr>
+            <th>Sistema di finitura</th>
+            <td>Bagno di saturazione profonda in olio minerale alimentare USP seguito da burro condizionante alla cera d'api biologica</td>
+          </tr>
+          <tr>
+            <th>Funzione del tagliere</th>
+            <td>Tagliere per salumi e formaggi ad alta resistenza, taglio del pane e spettacolare vassoio da portata / centrotavola per scrivania</td>
+          </tr>
+          <tr>
+            <th>Origine della bottega</th>
+            <td>Zurigo, Svizzera</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Before / After Finish Comparison Slider -->
+    <div class="comparison-section">
+      <div class="comparison-header">
+        <span class="section-subtitle">Trasformazione interattiva della materia</span>
+        <h2 style="font-size: 1.85rem; margin-bottom: 0.5rem;">Assieme grezzo a secco vs. Rivelazione della finitura a olio minerale</h2>
+        <p style="font-size: 0.95rem; max-width: 650px; margin: 0 auto;">
+          Trascina il cursore centrale per ammirare la drammatica trasformazione dai singoli segmenti grezzi non incollati assemblati a secco sul banco di lavoro fino al tagliere a illusione ottica 3D completamente saturo e dalla lucentezza profonda.
+        </p>
+      </div>
+
+      <div class="comparison-container" style="aspect-ratio: 3 / 4; max-width: 620px;">
+        <!-- After image (background): Fully saturated oiled surface -->
+        <img src="../../assets/images/projects/3d-cubes/10-full-surface-oil-pop.jpg" 
+             alt="Tagliere a illusione ottica cubi 3D completamente oliato" 
+             class="comparison-img">
+
+        <!-- Before image (foreground overlay): Raw dry-assembled cubes on the workbench -->
+        <div class="comparison-before">
+          <img src="../../assets/images/projects/3d-cubes/slider-before-raw-cubes.jpg" 
+               alt="Cubi 3D grezzi assemblati a secco sul banco da lavoro">
+        </div>
+
+        <!-- Slider input & UI handle -->
+        <input type="range" min="0" max="100" value="50" class="comparison-slider-input" aria-label="Cursore di confronto finitura prima e dopo">
+        <div class="comparison-handle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+
+        <span class="comparison-badge badge-left">Legno grezzo asciutto</span>
+        <span class="comparison-badge badge-right">Completa saturazione d'olio</span>
+      </div>
+    </div>
+
+    <!-- Technical Analysis & Geometric Theory -->
+    <section class="build-log-section" style="margin-top: 4rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Geometria dell'ebanisteria</span>
+        <h2 class="section-title">L'anatomia dell'illusione dei cubi 3D</h2>
+        <p>Perché questo motivo inganna la percezione spaziale umana e le rigorose tolleranze geometriche richieste in laboratorio.</p>
+      </div>
+
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Fase 01</span>
+          <span class="step-phase">Fisica ottica e valori tonali</span>
+        </div>
+        <h3 class="step-title">Il principio di illuminazione a tre valori tonali e la tassellatura romboidale</h3>
+        <p class="step-description">
+          L'illusione 3D si fonda essenzialmente sul contrasto di valore tonale (luminosità) prima ancora che sul contrasto cromatico. Affinché la corteccia visiva umana percepisca un volume tridimensionale su una superficie piana, il cervello necessita di tre distinti valori di luce coerenti con un'ipotetica sorgente luminosa direzionale:
+        </p>
+        <ul style="color: var(--text-muted); margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Piano superiore (Acero / Abete):</strong> Riflette la massima luce incidente (~80% di riflettanza). Costituisce un punto luce chiaro e brillante che cattura l'illuminazione zenitale.</li>
+          <li><strong>Piano intermedio / Mezzotono (Faggio):</strong> Rappresenta la luce ambientale diffusa (~45% di riflettanza). Il tono denso e caldo ambrato del faggio europeo fa da ponte cromatico tra la luce piena e l'ombra profonda.</li>
+          <li><strong>Piano d'ombra (Noce):</strong> Simula la faccia in ombra (~15% di riflettanza). Il ricco noce svizzero apporta tonalità profonde color caffè espresso e cioccolato, ancorando il lato in ombra di ogni singolo cubo.</li>
+        </ul>
+        <p class="step-description">
+          Una volta assemblati in rombi a 60°/120° che convergono in un unico vertice comune, il cervello ricompone automaticamente un cubo isometrico fluttuante nelle tre dimensioni. A seconda dell'attenzione cognitiva, i cubi possono apparire come sporgenti verso l'osservatore o come cavità che recedono: il classico fenomeno ottico reversibile del cubo di Necker.
+        </p>
+
+        <!-- SVG Schematic Diagram -->
+        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-md); margin-top: 1.5rem;">
+          <img src="../../assets/images/projects/3d-cubes/3d-cubes-hero.svg" 
+               alt="Schema geometrico dell'illusione ottica dei cubi 3D" 
+               style="width: 100%; height: auto; display: block; cursor: pointer;"
+               data-lightbox
+               data-caption="Tagliere cubi 3D: diagramma della tassellatura romboidale isometrica con facce in luce, mezzotono e ombra che convergono in giunzioni a 120°.">
+          <div class="step-caption">
+            <span class="step-caption-text">Schema vettoriale che illustra la griglia romboidale matematica a 60°/120° prima della fabbricazione in bottega.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Fase 02</span>
+          <span class="step-phase">Tolleranze trigonometriche</span>
+        </div>
+        <h3 class="step-title">La sfida degli angoli cumulativi: la precisione a 60°</h3>
+        <p class="step-description">
+          A differenza dei taglieri ortogonali a 90 gradi (come la scacchiera in faggio e amarante), il tagliere a cubi 3D richiede tagli a esattamente <strong>60 gradi</strong>. Uno scostamento di appena 0,1° per taglio si moltiplica per sei a ogni giunzione esagonale, generando un errore di apertura di 0,6°. Moltiplicato su 8 file, una guida goniometrica imprecisa lascerebbe fessure evidenti che nessuna pressione dei morsetti potrebbe mai richiudere senza spezzare le fibre del legno.
+        </p>
+        <div class="callout-box">
+          <div class="callout-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Strategia di bottega: la tecnica dei listelli laminati a due stadi
+          </div>
+          <p>
+            Anziché tagliare e tentare di incollare centinaia di singoli rombi sfusi, i falegnami incollano lunghi listelli paralleli di noce, faggio e acero lungo il bordo, per poi sezionare l'intero pannello laminato attraverso la venatura a esattamente 60 gradi. Sfalsando i listelli tagliati adiacenti di un solo segmento, i cubi a cascata si allineano automaticamente, garantendo linee di colla perfettamente dritte e risparmiando decine di ore di rischioso montaggio.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Step by Step Build Log -->
+    <section class="build-log-section">
+      <div class="section-header" style="margin-top: 4rem; margin-bottom: 2.5rem;">
+        <span class="section-subtitle">Documentazione del processo</span>
+        <h2 class="section-title">Il diario di lavorazione completo</h2>
+        <p>Un viaggio fotografico cronologico attraverso la laminazione iniziale dei listelli, il sezionamento a 60°, la registrazione a secco, il serraggio con cale, la squadratura e l'indimenticabile finitura a olio.</p>
+      </div>
+
+      <!-- Step 01 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Passo 01</span>
+          <span class="step-phase">Laminazione iniziale</span>
+        </div>
+        <h3 class="step-title">Laminazione dei listelli a tre essenze e preparazione del grezzo</h3>
+        <p class="step-description">
+          Le fondamenta dell'illusione ottica prendono forma piallando listelli lunghi e perfettamente uniformi di noce svizzero, faggio europeo e chiaro acero alpino/abete. Ciascun listello è stato calibrato a uno spessore identico e squadrato sul bordo. I listelli sono stati quindi disposti secondo una sequenza tonale ripetuta — noce (ombra), faggio (mezzotono) e acero (luce) — e incollati costa contro costa per realizzare il grezzo rigato iniziale multistrato.
+        </p>
+        <p class="step-description">
+          Il serraggio è stato eseguito mediante robusti morsetti a barra e a vite Bessey distribuiti a passo ravvicinato lungo il banco. Una pressione omogenea su tutta la lunghezza è stata fondamentale per prevenire svergolamenti o giunti privi di colla, garantendo che ogni fetta successiva conservasse larghezze di striscia perfettamente identiche.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/01-initial-strip-glueup.jpg" 
+               alt="Incollaggio iniziale di tre specie legnose serrate con morsetti a tubo Bessey" 
+               class="step-img"
+               data-lightbox
+               data-caption="Passo 01: Prima laminazione a listelli delle tre essenze serrata con robusti morsetti a tubo Bessey sul banco da lavoro.">
+          <div class="step-caption">
+            <span class="step-caption-text">Listelli alternati di noce, faggio e acero sotto pressione uniforme per formare il blocco laminato principale.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+
+        <div class="callout-box">
+          <div class="callout-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            L'intuito del falegname: Calibrazione della larghezza dei listelli
+          </div>
+          <p>
+            In una proiezione isometrica, l'altezza verticale di un rombo a 60° è legata allo spessore di taglio dal seno di 60° (\(\sqrt{3}/2 \approx 0{,}866\)). Se la larghezza del listello e lo spessore del successivo taglio trasversale non rispettano l'esatto rapporto geometrico, i rombi risultano allungati o schiacciati, trasformando i netti cubi isometrici 3D in prismi esagonali deformati.
+          </p>
+        </div>
+      </article>
+
+      <!-- Step 02 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Passo 02</span>
+          <span class="step-phase">Taglio angolare di precisione</span>
+        </div>
+        <h3 class="step-title">Taglio trasversale a 60 gradi sul banco sega</h3>
+        <p class="step-description">
+          Una volta che il blocco laminato è giunto a polimerizzazione completa ed è stato piallato su entrambe le facce, è stato portato al banco sega per essere tagliato in segmenti angolati. La guida goniometrica è stata calibrata esattamente a <strong>60 gradi</strong> rispetto alla lama. Una guida martire e un blocco d'arresto hanno assicurato che ogni striscia sezionata uscisse con larghezza di segmento identica e spigoli privi di scheggiature.
+        </p>
+        <p class="step-description">
+          Ogni passata attraverso la lama in metallo duro ha tagliato trasversalmente il grezzo rigato, producendo lunghe strisce a parallelogramma in cui le sezioni di noce, faggio e acero risultano inclinate in rombi a 60°/120°. Tagli netti e privi di vibrazioni sono qui vitali: anche la minima oscillazione della lama si tradurrebbe in avvallamenti durante il secondo incollaggio.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/02-angle-crosscut-60deg.jpg" 
+               alt="Taglio trasversale del blocco laminato a un angolo di 60 gradi sul banco sega" 
+               class="step-img"
+               data-lightbox
+               data-caption="Passo 02: Taglio trasversale del blocco laminato a esattamente 60° con la guida del banco sega per produrre segmenti a parallelogramma.">
+          <div class="step-caption">
+            <span class="step-caption-text">I tagli inclinati trasformano le strisce lineari in parallelogrammi con facce romboidali a 60°.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 03 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Passo 03</span>
+          <span class="step-phase">Assemblaggio a secco e allineamento</span>
+        </div>
+        <h3 class="step-title">Accoppiamento a secco del motivo a cubi in caduta</h3>
+        <p class="step-description">
+          Questo è il momento culminante della lavorazione: disporre i listelli a parallelogramma affiancati sul banco di montaggio. Sfalsando ogni listello successivo lungo l'asse a 60 gradi di esattamente un segmento romboidale, i singoli rombi si combinano a formare esagoni trifacciali.
+        </p>
+        <p class="step-description">
+          All'istante, le strisce diagonali bidimensionali scompaiono, sostituite dalla straordinaria illusione ottica di cubi tridimensionali impilati che precipitano nello spazio. Durante la prova a secco, i listelli sono stati esaminati con luce radente per verificare che la venatura del legno scorresse armoniosamente e che nessun listello fosse stato capovolto per errore.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/03-dry-fit-pattern-layout.jpg" 
+               alt="Prova a secco dei listelli a parallelogramma alternati che svelano l'illusione dei cubi in caduta" 
+               class="step-img"
+               data-lightbox
+               data-caption="Passo 03: Assemblaggio a secco dei listelli a parallelogramma alternati sul banco, che svela l'emergere dell'illusione dei cubi 3D.">
+          <div class="step-caption">
+            <span class="step-caption-text">Lo sfalsamento di un'unità tra listelli adiacenti fa convergere le tre essenze nei vertici a 120°.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 04 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Passo 04</span>
+          <span class="step-phase">Ispezione delle tolleranze</span>
+        </div>
+        <h3 class="step-title">Allineamento dei vertici e controllo accurato delle giunzioni</h3>
+        <p class="step-description">
+          Prima di procedere all'applicazione dell'adesivo, è stata condotta una scrupolosa ispezione di ogni intersezione. In una corretta tassellatura isometrica, tre distinti rombi convergono in ciascun vertice condiviso: un rombo superiore luminoso, un rombo laterale in mezzotono caldo e un rombo scuro in ombra.
+        </p>
+        <p class="step-description">
+          Qualsiasi deviazione nell'angolo di taglio o variazione di spessore si manifesterebbe all'istante con spigoli scalinati o fessure in questi nodi a tre punte. Sottili linee di riferimento a matita sono state tracciate lungo i listelli per garantire un perfetto registro longitudinale durante il serrato tempo aperto dell'incollaggio.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/04-vertex-alignment-detail.jpg" 
+               alt="Dettaglio ravvicinato dell'allineamento dei vertici dei rombi durante la prova a secco" 
+               class="step-img"
+               data-lightbox
+               data-caption="Passo 04: Ispezione macro dei vertici dei rombi e dei riferimenti di allineamento sul tagliere assemblato a secco.">
+          <div class="step-caption">
+            <span class="step-caption-text">Verifica fondamentale: accertarsi che i vertici delle tre facce convergano senza slittamenti assiali o disallineamenti.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 05 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Passo 05</span>
+          <span class="step-phase">Il primo incollaggio</span>
+        </div>
+        <h3 class="step-title">Assemblaggio manuale dei rombi in cubi esagonali</h3>
+        <p class="step-description">
+          Con tutti gli angoli tagliati e le tolleranze verificate a secco, è iniziata la delicata prima fase di assemblaggio: incollare i singoli rombi in unità esagonali. Nel disegno isometrico dei cubi a cascata, ogni cubo 3D è formato da tre rombi a 60°/120° — uno in abete alpino (luce zenitale), uno in faggio europeo (mezzotono caldo) e uno in noce svizzero (ombra profonda) — che convergono esattamente in un vertice centrale a 120 gradi.
+        </p>
+        <p class="step-description">
+          Serrare tre rombi sciolti con tradizionali morsetti a vite o paralleli è praticamente impossibile senza incorrere in slittamenti: gli angoli acuti a 60° agiscono come cunei e la forza meccanica dei morsetti fa scivolare violentemente i pezzi fuori registro.
+        </p>
+        <p class="step-description">
+          Per risolvere il problema, <strong>il primo incollaggio è stato eseguito interamente a mano</strong>. La resina alifatica Titebond III è stata stesa sui bordi a 60 gradi delle tre facce. Ogni triade esagonale è stata quindi afferrata saldamente tra le dita, esercitando una pressione manuale costante per <strong>1 o 2 minuti per blocco</strong>, finché l'adesivo non ha sviluppato una presa iniziale sufficiente a mantenere la posizione senza deformarsi o slittare.
+        </p>
+        <p class="step-description">
+          Questo incollaggio manuale è stato ripetuto blocco dopo blocco, unità dopo unità, per ogni singolo esagono del tagliere. È stato un lavoro lungo e faticoso per le dita, che ha richiesto enorme concentrazione e pazienza, ma ha permesso micro-regolazioni tattili garantendo che le facce superiori rimanessero complanari e i vertici nitidi.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/04b-first-glueup-hand-hexagons.jpg" 
+               alt="Serie di cubi esagonali incollati a mano in fase di asciugatura sul banco da lavoro" 
+               class="step-img"
+               data-lightbox
+               data-caption="Passo 05: Il primo incollaggio: cubi esagonali incollati a mano in essiccazione sul banco. Ogni terzina di rombi è stata pressata a mano per 1–2 minuti fino alla presa iniziale della colla.">
+          <div class="step-caption">
+            <span class="step-caption-text">Tutti gli esagoni a 3 rombi assemblati a mano, tenuti sotto pressione manuale per 1–2 minuti per blocco fino alla presa.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+
+        <div class="callout-box">
+          <div class="callout-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Retrospettiva dell'artigiano: Tecniche di montaggio alternative ed efficienti
+          </div>
+          <p>
+            Benché stringere ogni blocco a mano per 1–2 minuti abbia garantito giunzioni perfette senza slittamento da morsetti, è innegabilmente un processo lento e impegnativo. Per le prossime realizzazioni esistono tecniche alternative eccellenti:
+          </p>
+          <ul style="margin-top: 0.75rem; padding-left: 1.25rem; line-height: 1.7; color: var(--text-muted);">
+            <li><strong>Nastrino elastico (Blue Tape):</strong> disporre i tre rombi in linea su nastro adesivo per mascheratura ad alta tenuta, applicare la colla, ripiegarli nell'esagono 3D e tendere con forza il nastro sulla giunzione di chiusura. La tensione elastica del nastro richiama i tre giunti simultaneamente con pressione radiale uniforme, eliminando la tenuta manuale.</li>
+            <li><strong>Dima a V a 60°:</strong> costruire una scanalatura a V in legno a 60 gradi rivestita di nastro da pacchi, premendo i tre rombi con un cuneo posteriore contro la battuta.</li>
+            <li><strong>Laminazione angolare continua pre-incollata:</strong> incollare le tre essenze in lunghi grezzi laminati inclinati a 60° prima della troncatura, ottenendo file di rombi pre-unite in un unico passaggio.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Step 06 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Passo 06</span>
+          <span class="step-phase">Il secondo incollaggio</span>
+        </div>
+        <h3 class="step-title">Laminazione principale con cale di serraggio</h3>
+        <p class="step-description">
+          Con tutti i singoli esagoni polimerizzati dal primo incollaggio, il progetto è passato al <strong>secondo incollaggio</strong>: l'unione dell'intero campo di cubi esagonali in un unico pannello monolitico. Quando si applica una forza di serraggio laterale contro giunzioni inclinate a 60 gradi lungo più file, l'effetto cuneo tende a far slittare il pannello lungo i giunti facendolo incurvare verso l'alto come una tenda.
+        </p>
+        <p class="step-description">
+          Per contrastare questa spinta, robuste cale di serraggio in legno duro rivestite di nastro da imballaggio (per impedire l'adesione della colla) sono state collocate sopra e sotto l'assieme. Morsetti a vite verticali hanno bloccato le cale saldamente al banco, mentre i morsetti paralleli Bessey hanno impresso una pressione laterale controllata, serrando tutti i listelli in un unico pannello perfettamente piatto senza alcun disallineamento.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/05-panel-clamping-cauls.jpg" 
+               alt="Secondo incollaggio con morsetti paralleli Bessey e cale in legno duro" 
+               class="step-img"
+               data-lightbox
+               data-caption="Passo 06: Incollaggio del pannello principale con cale in legno duro nastrate e morsetti paralleli Bessey per prevenire imbarcamenti.">
+          <div class="step-caption">
+            <span class="step-caption-text">Rigide cale superiori e inferiori mantengono le strisce angolate a 60° ben adese al banco mentre i morsetti laterali chiudono le fughe.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 07 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Passo 07</span>
+          <span class="step-phase">Polimerizzazione e ispezione</span>
+        </div>
+        <h3 class="step-title">Rimozione dei morsetti e verifica della fuoriuscita di colla</h3>
+        <p class="step-description">
+          Dopo 24 ore complete di riposo sotto tensione, i morsetti e le cale sono stati allentati. Il pannello grezzo incollato si presentava con il suo caratteristico bordo perimetrale a zig-zag a gradini, conseguenza naturale dello sfalsamento delle strisce a 60°.
+        </p>
+        <p class="step-description">
+          L'ispezione dei cordoli di colla indurita lungo ciascuna giunzione ha confermato una fuoriuscita uniforme e continua su tutto il pannello, dimostrando una stesura impeccabile senza vuoti d'adesivo. I cordoni di colla secca sono stati rimossi con un raschietto per legno prima della calibratura a macchina, per preservare i taglienti degli utensili.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/06-cured-panel-squeezeout.jpg" 
+               alt="Pannello incollato dopo il serraggio che mostra la fuoriuscita di colla e i bordi a zig-zag a gradini" 
+               class="step-img"
+               data-lightbox
+               data-caption="Passo 07: Pannello polimerizzato liberato dai morsetti, con i tipici bordi a gradini e una fuoriuscita uniforme di colla.">
+          <div class="step-caption">
+            <span class="step-caption-text">Bordi perimetrali a zig-zag prima della refilatura, con la colla Titebond III indurita pronta per la raschiatura.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 08 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Passo 08</span>
+          <span class="step-phase">Squadratura di precisione</span>
+        </div>
+        <h3 class="step-title">Rifilatura perimetrale sul banco sega Festool</h3>
+        <p class="step-description">
+          Per trasformare il pannello a gradini in un tagliere rettilineo e pulito, il blocco è stato posizionato sulla postazione di taglio di precisione: il banco sega <strong>Festool TKS 80 EBS</strong> (dotato di tecnologia di sicurezza attiva SawStop AIM).
+        </p>
+        <p class="step-description">
+          Grazie a un carrello scorrevole di precisione con guida per tagli trasversali, le estremità seghettate sono state rifilate di netto, stabilendo il primo vero bordo di riferimento a 90 gradi. Il tagliere è stato quindi ruotato e rifilato longitudinalmente per definire lati perfettamente paralleli, portando le dimensioni esterne definitive a <strong>45,0 cm × 24,0 cm</strong>. Sullo sfondo della bottega è visibile la levigatrice a tamburo Jet, pronta per la calibratura dello spessore.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/07-squaring-table-saw.jpg" 
+               alt="Squadratura del tagliere sul banco sega Festool TKS 80 EBS" 
+               class="step-img"
+               data-lightbox
+               data-caption="Passo 08: Squadratura e rifilatura del perimetro del tagliere sul banco sega Festool TKS 80 EBS con guida per tagli trasversali.">
+          <div class="step-caption">
+            <span class="step-caption-text">Banco sega Festool TKS 80 che rifila i bordi a gradini; sullo sfondo della bottega si intravede la levigatrice a tamburo Jet.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 09 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Passo 09</span>
+          <span class="step-phase">Spianatura e preparazione dei bordi</span>
+        </div>
+        <h3 class="step-title">Levigatura a tamburo, cale di bordo e preparazione della superficie</h3>
+        <p class="step-description">
+          Con il perimetro squadrato, il tagliere è passato alla spianatura e calibratura sulla <strong>levigatrice a tamburo Jet</strong>. Molteplici passate leggere hanno rimosso ogni residuo dislivello tra i listelli adiacenti, portando il tagliere allo spessore uniforme di <strong>2,5 cm</strong> e preservando al contempo la nitidezza delle intersezioni.
+        </p>
+        <p class="step-description">
+          Tornato sul banco da lavoro, cale di bordo e morsetti paralleli Bessey sono stati utilizzati per la stabilizzazione finale e la rifinitura dei bordi. Il tagliere è stato quindi levigato in progressione con levigatrici rotorbitali: grana 80 → 120 → 180 → 240. Tra la grana 180 e la 240, l'intera superficie è stata bagnata con panno in microfibra umido (water-popping) per far sollevare le fibre schiacciate, per poi essere levigata a grana 240 donando un tocco vellutato. Uno smusso delicato a 45° è stato fresato lungo tutti i bordi e gli angoli perimetrali per garantire il massimo comfort ergonomico.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/08-edge-alignment-clamping.jpg" 
+               alt="Allineamento dei bordi e postazione di lavoro con applicatore Glue-Bot e morsetti Bessey" 
+               class="step-img"
+               data-lightbox
+               data-caption="Passo 09: Messa a punto sul banco e stabilizzazione con cale di bordo insieme al dispenser Glue-Bot e morsetti Bessey.">
+          <div class="step-caption">
+            <span class="step-caption-text">Allestimento sul banco: serraggio delle cale di bordo accanto al dosatore Glue-Bot prima della finitura abrasiva definitiva.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 10 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Passo 10</span>
+          <span class="step-phase">La rivelazione della finitura</span>
+        </div>
+        <h3 class="step-title">Il colpo d'olio (Oil Pop) — La prima pennellata centrale</h3>
+        <p class="step-description">
+          Dopo ore di pianificazione geometrica, tagli, incollaggi e attenta levigatura, è giunto il momento tanto atteso da ogni ebanista: la prima mano di finitura. Con un pennello pulito in setole naturali, puro olio minerale per uso alimentare USP è stato steso lungo la colonna centrale della tavola grezza e asciutta.
+        </p>
+        <p class="step-description">
+          La metamorfosi toglie il fiato. Il noce polveroso e grigio si accende di colpo in un intenso color espresso scuro; il faggio chiaro sboccia in una calda sfumatura ambrata mielata; e le facce in abete acquistano una luminosità pulita e radiosa. La netta separazione tra i fianchi grezzi carteggiati e il centro appena oliato crea uno spettacolo visivo indimenticabile sul banco da falegname.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/09-oil-finish-first-pass.jpg" 
+               alt="Prima pennellata di olio minerale lungo la linea mediana del tagliere a cubi 3D" 
+               class="step-img"
+               data-lightbox
+               data-caption="Passo 10: Il leggendario 'oil pop': la prima pennellata di olio minerale alimentare applicata al centro del tagliere levigato.">
+          <div class="step-caption">
+            <span class="step-caption-text">Contrasto immediato: il legno grezzo e opaco sui lati rispetto ai cubi vibranti e saturi d'olio lungo la linea centrale.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 11 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Passo 11</span>
+          <span class="step-phase">Nutrimento profondo</span>
+        </div>
+        <h3 class="step-title">Saturazione completa della superficie e profondità dell'illusione 3D</h3>
+        <p class="step-description">
+          L'olio minerale è stato applicato generosamente su tutta la superficie superiore, inferiore e sui bordi, lasciando che il legno di testa e di filo assorbisse l'olio fino a completa saturazione. Rimosso l'eccesso e lasciato riposare per la notte, il tagliere ha ricevuto una mano calda di burro per legno a base di cera d'api e oli vegetali, lucidato a mano fino a una setosa finitura semilucida.
+        </p>
+        <p class="step-description">
+          Con la superficie interamente nutrita, l'effetto ottico sprigiona tutto il suo vigore. I piani d'ombra in noce sembrano sprofondare di centimetri sotto il piano, le facce in faggio donano calore e consistenza corporea, mentre le facce superiori in acero sembrano investite da un fascio di luce zenitale. Sotto qualsiasi condizione di illuminazione, la tavola piana appare inequivocabilmente come un rilievo tridimensionale di cubi impilati.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/10-full-surface-oil-pop.jpg" 
+               alt="Tagliere cubi 3D completamente oliato con venature intense e contrasto vibrante" 
+               class="step-img"
+               data-lightbox
+               data-caption="Passo 11: Completa saturazione superficiale con olio minerale alimentare, che sprigiona tutta la profondità tridimensionale dei cubi in caduta.">
+          <div class="step-caption">
+            <span class="step-caption-text">Il tagliere finito da 45 cm × 24 cm con profonde ombre in noce, faggio dorato e luminosi punti luce superiori.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 12 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Passo 12</span>
+          <span class="step-phase">L'opera d'arte in servizio</span>
+        </div>
+        <h3 class="step-title">Il manufatto completato nel suo ambiente d'elezione</h3>
+        <p class="step-description">
+          Ecco il tagliere a illusione ottica cubi 3D completato nel suo contesto d'uso quotidiano — fotografato su una moderna scrivania con doppio monitor a Zurigo. Sia che venga impiegato come spettacolare tagliere di servizio per pane a lievitazione naturale e formaggi svizzeri stagionati, sia come elegante sottomano direzionale e scultura geometrica da conversazione, la maestria artigianale parla da sé.
+        </p>
+        <p class="step-description">
+          Ogni giunzione è serrata al decimo di millimetro, la superficie è perfettamente piana e vellutata al tatto, e la precisione geometrica della tassellatura a 60° rappresenta una testimonianza duratura di falegnameria paziente e metodica.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/11-finished-board-desk.jpg" 
+               alt="Tagliere a illusione ottica cubi 3D ultimato al centro di una scrivania direzionale" 
+               class="step-img"
+               data-lightbox
+               data-caption="Passo 12: Il tagliere cubi 3D completato ed esposto su una scrivania direzionale a Zurigo, a testimonianza della finitura impeccabile e dell'illusione geometrica.">
+          <div class="step-caption">
+            <span class="step-caption-text">Finitura setosa impeccabile: il tagliere esposto al centro della scena che esalta la nitidezza dei cubi isometrici in caduta.</span>
+            <span class="step-zoom-hint">Clicca per ingrandire</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Complete 12-Photo Build Gallery -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Cronaca per immagini</span>
+        <h2 class="section-title">Galleria fotografica completa delle 12 fasi</h2>
+        <p>Esplora gli scatti ad alta risoluzione di ciascuna fase di fabbricazione del tagliere a cubi 3D.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-lightbox data-caption="01: Prima laminazione a listelli delle tre essenze serrata con robusti morsetti a tubo Bessey." data-full="../../assets/images/projects/3d-cubes/01-initial-strip-glueup.jpg">
+          <img src="../../assets/images/projects/3d-cubes/01-initial-strip-glueup.jpg" alt="Laminazione iniziale dei listelli" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">01 • Incollaggio listelli</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="02: Sezionamento del blocco laminato a 60° con la guida goniometrica del banco sega." data-full="../../assets/images/projects/3d-cubes/02-angle-crosscut-60deg.jpg">
+          <img src="../../assets/images/projects/3d-cubes/02-angle-crosscut-60deg.jpg" alt="Taglio angolare a 60 gradi" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">02 • Tagli angolari a 60°</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="03: Prova di assemblaggio a secco che rivela il motivo dei cubi in caduta." data-full="../../assets/images/projects/3d-cubes/03-dry-fit-pattern-layout.jpg">
+          <img src="../../assets/images/projects/3d-cubes/03-dry-fit-pattern-layout.jpg" alt="Motivo in prova a secco" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">03 • Prova a secco del pattern</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="04: Ispezione macro ravvicinata dei vertici delle facce romboidali." data-full="../../assets/images/projects/3d-cubes/04-vertex-alignment-detail.jpg">
+          <img src="../../assets/images/projects/3d-cubes/04-vertex-alignment-detail.jpg" alt="Dettaglio allineamento vertici" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">04 • Ispezione dei vertici</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="05: Il primo incollaggio: cubi esagonali tenuti sotto pressione manuale per 1-2 minuti per blocco." data-full="../../assets/images/projects/3d-cubes/04b-first-glueup-hand-hexagons.jpg">
+          <img src="../../assets/images/projects/3d-cubes/04b-first-glueup-hand-hexagons.jpg" alt="Gruppo di cubi esagonali incollati a mano" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">05 • Primo incollaggio</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="06: Incollaggio del pannello principale con cale di serraggio in legno duro e morsetti paralleli Bessey." data-full="../../assets/images/projects/3d-cubes/05-panel-clamping-cauls.jpg">
+          <img src="../../assets/images/projects/3d-cubes/05-panel-clamping-cauls.jpg" alt="Incollaggio del pannello principale" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">06 • Serraggio con cale</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="07: Blocco polimerizzato con i tipici bordi a gradini e cordoni di colla estrusi." data-full="../../assets/images/projects/3d-cubes/06-cured-panel-squeezeout.jpg">
+          <img src="../../assets/images/projects/3d-cubes/06-cured-panel-squeezeout.jpg" alt="Pannello indurito con colla estrusa" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">07 • Pannello polimerizzato</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="08: Squadratura delle estremità a gradini sul banco sega Festool TKS 80 EBS." data-full="../../assets/images/projects/3d-cubes/07-squaring-table-saw.jpg">
+          <img src="../../assets/images/projects/3d-cubes/07-squaring-table-saw.jpg" alt="Squadratura sul banco sega" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">08 • Squadratura al banco sega</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="09: Allestimento sul banco con cale di bordo e Glue-Bot prima della levigatura finale." data-full="../../assets/images/projects/3d-cubes/08-edge-alignment-clamping.jpg">
+          <img src="../../assets/images/projects/3d-cubes/08-edge-alignment-clamping.jpg" alt="Allestimento banco con cale di bordo" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">09 • Preparazione dei bordi</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="10: Prima passata d'olio lungo la mezzeria che mostra l'istantanea rivelazione dei colori." data-full="../../assets/images/projects/3d-cubes/09-oil-finish-first-pass.jpg">
+          <img src="../../assets/images/projects/3d-cubes/09-oil-finish-first-pass.jpg" alt="Prima passata d'olio" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">10 • Prima stesura d'olio</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="11: Saturazione d'olio sull'intera superficie che svela il profondo contrasto ottico tridimensionale." data-full="../../assets/images/projects/3d-cubes/10-full-surface-oil-pop.jpg">
+          <img src="../../assets/images/projects/3d-cubes/10-full-surface-oil-pop.jpg" alt="Saturazione d'olio totale" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">11 • Bagno d'olio completo</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="12: Tagliere cubi 3D completato collocato al centro di una scrivania direzionale." data-full="../../assets/images/projects/3d-cubes/11-finished-board-desk.jpg">
+          <img src="../../assets/images/projects/3d-cubes/11-finished-board-desk.jpg" alt="Tagliere finito al centro della scrivania" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">12 • Esposizione finale</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wood Species Deep Dive -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Specie legnose</span>
+        <h2 class="section-title">Le tre essenze in armonia</h2>
+        <p>Una composizione di legni autoctoni europei e svizzeri selezionati per tonalità, densità e durata nel tempo.</p>
+      </div>
+
+      <div class="timber-grid">
+        <!-- Swiss Walnut -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #422b22, #1c110b);"></div>
+          <div class="timber-header">
+            <h3>Noce svizzero</h3>
+            <div class="timber-scientific">Juglans regia</div>
+          </div>
+          <p>
+            Pregiato per le sue tonalità sfumate color cioccolato fondente, la tessitura fine e le qualità tattili vellutate. In questo tagliere, il noce costituisce l'ancoraggio dell'illusione 3D, proiettando ombre profonde realistiche che fanno balzare ogni cubo fuori dalla superficie.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Durezza Janka</span>
+              <div class="spec-value">1.010 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Ruolo nell'illusione</span>
+              <div class="spec-value">Faccia d'ombra</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- European Beech -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #d8a876, #b88450);"></div>
+          <div class="timber-header">
+            <h3>Faggio europeo</h3>
+            <div class="timber-scientific">Fagus sylvatica</div>
+          </div>
+          <p>
+            Robusto, resiliente e poco poroso. Reperito localmente da foreste a gestione sostenibile dell'Europa centrale. Il suo mezzotono ambrato caldo e mielato offre l'equilibrio cromatico indispensabile per collegare luce e ombra.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Durezza Janka</span>
+              <div class="spec-value">1.450 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Ruolo nell'illusione</span>
+              <div class="spec-value">Faccia mezzotono</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alpine Maple / Spruce -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #fbf8f2, #eee5d3);"></div>
+          <div class="timber-header">
+            <h3>Acero alpino / Abete</h3>
+            <div class="timber-scientific">Acer pseudoplatanus / Picea abies</div>
+          </div>
+          <p>
+            Rinomato per la lucentezza chiara e lattea e la fibra stretta e fine. Funge da vivace punto luce superiore di ciascun cubo, simulando la luce solare zenitale che scende sul paesaggio geometrico.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Durezza Janka</span>
+              <div class="spec-value">950 - 1.450 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Ruolo nell'illusione</span>
+              <div class="spec-value">Punto luce superiore</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Care & Maintenance Protocol -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Manufatto culinario per generazioni</span>
+        <h2 class="section-title">Protocollo di cura e manutenzione</h2>
+        <p>Come preservare un tagliere geometrico multi-essenza affinché duri per generazioni.</p>
+      </div>
+
+      <div class="care-grid">
+        <div class="care-card">
+          <h4>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Cosa fare
+          </h4>
+          <ul>
+            <li>Lavare a mano entrambi i lati con sapone per piatti delicato e acqua tiepida subito dopo l'uso.</li>
+            <li>Asciugare accuratamente con un canovaccio e riporre in verticale per consentire un'asciugatura uniforme su tutti i lati.</li>
+            <li>Applicare olio minerale per uso alimentare una volta al mese o ogniqualvolta il legno appaia opaco o secco al tatto.</li>
+            <li>Riapplicare burro per legno a base di cera d'api ogni 3–4 mesi per una protezione idrorepellente profonda.</li>
+          </ul>
+        </div>
+
+        <div class="care-card">
+          <h4>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e74c3c" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            Cosa non fare mai
+          </h4>
+          <ul>
+            <li><strong>Non lavare mai in lavastoviglie</strong>: le alte temperature, i detergenti aggressivi e il vapore sciolgono la colla e incurvano il legno irreparabilmente.</li>
+            <li>Non lasciare mai in ammollo o immerso nel lavello.</li>
+            <li>Non lasciare mai asciugare appoggiato in piano sul piano cucina (l'umidità intrappolata sotto provoca svergolamenti e sollecita le giunzioni).</li>
+            <li>Non utilizzare mai oli da cucina come olio d'oliva o di semi (irrancidiscono, appiccicano e producono odori sgradevoli).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation between projects -->
+    <div style="margin: 4rem 0 2rem; padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+      <div>
+        <span class="spec-label">Progetto precedente</span>
+        <h4 style="font-size: 1.25rem;"><a href="beech-purpleheart-cutting-board.html" style="color: var(--text-highlight);">← Tagliere a griglia in faggio e amarante</a></h4>
+      </div>
+      <div>
+        <span class="spec-label">Progetto successivo</span>
+        <h4 style="font-size: 1.25rem;"><a href="purpleheart-heart-serving-board.html" style="color: var(--text-highlight);">Vassoio a cuore in amarante →</a></h4>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Lightbox Container -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Ingrandimento immagine">
+    <button class="lightbox-close" aria-label="Chiudi immagine">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Immagine precedente">&#10094;</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Immagine successiva">&#10095;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="../index.html" class="brand-logo">
+            <img src="../../assets/images/logo.png" alt="Logo ZuriForge" class="brand-icon" width="40" height="40">
+            <span class="brand-name">ZuriForge</span>
+          </a>
+          <p class="footer-brand-desc">
+            Lavorazione artigianale del legno e diario di bottega. Documentazione di taglieri geometrici, dime di precisione ed esplorazione dei legnami a Zurigo.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Documentazione</h4>
+          <ul class="footer-links">
+            <li><a href="beech-purpleheart-cutting-board.html">Tagliere in faggio e amarante</a></li>
+            <li><a href="3d-cubes-board.html">Tagliere a illusione cubi 3D</a></li>
+            <li><a href="purpleheart-heart-serving-board.html">Vassoio a cuore in amarante</a></li>
+            <li><a href="epoxy-olive-board.html">Tagliere river in olivo e resina</a></li>
+            <li><a href="walnut-endgrain-cutting-board.html">Tagliere in legno di testa in noce</a></li>
+            <li><a href="../index.html#timber">Specie legnose</a></li>
+            <li><a href="../about.html">Informazioni sulla bottega</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Filosofia di bottega</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-dim);">Finalità strettamente non commerciale</span></li>
+            <li><span style="color: var(--text-dim);">Diari di costruzione open source</span></li>
+            <li><span style="color: var(--text-dim);">Legni svizzeri e pregiati sostenibili</span></li>
+            <li><a href="https://github.com/andrei-alpha/andrei-alpha.github.io" target="_blank" rel="noopener">Repository GitHub</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZuriForge • Andrei Antonescu • Zurigo, Svizzera</div>
+        <div>Realizzato con precisione e trucioli di legno</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js?v=1.1"></script>
+  <!-- Slide-Out Workshop Build Archive Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="workshop-drawer" id="workshop-drawer" aria-hidden="true" role="dialog" aria-labelledby="drawer-title">
+    <div class="drawer-header">
+      <div class="drawer-header-top">
+        <div class="drawer-title-group">
+          <span class="drawer-badge">Indice di bottega</span>
+          <h2 id="drawer-title" class="drawer-title">Diario del maker</h2>
+        </div>
+        <button class="drawer-close" id="drawer-close-btn" aria-label="Chiudi diario">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <p class="drawer-subtitle">
+        Documentazione di incastri geometrici, dime e caratteristiche dei legnami attraverso 5 progetti di bottega a Zurigo.
+      </p>
+      <div class="drawer-filters">
+        <button class="drawer-filter-btn active" data-filter="all">Tutti (5)</button>
+        <button class="drawer-filter-btn" data-filter="endgrain">Legno di testa (3)</button>
+        <button class="drawer-filter-btn" data-filter="epoxy">Bordo naturale / Resina (1)</button>
+        <button class="drawer-filter-btn" data-filter="art">Opera artistica (1)</button>
+      </div>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Project 1: Walnut End-Grain -->
+      <a href="walnut-endgrain-cutting-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/walnut-endgrain/07-walnut-cutting-board-knife.jpg" alt="Tagliere in legno di testa di noce massello" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Legno di testa d'eccellenza</span>
+            <span class="drawer-date">Ott 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Tagliere in noce di testa massello</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Noce svizzero</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>450 × 270 × 25 mm</span>
+            <span>•</span>
+            <span>Canalina raccoglisucco</span>
+            <span>•</span>
+            <span>Olio minerale</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2: Beech & Purpleheart -->
+      <a href="beech-purpleheart-cutting-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/beech-purpleheart/13-finished-oil-pop.jpg" alt="Tagliere geometrico in faggio e amarante" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Griglia di precisione</span>
+            <span class="drawer-date">Ott 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Tagliere in faggio e amarante</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Faggio europeo</span>
+            <span class="timber-chip">Amarante</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>420 × 285 × 42 mm</span>
+            <span>•</span>
+            <span>Blocco massiccio</span>
+            <span>•</span>
+            <span>Cera d'api</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 3: 3D Cubes Illusion -->
+      <a href="3d-cubes-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/3d-cubes/raw/CBE460FA-1CD5-4886-A3C1-9EAA979465CC.JPG" alt="Tagliere a illusione ottica cubi 3D" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Illusione ottica</span>
+            <span class="drawer-date">Ott 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Tagliere a cubi 3D isometrici</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Noce</span>
+            <span class="timber-chip">Abete</span>
+            <span class="timber-chip">Faggio</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>380 × 260 × 38 mm</span>
+            <span>•</span>
+            <span>Rombo a 60°</span>
+            <span>•</span>
+            <span>Olio di noce</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 4: Epoxy Olive Board -->
+      <a href="epoxy-olive-board.html" class="drawer-project-card" data-category="epoxy">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/epoxy-olive-board/10-finished-olive-epoxy-board.jpg" alt="Tagliere river in olivo mediterraneo e resina epossidica" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Ibrido bordo naturale</span>
+            <span class="drawer-date">Set 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Tagliere river in olivo e resina</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Olivo secolare</span>
+            <span class="timber-chip">Resina cerulea</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>480 × 240 × 32 mm</span>
+            <span>•</span>
+            <span>Lucidato a grana 12.000</span>
+            <span>•</span>
+            <span>Odie's Oil</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 5: Purpleheart Heart -->
+      <a href="purpleheart-heart-serving-board.html" class="drawer-project-card" data-category="art">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/purpleheart-heart/06-finished-heart-board.jpg" alt="Tagliere a forma di cuore in amarante in legno di testa" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Pezzo artistico su misura</span>
+            <span class="drawer-date">Ott 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Tagliere a cuore in amarante</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Amarante della Guyana</span>
+            <span class="timber-chip">Bordo in faggio</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>310 × 290 × 35 mm</span>
+            <span>•</span>
+            <span>Cottura termica</span>
+            <span>•</span>
+            <span>Burro per legno (Holz-Butter)</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-footer-stats">
+        <span>5 progetti completati</span>
+        <span>•</span>
+        <span>Bottega di Zurigo</span>
+      </div>
+      <a href="../index.html#projects" class="btn btn-outline drawer-view-all-btn">
+        <span>Mostra tutti i progetti</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </aside>
+
+</body>
+</html>

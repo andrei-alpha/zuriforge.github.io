@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D-Würfel optisches Täuschungs-Schneidebrett — ZuriForge</title>
+  <meta name="description" content="Technische Dokumentation und Werkstatt-Baubericht eines 45 cm × 24 cm × 2,5 cm grossen Schneide- und Servierbretts mit optischer 3D-Würfel-Illusion, handgefertigt aus Nussbaum, Rotbuche und Fichte/Ahorn in Zürich.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../../css/style.css?v=1.1">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="../../assets/images/favicon-64x64.png">
+  <link rel="apple-touch-icon" href="../../assets/images/logo.png">
+  <style>#workshop-drawer:not(.active),#drawer-backdrop:not(.active){display:none!important;}</style>
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-logo" aria-label="ZuriForge Startseite">
+        <img src="../../assets/images/logo.png" alt="ZuriForge Logo" class="brand-icon" width="40" height="40">
+        <span class="brand-name">ZuriForge<span class="brand-sub">ZRH</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Projekte</a></li>
+          <li><a href="../index.html#timber" class="nav-link">Holzbibliothek</a></li>
+          <li><a href="../index.html#craft" class="nav-link">Prinzipien</a></li>
+          <li><a href="../about.html" class="nav-link">Über uns</a></li>
+          <li>
+            <button class="nav-drawer-btn open-drawer-btn" aria-label="Werkstatt-Journal öffnen">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>Journal</span>
+              <span class="drawer-pill">5</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="navigation" aria-label="Sprachauswahl">
+          <svg class="lang-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <a href="3d-cubes-board.html" class="lang-btn active" hreflang="de" data-lang="de" aria-current="page" title="Deutsch">DE</a>
+          <span class="lang-divider"></span>
+          <a href="../../fr/projects/3d-cubes-board.html" class="lang-btn" hreflang="fr" data-lang="fr" title="Français">FR</a>
+          <span class="lang-divider"></span>
+          <a href="../../it/projects/3d-cubes-board.html" class="lang-btn" hreflang="it" data-lang="it" title="Italiano">IT</a>
+          <span class="lang-divider"></span>
+          <a href="../../projects/3d-cubes-board.html" class="lang-btn" hreflang="en" data-lang="en" title="English">EN</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Navigationsmenü umschalten" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Project Header Hero -->
+  <div class="project-header-hero">
+    <div class="container container-narrow">
+      <div class="breadcrumb">
+        <a href="../index.html">ZuriForge</a>
+        <span>/</span>
+        <a href="../index.html#projects">Projekte</a>
+        <span>/</span>
+        <span>3D-Würfel optisches Täuschungsbrett</span>
+      </div>
+
+      <div class="project-category">Projekt 02 • Geometrische optische Illusion</div>
+      <h1 class="project-page-title">3D-Würfel Optische Täuschung Schneidebrett</h1>
+      <p class="project-page-subtitle">
+        Ein 45 cm × 24 cm × 2,5 cm grosses Schneide- und Servierbrett mit bestechender dreidimensionaler Würfel-Illusion. Konstruiert durch eine präzise 60°-Dreiton-Parkettierung aus Schweizer Nussbaum, Europäischer Rotbuche und alpiner Fichte / Bergahorn in Zürich.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container container-narrow" style="padding-top: 3rem;">
+
+    <!-- Master Specifications -->
+    <div class="specs-table-wrapper">
+      <h3 style="font-size: 1.35rem; margin-bottom: 1.25rem;">Projektspezifikationen &amp; Parameter</h3>
+      <table class="specs-table">
+        <tbody>
+          <tr>
+            <th>Endmasse</th>
+            <td><strong>45,0 cm</strong> Länge × <strong>24,0 cm</strong> Breite × <strong>2,5 cm</strong> Stärke</td>
+          </tr>
+          <tr>
+            <th>Visueller Effekt</th>
+            <td>Isometrische 3D-Taumelwürfel (Reversible Necker-Würfel optische Täuschung)</td>
+          </tr>
+          <tr>
+            <th>Geometriemuster</th>
+            <td>60° / 120° Rauten-Parkettierung (Rhombille-Tiling), angeordnet in hexagonalen Dreiergruppen</td>
+          </tr>
+          <tr>
+            <th>Holzarten &amp; Tonwert-Rollen</th>
+            <td>
+              <ul style="list-style: none; padding: 0; margin: 0; line-height: 1.8;">
+                <li><strong style="color: #f5ebe0;">• Alpiner Bergahorn / Fichte (<em>Acer / Picea</em>)</strong> — Oberseite (Lichtglanzpunkt, fängt einfallendes Deckenlicht ein)</li>
+                <li><strong style="color: #d4a373;">• Europäische Rotbuche (<em>Fagus sylvatica</em>)</strong> — Rechte Facette (Mittlerer Halbton, warmer goldener Körper)</li>
+                <li><strong style="color: #a47158;">• Schweizer Nussbaum (<em>Juglans regia</em>)</strong> — Linke Facette (Tiefe Schattenebene, erzeugt isometrische Raumtiefe)</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <th>Leim</th>
+            <td>Titebond III Ultimate (wasserfester, lebensmittelechter Aliphatleim)</td>
+          </tr>
+          <tr>
+            <th>Maschinen &amp; Vorrichtungen</th>
+            <td>Festool TKS 80 EBS Tischkreissäge mit Gehrungsanschlag &amp; Schiebetisch, Jet Zylinderschleifmaschine, Bessey Parallel- &amp; Rohrschraubzwingen, Hartholz-Verleimzulagen, Glue-Bot Leimspender</td>
+          </tr>
+          <tr>
+            <th>Schleifsequenz</th>
+            <td>Feinstufiger Exzenterschliff: 80 → 120 → 180 → 240 (gewässert) mit harten Schleiftellern</td>
+          </tr>
+          <tr>
+            <th>Oberflächenbehandlung</th>
+            <td>Tiefes Sättigungsbad in lebensmittelechtem Mineralöl (USP), veredelt mit Bio-Bienenwachs-Holz-Butter</td>
+          </tr>
+          <tr>
+            <th>Funktion</th>
+            <td>Schweres Charcuterie-, Brotschneide- und exklusives Servierbrett / markantes Schreibtisch-Unikat</td>
+          </tr>
+          <tr>
+            <th>Herkunft</th>
+            <td>Zürich, Schweiz</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Before / After Finish Comparison Slider -->
+    <div class="comparison-section">
+      <div class="comparison-header">
+        <span class="section-subtitle">Interaktive Materialverwandlung</span>
+        <h2 style="font-size: 1.85rem; margin-bottom: 0.5rem;">Rohe Trockenmontage vs. Mineralöl-Finish</h2>
+        <p style="font-size: 0.95rem; max-width: 650px; margin: 0 auto;">
+          Verschieben Sie den mittleren Regler, um die dramatische Verwandlung vom unbeleimten, trocken auf der Werkbank zusammengesteckten Rohzuschnitt zum tief gesättigten, seidig glänzenden 3D-Illusion-Brett zu erleben.
+        </p>
+      </div>
+
+      <div class="comparison-container" style="aspect-ratio: 3 / 4; max-width: 620px;">
+        <!-- After image (background): Fully saturated oiled surface -->
+        <img src="../../assets/images/projects/3d-cubes/10-full-surface-oil-pop.jpg" 
+             alt="Vollständig geöltes 3D-Würfel-Illusion-Schneidebrett" 
+             class="comparison-img">
+
+        <!-- Before image (foreground overlay): Raw dry-assembled cubes on the workbench -->
+        <div class="comparison-before">
+          <img src="../../assets/images/projects/3d-cubes/slider-before-raw-cubes.jpg" 
+               alt="Trocken zusammengesteckte rohe 3D-Würfel auf der Werkbank">
+        </div>
+
+        <!-- Slider input & UI handle -->
+        <input type="range" min="0" max="100" value="50" class="comparison-slider-input" aria-label="Vergleichs-Schieberegler vor und nach dem Finish">
+        <div class="comparison-handle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+
+        <span class="comparison-badge badge-left">Rohes trockenes Holz</span>
+        <span class="comparison-badge badge-right">Volle Ölsättigung</span>
+      </div>
+    </div>
+
+    <!-- Technical Analysis & Geometric Theory -->
+    <section class="build-log-section" style="margin-top: 4rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Holz-Geometrie</span>
+        <h2 class="section-title">Die Anatomie der 3D-Würfel-Illusion</h2>
+        <p>Warum dieses Muster die menschliche Raumwahrnehmung täuscht und welche extremen geometrischen Toleranzen in der Werkstatt gefordert sind.</p>
+      </div>
+
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Phase 01</span>
+          <span class="step-phase">Optische Physik &amp; Tonwerte</span>
+        </div>
+        <h3 class="step-title">Das Dreiton-Beleuchtungsprinzip &amp; die Rhombille-Parkettierung</h3>
+        <p class="step-description">
+          Die 3D-Illusion basiert fundamental auf Tonwertkontrasten und nicht allein auf Farbunterschieden. Damit die menschliche Sehrinde auf einer ebenen Fläche dreidimensionales Volumen wahrnimmt, verlangt das Gehirn nach drei klar abgestuften Helligkeitswerten, die einer angenommenen gerichteten Lichtquelle entsprechen:
+        </p>
+        <ul style="color: var(--text-muted); margin-bottom: 1.5rem; padding-left: 1.5rem; line-height: 1.8;">
+          <li><strong>Obere Ebene (Ahorn / Fichte):</strong> Reflektiert maximales Licht (~80 % Reflexionsgrad). Bietet ein klares, helles Glanzlicht, das die Deckenbeleuchtung auffängt.</li>
+          <li><strong>Halbtonebene (Rotbuche):</strong> Simuliert diffuses Umgebungslicht (~45 % Reflexionsgrad). Das dichte, warme Honigamber der europäischen Rotbuche dient als farblicher Übergang zwischen Glanzlicht und tiefem Schatten.</li>
+          <li><strong>Schattenebene (Nussbaum):</strong> Stellt die abgewandte Fläche dar (~15 % Reflexionsgrad). Der edle Schweizer Nussbaum liefert dunkle Espresso- und Schokoladentöne, die der Schattenseite jedes Würfels Tiefe verleihen.</li>
+        </ul>
+        <p class="step-description">
+          Werden diese Rauten mit 60°/120°-Winkeln so zusammengefügt, dass sie sich in einem gemeinsamen Knotenpunkt treffen, rekonstruiert das Gehirn automatisch einen im Raum schwebenden isometrischen Würfel. Je nach Blickfokus scheinen die Würfel nach vorn herauszutreten oder nach hinten zurückzuweichen – das klassische Phänomen des reversiblen Necker-Würfels.
+        </p>
+
+        <!-- SVG Schematic Diagram -->
+        <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-subtle); box-shadow: var(--shadow-md); margin-top: 1.5rem;">
+          <img src="../../assets/images/projects/3d-cubes/3d-cubes-hero.svg" 
+               alt="Schematische Zeichnung der optischen 3D-Würfel-Illusion" 
+               style="width: 100%; height: auto; display: block; cursor: pointer;"
+               data-lightbox
+               data-caption="3D-Würfel-Brett: Isometrisches Parkettierungsdiagramm, das Glanzlicht-, Halbton- und Schattenfacetten an den 120°-Knotenpunkten zeigt.">
+          <div class="step-caption">
+            <span class="step-caption-text">Vektorschema des mathematischen 60°/120°-Rautenrasters vor der Fertigung in der Werkstatt.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Phase 02</span>
+          <span class="step-phase">Trigonometrische Toleranzen</span>
+        </div>
+        <h3 class="step-title">Die Herausforderung additiver Winkelfehler: Präzision bei 60°</h3>
+        <p class="step-description">
+          Anders als rechtwinklige 90-Grad-Schneidebretter (wie das Rotbuchen- &amp; Amaranth-Gitterbrett) verlangt das 3D-Würfel-Brett Schnitte im exakten Winkel von <strong>60 Grad</strong>. Eine minimale Abweichung von nur 0,1° pro Schnitt multipliziert sich an jedem sechseckigen Knotenpunkt sechsfach zu einem Winkelfehler von 0,6°. Über 8 Reihen hinweg führt ein ungenau justierter Gehrungsanschlag zu klaffenden Fugen, die sich selbst mit massivem Zwingendruck nicht schliessen lassen, ohne die Holzfasern zu quetschen.
+        </p>
+        <div class="callout-box">
+          <div class="callout-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Werkstatt-Strategie: Die zweistufige Leisten-Verleimtechnik
+          </div>
+          <p>
+            Anstatt hunderte einzelner loser Rauten mühsam zuzuschneiden und einzeln zu verleimen, fügt man zunächst lange Leisten aus Nussbaum, Rotbuche und Ahorn parallel Kante an Kante zusammen. Anschliessend wird die gesamte laminierte Platte quer zur Faser exakt im 60-Grad-Winkel in Streifen aufgetrennt. Versetzt man benachbarte Streifen um genau ein Rautensegment, richten sich die Würfel automatisch fluchtend aus – das spart Dutzende Stunden fehleranfälliger Montage und garantiert messerscharfe Fugen.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- Step by Step Build Log -->
+    <section class="build-log-section">
+      <div class="section-header" style="margin-top: 4rem; margin-bottom: 2.5rem;">
+        <span class="section-subtitle">Prozessdokumentation</span>
+        <h2 class="section-title">Das vollständige Werkstatt-Protokoll</h2>
+        <p>Eine chronologische Fotodokumentation von der ersten Leistenverleimung über den 60°-Winkelschnitt, das manuelle Ansetzen der Sechsecke, die Zulagen-Verleimung, das Formatieren bis zum unvergesslichen Anfeuern durch das Ölbad.</p>
+      </div>
+
+      <!-- Step 01 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 01</span>
+          <span class="step-phase">Erste Verleimung</span>
+        </div>
+        <h3 class="step-title">Dreiholz-Streifenverleimung &amp; Rohling-Montage</h3>
+        <p class="step-description">
+          Das Fundament der optischen Täuschung beginnt mit dem Hobeln langer, vollkommen gleichmässiger Leisten aus Schweizer Nussbaum, Europäischer Rotbuche und heller alpiner Fichte/Bergahorn. Jede Leiste wurde auf identische Stärke gehobelt und an den Kanten exakt gefügt. Anschliessend wurden die Leisten in einer sich wiederholenden Tonwert-Abfolge angeordnet – Nussbaum (Schatten), Rotbuche (Halbton) und Fichte (Glanzlicht) – und Kante an Kante zur ersten gestreiften Verleimplatte gefügt.
+        </p>
+        <p class="step-description">
+          Das Spannen erfolgte mit schweren Bessey Rohrschraubzwingen und Parallelzwingen in engem Abstand über die gesamte Werkbank. Ein gleichmässiger Druck über die volle Länge war entscheidend, um ein Schüsseln der Platte oder ein Verhungern der Leimfugen zu verhindern, damit alle späteren Streifenschnitte exakt identische Leistenbreiten aufweisen.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/01-initial-strip-glueup.jpg" 
+               alt="Erste Verleimung der drei Holzarten in Bessey Rohrschraubzwingen gespannt" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 01: Erste Streifenverleimung der drei Holzarten auf der Werkbank, fest eingespannt in schwere Bessey Rohrschraubzwingen.">
+          <div class="step-caption">
+            <span class="step-caption-text">Abwechselnde Nussbaum-, Rotbuchen- und Ahornleisten unter gleichmässigem Zwingendruck bilden den Grundrohling.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+
+        <div class="callout-box">
+          <div class="callout-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Werkstatt-Wissen: Kalibrierung der Leistenbreite
+          </div>
+          <p>
+            In einer isometrischen Projektion verhält sich die senkrechte Höhe einer 60°-Raute zur Schnittbreite wie der Sinus von 60° (\(\sqrt{3}/2 \approx 0{,}866\)). Stimmen Leistenbreite und die spätere Streifen-Schnittbreite nicht exakt mit diesem geometrischen Verhältnis überein, werden die Rauten gestaucht oder gestreckt – aus den präzisen 3D-Würfeln würden verzerrte hexagonale Prismen.
+          </p>
+        </div>
+      </article>
+
+      <!-- Step 02 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 02</span>
+          <span class="step-phase">Präzisions-Winkelschnitt</span>
+        </div>
+        <h3 class="step-title">60-Grad-Winkelkappschnitte auf der Tischkreissäge</h3>
+        <p class="step-description">
+          Nachdem der verleimte Rohling ausgehärtet und beidseitig plan gehobelt war, ging es an die Tischkreissäge zum Winkelschnitt. Der Gehrungsanschlag wurde penibel auf exakt <strong>60 Grad</strong> zum Sägeblatt eingestellt. Ein Opferholz-Anschlag und ein Längenstopp stellten sicher, dass jeder abgetrennte Streifen eine identische Breite und ausrissfreie Kanten aufwies.
+        </p>
+        <p class="step-description">
+          Mit jedem Schnitt durch das Hartmetall-Sägeblatt entstanden lange Parallelogramm-Streifen, in denen die Nussbaum-, Rotbuchen- und Fichtensegmente zu 60°/120°-Rauten verschoben waren. Saubere, vibrationsfreie Schnitte sind hier essenziell: Selbst kleinste Riefen würden sich bei der zweiten Verleimung als Fugen rächen.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/02-angle-crosscut-60deg.jpg" 
+               alt="Ablängen des verleimten Rohlings im 60-Grad-Winkel auf der Tischkreissäge" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 02: Ablängen des Rohlings im exakten 60°-Winkel am Gehrungsanschlag der Tischkreissäge zu Parallelogramm-Streifen.">
+          <div class="step-caption">
+            <span class="step-caption-text">Winkelschnitte verwandeln die geraden Streifen in Parallelogramme mit 60°-Rautenfacetten.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 03 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 03</span>
+          <span class="step-phase">Trockenmontage &amp; Ausrichtung</span>
+        </div>
+        <h3 class="step-title">Muster-Trockenprobe der taumelnden Würfel</h3>
+        <p class="step-description">
+          Der magische Moment des Baus: Das Auslegen der geschnittenen Parallelogramm-Streifen nebeneinander auf der Montagebank. Versetzt man jeden aufeinanderfolgenden Streifen entlang der 60-Grad-Achse um genau ein Rautensegment, schliessen sich die einzelnen Rauten zu dreiseitigen Sechsecken zusammen.
+        </p>
+        <p class="step-description">
+          Schlagartig verschwinden die zweidimensionalen Streifen – an ihre Stelle tritt die verblüffende optische Täuschung gestapelter, frei im Raum schwebender 3D-Würfel. Während dieser Trockenprobe wurden alle Streifen unter Streiflicht geprüft, um einen harmonischen Faserverlauf zu gewährleisten und sicherzustellen, dass kein Streifen versehentlich verkehrt herum lag.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/03-dry-fit-pattern-layout.jpg" 
+               alt="Trockenprobe der versetzten Parallelogramm-Streifen zeigt die Würfel-Illusion" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 03: Trockene Passprobe der versetzten Streifen auf der Werkbank – die 3D-Würfel-Illusion entsteht.">
+          <div class="step-caption">
+            <span class="step-caption-text">Das Versetzen benachbarter Streifen um eine Einheit lässt die drei Holzarten an 120°-Knotenpunkten zusammentreffen.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 04 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 04</span>
+          <span class="step-phase">Toleranzkontrolle</span>
+        </div>
+        <h3 class="step-title">Prüfung der Knotenpunkte &amp; Fugeninspektion</h3>
+        <p class="step-description">
+          Vor dem Leimauftrag wurden alle Nahtstellen akribisch begutachtet. In einer fehlerfreien isometrischen Parkettierung treffen an jedem Knotenpunkt drei unterschiedliche Rauten zusammen: eine helle Deckraute, eine warme Halbton-Seitenraute und eine dunkle Schattenraute.
+        </p>
+        <p class="step-description">
+          Jede Winkelabweichung oder Dickenungenauigkeit würde sich an diesen dreiteiligen Schnittpunkten als unschöne Stufen oder Fugen bemerkbar machen. Feine Bleistift-Referenzmarkierungen über die Streifen hinweg sicherten die exakte Längsausrichtung während der hektischen offenen Zeit des Leimauftrags.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/04-vertex-alignment-detail.jpg" 
+               alt="Nahaufnahme der aufeinandertreffenden Rautenspitzen bei der Trockenprobe" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 04: Makroinspektion der Rauten-Knotenpunkte und Referenzmarkierungen auf dem trocken ausgelegten Brett.">
+          <div class="step-caption">
+            <span class="step-caption-text">Kritische Kontrolle: Prüfung, ob sich die drei Facetten spitzenbündig ohne Versatz treffen.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 05 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 05</span>
+          <span class="step-phase">Die erste Verleimung</span>
+        </div>
+        <h3 class="step-title">Manuelles Fügen der Rauten zu Sechseck-Würfeln</h3>
+        <p class="step-description">
+          Nachdem alle Winkel geschnitten und die Trockenpassung geprüft war, begann die anspruchsvollste Montagephase: das Fügen der einzelnen Rauten zu hexagonalen Würfeleinheiten. Bei den isometrischen Taumelwürfeln besteht jeder 3D-Würfel aus drei 60°/120°-Rauten – einer Fichte/Ahorn (Glanzlicht), einer Rotbuche (Halbton) und einem Schweizer Nussbaum (Schatten) –, die exakt an einem zentralen 120-Grad-Knotenpunkt zusammentreffen.
+        </p>
+        <p class="step-description">
+          Drei lose Rauten mit herkömmlichen Schraub- oder Parallelzwingen zu spannen, ist ohne Verrutschen praktisch unmöglich: Die spitzen 60°-Winkel wirken wie Keile. Unter mechanischem Zwingendruck scheren die Teile unweigerlich seitlich aus.
+        </p>
+        <p class="step-description">
+          Als Lösung <strong>wurde diese erste Verleimung vollständig von Hand ausgeführt</strong>: Titebond III Aliphatleim wurde auf die Kanten der drei Rauten aufgetragen. Anschliessend wurde jedes hexagonale Trio fest zwischen den Fingern zusammengedrückt – mit stetigem manuellen Druck für <strong>1 bis 2 Minuten pro Klotz</strong>, bis der Leim genügend Anfangshaftung (Green Tack) entwickelte, um ohne Verrutschen formstabil zu bleiben.
+        </p>
+        <p class="step-description">
+          Dieser manuelle Vorgang wurde Klotz für Klotz, Einheit für Einheit für jedes einzelne Sechseck des gesamten Brettes wiederholt. Eine ausserordentlich zeitaufwendige, die Finger ermüdende Geduldsprobe, die höchste Konzentration verlangte – doch sie ermöglichte feinfühlige Korrekturen nach Gefühl, um sicherzustellen, dass die Oberflächen absolut plan und die Knotenpunkte gestochen scharf blieben.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/04b-first-glueup-hand-hexagons.jpg" 
+               alt="Reihe von handverleimten hexagonalen Würfeleinheiten auf der Werkbank" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 05: Die erste Verleimung: Von Hand gefügte hexagonale Würfelcluster auf der Werkbank beim Abbinden. Jede 3-Rauten-Gruppe wurde 1–2 Minuten manuell gepresst.">
+          <div class="step-caption">
+            <span class="step-caption-text">Alle 3-Rauten-Sechsecke wurden von Hand gefügt und 1–2 Minuten pro Einheit bis zum ersten Anziehen manuell gehalten.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+
+        <div class="callout-box">
+          <div class="callout-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Erkenntnis des Handwerkers: Effizientere Montagemethoden für die Zukunft
+          </div>
+          <p>
+            Das manuelle Halten jedes einzelnen Blocks für 1–2 Minuten garantierte perfekte Fugen ohne Verrutschen, ist jedoch enorm arbeitsintensiv. Für künftige Projekte bieten sich rationellere Spanntechniken an:
+          </p>
+          <ul style="margin-top: 0.75rem; padding-left: 1.25rem; line-height: 1.7; color: var(--text-muted);">
+            <li><strong>Spannen mit elastischem Klebeband:</strong> Die drei Rauten flach nebeneinander auf einen Streifen elastisches Malerkrepp legen, Leim angeben, zum 3D-Sechseck zusammenklappen und das Klebeband straff über die Fuge ziehen. Der elastische Zug presst alle drei Fugen gleichmässig nach innen – das manuelle Halten entfällt komplett.</li>
+            <li><strong>60°-V-Nut-Spannlade:</strong> Eine hölzerne V-Nut im 60-Grad-Winkel bauen, mit Paketband abkleben und die Rauten mit einem kleinen Keil von hinten gegen den Anschlag spannen.</li>
+            <li><strong>Verleimen vorgefertigter Winkelblöcke:</strong> Die drei Holzarten vor dem Zuschnitt zu langen 60°-Winkelblöcken verleimen, sodass beim Schnitt direkt fertige Dreierstreifen entstehen.</li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Step 06 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 06</span>
+          <span class="step-phase">Die zweite Verleimung</span>
+        </div>
+        <h3 class="step-title">Hauptverleimung mit massiven Verleimzulagen</h3>
+        <p class="step-description">
+          Nachdem alle einzelnen Sechsecke aus der ersten Verleimung ausgehärtet waren, folgte die <strong>zweite Verleimung</strong>: das Fügen des gesamten Feldes zu einer zusammenhängenden, monolithischen Platte. Wird seitlicher Zwingendruck auf 60-Grad-Schrägfugen über mehrere Reihen ausgeübt, neigt die Platte durch die Keilwirkung dazu, entlang der Schrägen auszuweichen und sich zeltartig nach oben aufzubäumen.
+        </p>
+        <p class="step-description">
+          Um dem entgegenzuwirken, wurden massive Hartholz-Verleimzulagen (mit Paketband gegen Leimanhaftung geschützt) quer über die Ober- und Unterseite des Verbunds gelegt. Vertikale Schraubzwingen pressten die Zulagen plan auf die Werkbank, während schwere Bessey Parallelzwingen kontrollierten Druck von den Seiten aufbauten. So wurden alle Segmente fugendicht und vollkommen plan zu einer Platte vereinigt.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/05-panel-clamping-cauls.jpg" 
+               alt="Zweite Verleimung mit Bessey Parallelzwingen und massiven Hartholz-Verleimzulagen" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 06: Hauptverleimung der Platte mit paketbandumwickelten Hartholzzulagen und Bessey Parallelzwingen gegen Aufbäumen.">
+          <div class="step-caption">
+            <span class="step-caption-text">Starre obere und untere Verleimzulagen halten die 60°-Streifen plan, während seitliche Zwingen die Fugen schliessen.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 07 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 07</span>
+          <span class="step-phase">Aushärtung &amp; Qualitätskontrolle</span>
+        </div>
+        <h3 class="step-title">Ausschalen &amp; Begutachtung des Leimaustritts</h3>
+        <p class="step-description">
+          Nach vollen 24 Stunden Aushärtung unter Zwingendruck wurden Zulagen und Zwingen gelöst. Der rohe Rohling präsentierte sich mit seinen charakteristischen gestuften Zickzack-Enden – die logische Konsequenz der versetzten 60°-Parallelogramme.
+        </p>
+        <p class="step-description">
+          Die ausgehärteten Leimperlen entlang jeder Fuge zeigten einen gleichmässigen Leimaustritt über die gesamte Platte – der Beweis für vollflächige Benetzung ohne Hohlräume. Die harten Leimnasen wurden vor der maschinellen Weiterverarbeitung mit einer scharfen Hartmetall-Ziehklinge abgetragen, um Hobel- und Schleifwerkzeuge zu schonen.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/06-cured-panel-squeezeout.jpg" 
+               alt="Ausgehärtetes verleimtes Brett nach dem Entspannen mit Leimaustritt und gestuften Enden" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 07: Ausgehärtete Platte nach dem Entspannen mit den typischen gestuften Enden und gleichmässigem Leimaustritt.">
+          <div class="step-caption">
+            <span class="step-caption-text">Gestufte Zickzack-Aussenkanten vor dem Formatieren; der erstarrte Titebond III Leimaustritt wird sauber abgezogen.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 08 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 08</span>
+          <span class="step-phase">Präzises Formatieren</span>
+        </div>
+        <h3 class="step-title">Rechtwinkliger Besäumungsschnitt auf der Festool Tischkreissäge</h3>
+        <p class="step-description">
+          Um aus dem gestuften Rohling ein makelloses, rechtwinkliges Schneidebrett zu formen, kam das Werkstück auf die Präzisions-Sägestation der Werkstatt: die <strong>Festool TKS 80 EBS</strong> Tischkreissäge (mit integrierter SawStop AIM-Sicherheitstechnologie).
+        </p>
+        <p class="step-description">
+          Mit dem präzisen Schiebetisch und Queranschlag wurden die gezackten Enden sauber abgetrennt und so die erste exakte 90-Grad-Referenzkante geschaffen. Anschliessend wurde das Brett gedreht und auf parallele Breite geschnitten, womit die finalen Aussenmasse von <strong>45,0 cm × 24,0 cm</strong> festgelegt wurden. Im Werkstatthintergrund ist bereits die gelbe Jet Zylinderschleifmaschine für die Dickenkalibrierung bereitgestellt.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/07-squaring-table-saw.jpg" 
+               alt="Rechtwinkliges Formatieren des Brettes auf der Festool TKS 80 EBS Tischkreissäge" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 08: Formatieren und winkliges Ablängen des Brettes auf der Festool TKS 80 EBS Tischkreissäge mit Schiebeanschlag.">
+          <div class="step-caption">
+            <span class="step-caption-text">Festool TKS 80 Tischkreissäge beim Kappen der Stufenkanten; im Hintergrund die Jet Zylinderschleifmaschine.</span>
+            <span class="step-zoom-hint">Click to enlarge</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 09 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 09</span>
+          <span class="step-phase">Egalisieren &amp; Kantenbearbeitung</span>
+        </div>
+        <h3 class="step-title">Zylinderschleifen, Kantenzulagen &amp; Oberflächenvorbereitung</h3>
+        <p class="step-description">
+          Nach dem Formatieren wurde das Brett auf der <strong>Jet Zylinderschleifmaschine</strong> auf exakte Stärke kalibriert und feineingeebnet. Mehrere feine Zustellungen beseitigten minimale Höhenunterschiede zwischen den Streifen und brachten das Brett auf eine gleichmässige Endstärke von <strong>2,5 cm</strong>, ohne die scharfen Facettenkanten zu verrunden.
+        </p>
+        <p class="step-description">
+          Auf der Werkbank wurden Kantenzulagen und Bessey Parallelzwingen für die finale Stabilisierung und Kantenbearbeitung angesetzt. Anschliessend wurde die Oberfläche mit Exzenterschleifern feinstufig von Korn 80 über 120 und 180 bis 240 geschliffen. Zwischen Korn 180 und 240 wurde das Brett «gewässert» (mit einem feuchten Mikrofasertuch abgewischt), um niedergedrückte Holzfasern aufzustellen, die mit 240er-Korn samtweich gekappt wurden. Umlaufend erhielten alle Kanten eine dezente 45°-Fase für eine handschmeichelnde Haptik.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/08-edge-alignment-clamping.jpg" 
+               alt="Kantenausrichtung und Werkbank-Aufbau mit Glue-Bot und Bessey Zwingen" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 09: Werkbank-Einrichtung zur Kantenstabilisierung mit Glue-Bot Leimspender und Bessey Zwingen vor dem Feinschliff.">
+          <div class="step-caption">
+            <span class="step-caption-text">Werkbank-Vorbereitung: Kantenzulagen-Spannung neben dem Glue-Bot Spender vor dem finalen Schleifdurchgang.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 10 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 10</span>
+          <span class="step-phase">Das grosse Anfeuern</span>
+        </div>
+        <h3 class="step-title">Der «Oil Pop» — Der erste Pinselstrich entlang der Mittellinie</h3>
+        <p class="step-description">
+          Nach zahllosen Stunden geometrischer Präzision, des Schneidens, manuellen Leimens und geduldigen Schleifens kam der Moment, auf den jeder Holzhandwerker hinrecherchiert: der erste Auftrag des Oberflächenfinishs. Mit einem sauberen Naturhaarpinsel wurde reines, lebensmittelechtes Mineralöl (USP) exakt entlang der mittleren Spalte des trockenen Rohholzes gestrichen.
+        </p>
+        <p class="step-description">
+          Die Verwandlung verschlägt einem den Atem: Das staubig-graue Nussbaumholz bricht augenblicklich in sattes Zartbitter-Espresso aus; die blasse Rotbuche entfaltet ein warmes Honigamber; und die Fichtenfacetten strahlen in seidiger Helle. Die messerscharfe Trennlinie zwischen den noch rohen Flanken und der frisch geölten Mitte ist ein spektakulärer Anblick auf der Werkbank.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/09-oil-finish-first-pass.jpg" 
+               alt="Erster Pinselstrich mit Mineralöl entlang der Mittellinie des 3D-Würfel-Bretts" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 10: Der legendäre «Oil Pop»: Der erste Pinselstrich mit lebensmittelechtem Mineralöl auf der Mitte des geschliffenen Brettes.">
+          <div class="step-caption">
+            <span class="step-caption-text">Direkter Kontrast: Das trockene Rohholz an den Seiten gegenüber den leuchtenden, ölgesättigten Würfeln in der Mitte.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 11 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 11</span>
+          <span class="step-phase">Tiefensättigung</span>
+        </div>
+        <h3 class="step-title">Vollflächige Ölsättigung &amp; dreidimensionale Tiefenwirkung</h3>
+        <p class="step-description">
+          Nun wurde das Mineralöl grosszügig auf der gesamten Oberseite, Unterseite und an den Kanten aufgetragen. Hirnholz- und Längsholzporen tranken das Öl gierig bis zur vollständigen Sättigung ein. Nach dem Abwischen des Überschusses und einer Ruhepause über Nacht erhielt das Brett eine Einreibung mit handgemachter Bio-Bienenwachs-Holz-Butter, die mit einem weichen Tuch zu feinem Seidenglanz auspoliert wurde.
+        </p>
+        <p class="step-description">
+          Mit der vollen Ölsättigung entfaltet die optische Täuschung ihre volle visuelle Wucht: Die dunklen Nussbaumflächen scheinen zentimetertief in die Fläche hineinzureichen, die Buchenfacetten verleihen solide Körperhaftigkeit, und die oberen Ahornfacetten wirken, als würden sie von einem Scheinwerfer direkt angestrahlt. Unter jedem Lichteinfall wirkt das ebene Brett unweigerlich wie ein räumliches Feld gestapelter Würfel.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/10-full-surface-oil-pop.jpg" 
+               alt="Vollständig geöltes 3D-Würfel-Schneidebrett mit lebendiger Maserung und starkem Kontrast" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 11: Vollständige Sättigung mit lebensmittelechtem Mineralöl – die volle Dreidimensionalität der Taumelwürfel wird sichtbar.">
+          <div class="step-caption">
+            <span class="step-caption-text">Das fertig veredelte 45 cm × 24 cm Brett zeigt tiefe Nussbaumschatten, goldene Rotbuche und strahlende Glanzlichter.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 12 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 12</span>
+          <span class="step-phase">Das Unikat im Alltag</span>
+        </div>
+        <h3 class="step-title">Das vollendete Meisterstück in seiner natürlichen Umgebung</h3>
+        <p class="step-description">
+          Hier zeigt sich das fertige 3D-Würfel-Brett in seiner alltäglichen Umgebung – fotografiert auf einem modernen Schreibtisch mit Doppelmonitor in Zürich. Ob als atemberaubendes Servierbrett für handwerkliches Sauerteigbrot und gereiften Schweizer Alpkäse oder als repräsentative Schreibtischauflage und geometrisches Kunstobjekt: Die handwerkliche Sorgfalt spricht für sich.
+        </p>
+        <p class="step-description">
+          Jede Fuge sitzt dicht, die Fläche ist vollkommen eben und samtweich geschliffen, und die mathematische Exaktheit der 60°-Parkettierung ist ein dauerhaftes Zeugnis geduldiger, methodischer Holzhandwerkskunst.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/3d-cubes/11-finished-board-desk.jpg" 
+               alt="Fertiges 3D-Würfel-Brett mittig auf einem Schreibtisch präsentiert" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 12: Das fertige 3D-Würfel-Brett im Fokus auf einem Zürcher Schreibtisch – mit makellosem Finish und plastischer Geometrie.">
+          <div class="step-caption">
+            <span class="step-caption-text">Makelloses seidiges Finish: Das vollendete Brett im Mittelpunkt, das die präzisen isometrischen Taumelwürfel zur Geltung bringt.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Complete 12-Photo Build Gallery -->
+    <section class="section" style="padding-top: 1rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Bilderchronik</span>
+        <h2 class="section-title">Vollständige 12-Bilder-Werkstattgalerie</h2>
+        <p>Entdecken Sie hochauflösende Aufnahmen aus allen Phasen der Entstehung des 3D-Würfel-Bretts.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-lightbox data-caption="01: Erste Streifenverleimung der drei Holzarten in schweren Bessey Rohrschraubzwingen." data-full="../../assets/images/projects/3d-cubes/01-initial-strip-glueup.jpg">
+          <img src="../../assets/images/projects/3d-cubes/01-initial-strip-glueup.jpg" alt="Erste Streifenverleimung" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">01 • Streifenverleimung</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="02: 60°-Winkelschnitt des laminierten Rohlings am Gehrungsanschlag der Tischkreissäge." data-full="../../assets/images/projects/3d-cubes/02-angle-crosscut-60deg.jpg">
+          <img src="../../assets/images/projects/3d-cubes/02-angle-crosscut-60deg.jpg" alt="60-Grad-Winkelschnitt" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">02 • 60°-Winkelschnitte</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="03: Trockenprobe des Musters zeigt die optische Täuschung der Taumelwürfel." data-full="../../assets/images/projects/3d-cubes/03-dry-fit-pattern-layout.jpg">
+          <img src="../../assets/images/projects/3d-cubes/03-dry-fit-pattern-layout.jpg" alt="Trockenprobe des Musters" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">03 • Muster-Trockenprobe</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="04: Nahaufnahme der Fugen und Spitzen an den Rauten-Knotenpunkten." data-full="../../assets/images/projects/3d-cubes/04-vertex-alignment-detail.jpg">
+          <img src="../../assets/images/projects/3d-cubes/04-vertex-alignment-detail.jpg" alt="Detail der Knotenpunktausrichtung" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">04 • Knotenpunktprüfung</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="05: Die erste Verleimung: Von Hand gefügte Sechsecke, 1–2 Minuten pro Block manuell gepresst." data-full="../../assets/images/projects/3d-cubes/04b-first-glueup-hand-hexagons.jpg">
+          <img src="../../assets/images/projects/3d-cubes/04b-first-glueup-hand-hexagons.jpg" alt="Reihe handverleimter Sechseck-Würfel" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">05 • Erste Verleimung</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="06: Hauptverleimung der Platte mit Hartholz-Verleimzulagen und Bessey Parallelzwingen." data-full="../../assets/images/projects/3d-cubes/05-panel-clamping-cauls.jpg">
+          <img src="../../assets/images/projects/3d-cubes/05-panel-clamping-cauls.jpg" alt="Hauptverleimung der Platte" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">06 • Verleimung mit Zulagen</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="07: Ausgehärteter Rohling mit charakteristischen Stufenkanten und Leimaustritt." data-full="../../assets/images/projects/3d-cubes/06-cured-panel-squeezeout.jpg">
+          <img src="../../assets/images/projects/3d-cubes/06-cured-panel-squeezeout.jpg" alt="Ausgehärteter Rohling mit Leimaustritt" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">07 • Ausgehärtete Platte</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="08: Rechtwinkliges Besäumen der Stufenkanten auf der Festool TKS 80 EBS Tischkreissäge." data-full="../../assets/images/projects/3d-cubes/07-squaring-table-saw.jpg">
+          <img src="../../assets/images/projects/3d-cubes/07-squaring-table-saw.jpg" alt="Besäumen auf der Tischkreissäge" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">08 • Formatieren an der Säge</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="09: Werkbank-Einrichtung zur Kantenbearbeitung mit Glue-Bot vor dem Feinschliff." data-full="../../assets/images/projects/3d-cubes/08-edge-alignment-clamping.jpg">
+          <img src="../../assets/images/projects/3d-cubes/08-edge-alignment-clamping.jpg" alt="Werkbank-Aufbau zur Kantenbearbeitung" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">09 • Kantenpräparation</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="10: Erster Pinselstrich mit Mineralöl entlang der Mittellinie bringt sofortige Farbtiefe." data-full="../../assets/images/projects/3d-cubes/09-oil-finish-first-pass.jpg">
+          <img src="../../assets/images/projects/3d-cubes/09-oil-finish-first-pass.jpg" alt="Erster Ölauftrag" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">10 • Erster Ölauftrag</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="11: Vollständige Ölsättigung der Fläche enthüllt den plastischen 3D-Kontrast." data-full="../../assets/images/projects/3d-cubes/10-full-surface-oil-pop.jpg">
+          <img src="../../assets/images/projects/3d-cubes/10-full-surface-oil-pop.jpg" alt="Vollflächig angefeuerte Oberfläche" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">11 • Volles Anfeuern</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="12: Fertiges 3D-Würfel-Brett repräsentativ auf dem Schreibtisch präsentiert." data-full="../../assets/images/projects/3d-cubes/11-finished-board-desk.jpg">
+          <img src="../../assets/images/projects/3d-cubes/11-finished-board-desk.jpg" alt="Fertiges Brett auf dem Schreibtisch" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">12 • Fertiges Schaustück</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Wood Species Deep Dive -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Holzarten</span>
+        <h2 class="section-title">Die drei Hölzer im Einklang</h2>
+        <p>Eine einheimische europäische und Schweizer Waldkomposition, ausgewählt nach Farbton, Dichte und Langlebigkeit.</p>
+      </div>
+
+      <div class="timber-grid">
+        <!-- Swiss Walnut -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #422b22, #1c110b);"></div>
+          <div class="timber-header">
+            <h3>Schweizer Nussbaum</h3>
+            <div class="timber-scientific">Juglans regia</div>
+          </div>
+          <p>
+            Geschätzt für seine tiefen, rauchigen Schokoladentöne, die feine Maserung und den samtigen Griff. In diesem Brett bildet Nussbaum das Fundament der 3D-Illusion: Er wirft realistische, tiefe Schatten, die jeden einzelnen Würfel plastisch aus der Fläche hervortreten lassen.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Janka-Härte</span>
+              <div class="spec-value">1'010 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Rolle im Muster</span>
+              <div class="spec-value">Schattenfacette</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- European Beech -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #d8a876, #b88450);"></div>
+          <div class="timber-header">
+            <h3>Europäische Rotbuche</h3>
+            <div class="timber-scientific">Fagus sylvatica</div>
+          </div>
+          <p>
+            Zäh, widerstandsfähig und feinporig. Nachhaltig aus mitteleuropäischer Waldwirtschaft bezogen. Ihr warmer, honigfarbener Halbton sorgt für die harmonische Farbbalance zwischen hellem Glanzlicht und tiefem Schatten.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Janka-Härte</span>
+              <div class="spec-value">1'450 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Rolle im Muster</span>
+              <div class="spec-value">Halbtonfacette</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Alpine Maple / Spruce -->
+        <div class="timber-card">
+          <div class="timber-accent-bar" style="background: linear-gradient(90deg, #fbf8f2, #eee5d3);"></div>
+          <div class="timber-header">
+            <h3>Alpiner Bergahorn / Fichte</h3>
+            <div class="timber-scientific">Acer pseudoplatanus / Picea abies</div>
+          </div>
+          <p>
+            Bekannt für seine helle, cremefarbene Strahlkraft und die dichte, gleichmässige Faserstruktur. Bildet das lebendige Glanzlicht auf der Oberseite jedes Würfels und simuliert einfallendes Tageslicht auf der geometrischen Landschaft.
+          </p>
+          <div class="timber-stats">
+            <div>
+              <span class="spec-label">Janka-Härte</span>
+              <div class="spec-value">950 – 1'450 lbf</div>
+            </div>
+            <div>
+              <span class="spec-label">Rolle im Muster</span>
+              <div class="spec-value">Oberes Glanzlicht</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Care & Maintenance Protocol -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Kulinarisches Erbstück</span>
+        <h2 class="section-title">Pflege- &amp; Reinigungsprotokoll</h2>
+        <p>So pflegen Sie ein geometrisches Mehrholz-Schneidebrett, damit es Generationen überdauert.</p>
+      </div>
+
+      <div class="care-grid">
+        <div class="care-card">
+          <h4>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Was Sie tun sollten
+          </h4>
+          <ul>
+            <li>Beide Seiten sofort nach Gebrauch von Hand mit lauwarmem Wasser und mildem Spülmittel abwaschen.</li>
+            <li>Mit einem Küchentuch gründlich abtrocknen und hochkant stehend an der Luft gleichmässig trocknen lassen.</li>
+            <li>Einmal im Monat oder sobald das Holz matt wirkt oder sich trocken anfühlt, lebensmittelechtes Mineralöl auftragen.</li>
+            <li>Alle 3 bis 4 Monate Bio-Bienenwachs-Holz-Butter auftragen und einpolieren, um eine wasserabweisende Schutzschicht zu erhalten.</li>
+          </ul>
+        </div>
+
+        <div class="care-card">
+          <h4>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e74c3c" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            Was Sie niemals tun sollten
+          </h4>
+          <ul>
+            <li><strong>Niemals in die Spülmaschine geben:</strong> Hitze, scharfe Reiniger und heisser Dampf lösen die Leimfugen und verziehen das Holz irreparabel.</li>
+            <li>Niemals im Spülbecken oder im Wasserbad einweichen lassen.</li>
+            <li>Niemals flach auf der Arbeitsplatte trocknen lassen (eingeschlossene Feuchtigkeit darunter führt zu Schüsseln und Spannungsrissen).</li>
+            <li>Niemals Speiseöle wie Oliven- oder Rapsöl verwenden (sie werden mit der Zeit ranzig, klebrig und riechen unangenehm).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation between projects -->
+    <div style="margin: 4rem 0 2rem; padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+      <div>
+        <span class="spec-label">Vorheriges Projekt</span>
+        <h4 style="font-size: 1.25rem;"><a href="beech-purpleheart-cutting-board.html" style="color: var(--text-highlight);">← Rotbuchen- &amp; Amaranth-Gitterbrett</a></h4>
+      </div>
+      <div>
+        <span class="spec-label">Nächstes Projekt</span>
+        <h4 style="font-size: 1.25rem;"><a href="purpleheart-heart-serving-board.html" style="color: var(--text-highlight);">Amaranth-Herz-Servierbrett →</a></h4>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Lightbox Container -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Bilder-Lightbox">
+    <button class="lightbox-close" aria-label="Bild schliessen">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Vorheriges Bild">&#10094;</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Nächstes Bild">&#10095;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="../index.html" class="brand-logo">
+            <img src="../../assets/images/logo.png" alt="ZuriForge Logo" class="brand-icon" width="40" height="40">
+            <span class="brand-name">ZuriForge</span>
+          </a>
+          <p class="footer-brand-desc">
+            Handgefertigte Holzarbeiten &amp; Werkstatt-Journal. Dokumentation geometrischer Schneidebretter, Präzisionsvorrichtungen und Holzcharakteristika in Zürich.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Dokumentation</h4>
+          <ul class="footer-links">
+            <li><a href="beech-purpleheart-cutting-board.html">Rotbuche &amp; Amaranth Brett</a></li>
+            <li><a href="3d-cubes-board.html">3D-Würfel-Illusion Brett</a></li>
+            <li><a href="purpleheart-heart-serving-board.html">Amaranth-Herzbrett</a></li>
+            <li><a href="epoxy-olive-board.html">Olive &amp; Epoxid River-Board</a></li>
+            <li><a href="walnut-endgrain-cutting-board.html">Nussbaum-Hirnholzbrett</a></li>
+            <li><a href="../index.html#timber">Holzbibliothek</a></li>
+            <li><a href="../about.html">Über die Werkstatt</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Werkstatt-Ethos</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-dim);">Ausschliesslich nicht-kommerziell</span></li>
+            <li><span style="color: var(--text-dim);">Open-Source-Bauberichte</span></li>
+            <li><span style="color: var(--text-dim);">Nachhaltige Schweizer &amp; Edelhölzer</span></li>
+            <li><a href="https://github.com/andrei-alpha/andrei-alpha.github.io" target="_blank" rel="noopener">GitHub-Repository</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZuriForge • Andrei Antonescu • Zürich, Schweiz</div>
+        <div>Mit Präzision &amp; Holzspänen geschaffen</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js?v=1.1"></script>
+  <!-- Slide-Out Workshop Build Archive Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="workshop-drawer" id="workshop-drawer" aria-hidden="true" role="dialog" aria-labelledby="drawer-title">
+    <div class="drawer-header">
+      <div class="drawer-header-top">
+        <div class="drawer-title-group">
+          <span class="drawer-badge">Werkstatt-Index</span>
+          <h2 id="drawer-title" class="drawer-title">Werkstatt-Journal</h2>
+        </div>
+        <button class="drawer-close" id="drawer-close-btn" aria-label="Journal schliessen">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <p class="drawer-subtitle">
+        Dokumentation geometrischer Verbindungen, Vorrichtungen und Holzcharakteristika über 5 Atelierprojekte in Zürich.
+      </p>
+      <div class="drawer-filters">
+        <button class="drawer-filter-btn active" data-filter="all">Alle (5)</button>
+        <button class="drawer-filter-btn" data-filter="endgrain">Hirnholz (3)</button>
+        <button class="drawer-filter-btn" data-filter="epoxy">Naturkante / Epoxid (1)</button>
+        <button class="drawer-filter-btn" data-filter="art">Kunstobjekt (1)</button>
+      </div>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Project 1: Walnut End-Grain -->
+      <a href="walnut-endgrain-cutting-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/walnut-endgrain/07-walnut-cutting-board-knife.jpg" alt="Massives Nussbaum-Hirnholz-Schneidebrett" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Traditionelles Hirnholz</span>
+            <span class="drawer-date">Okt. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Massives Nussbaum-Hirnholzbrett</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Schweizer Nussbaum</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>450 × 270 × 25 mm</span>
+            <span>•</span>
+            <span>Saftrille</span>
+            <span>•</span>
+            <span>Mineralöl</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2: Beech & Purpleheart -->
+      <a href="beech-purpleheart-cutting-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/beech-purpleheart/13-finished-oil-pop.jpg" alt="Geometrisches Rotbuchen- &amp; Amaranth-Brett" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Präzisionsraster</span>
+            <span class="drawer-date">Okt. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Rotbuche &amp; Amaranth Brett</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Europäische Rotbuche</span>
+            <span class="timber-chip">Amaranth</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>420 × 285 × 42 mm</span>
+            <span>•</span>
+            <span>Massiver Block</span>
+            <span>•</span>
+            <span>Bienenwachs-Politur</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 3: 3D Cubes Illusion -->
+      <a href="3d-cubes-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/3d-cubes/raw/CBE460FA-1CD5-4886-A3C1-9EAA979465CC.JPG" alt="3D-Würfel-Illusion-Schneidebrett" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Optische Illusion</span>
+            <span class="drawer-date">Okt. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">3D-Würfel-Illusion Brett</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Nussbaum</span>
+            <span class="timber-chip">Fichte</span>
+            <span class="timber-chip">Rotbuche</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>380 × 260 × 38 mm</span>
+            <span>•</span>
+            <span>60°-Rauten</span>
+            <span>•</span>
+            <span>Walnussöl</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 4: Epoxy Olive Board -->
+      <a href="epoxy-olive-board.html" class="drawer-project-card" data-category="epoxy">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/epoxy-olive-board/10-finished-olive-epoxy-board.jpg" alt="Mediterranes Olivenholz &amp; Epoxid-River-Board" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Naturkanten-Hybrid</span>
+            <span class="drawer-date">Sep. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Olive &amp; Epoxid River-Board</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Hundertjährige Olive</span>
+            <span class="timber-chip">Cerulean-Harz</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>480 × 240 × 32 mm</span>
+            <span>•</span>
+            <span>12'000er Hochglanzpolitur</span>
+            <span>•</span>
+            <span>Odie's Oil</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 5: Purpleheart Heart -->
+      <a href="purpleheart-heart-serving-board.html" class="drawer-project-card" data-category="art">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/purpleheart-heart/06-finished-heart-board.jpg" alt="Amaranth-Herz-Servierbrett" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Individuelles Kunstwerk</span>
+            <span class="drawer-date">Okt. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Amaranth-Herzbrett</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Guyana-Amaranth</span>
+            <span class="timber-chip">Rotbuchen-Akzent</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>310 × 290 × 35 mm</span>
+            <span>•</span>
+            <span>Thermische Aktivierung</span>
+            <span>•</span>
+            <span>Holz-Butter</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-footer-stats">
+        <span>5 vollendete Projekte</span>
+        <span>•</span>
+        <span>Werkstatt Zürich</span>
+      </div>
+      <a href="../index.html#projects" class="btn btn-outline drawer-view-all-btn">
+        <span>Gesamte Werkschau ansehen</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </aside>
+
+</body>
+</html>

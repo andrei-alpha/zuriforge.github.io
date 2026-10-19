@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initComparisonSlider();
   initLightbox();
   initWorkshopDrawer();
+  initLanguageSwitcher();
 });
 
 /* Mobile Navigation */
@@ -245,4 +246,19 @@ function initWorkshopDrawer() {
       closeDrawer();
     });
   }
+}
+
+/* Language Switcher Preference */
+function initLanguageSwitcher() {
+  const langButtons = document.querySelectorAll('.lang-btn');
+  langButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const lang = btn.getAttribute('data-lang');
+      if (lang) {
+        try {
+          localStorage.setItem('zuriforge_lang', lang);
+        } catch (e) {}
+      }
+    });
+  });
 }

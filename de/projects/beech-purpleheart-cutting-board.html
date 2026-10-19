@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rotbuche &amp; Amaranth Rauten-Schneidebrett — ZuriForge</title>
+  <meta name="description" content="Detaillierter Werkstattbericht und Schritt-für-Schritt-Prozess zur Fertigung eines 19 × 28 × 2 cm grossen diagonalen Rauten-Hirnholz-Schneidebretts aus Europäischer Rotbuche und Amaranth in Zürich.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../../css/style.css?v=1.1">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="64x64" href="../../assets/images/favicon-64x64.png">
+  <link rel="apple-touch-icon" href="../../assets/images/logo.png">
+  <style>#workshop-drawer:not(.active),#drawer-backdrop:not(.active){display:none!important;}</style>
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="../index.html" class="brand-logo" aria-label="ZuriForge Startseite">
+        <img src="../../assets/images/logo.png" alt="ZuriForge Logo" class="brand-icon" width="40" height="40">
+        <span class="brand-name">ZuriForge<span class="brand-sub">ZRH</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Projekte</a></li>
+          <li><a href="../index.html#timber" class="nav-link">Holzbibliothek</a></li>
+          <li><a href="../index.html#craft" class="nav-link">Prinzipien</a></li>
+          <li><a href="../about.html" class="nav-link">Über uns</a></li>
+          <li>
+            <button class="nav-drawer-btn open-drawer-btn" aria-label="Werkstatt-Journal öffnen">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+              </svg>
+              <span>Journal</span>
+              <span class="drawer-pill">5</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <div class="lang-switch" role="navigation" aria-label="Sprachauswahl">
+          <svg class="lang-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <a href="beech-purpleheart-cutting-board.html" class="lang-btn active" hreflang="de" data-lang="de" aria-current="page" title="Deutsch">DE</a>
+          <span class="lang-divider"></span>
+          <a href="../../fr/projects/beech-purpleheart-cutting-board.html" class="lang-btn" hreflang="fr" data-lang="fr" title="Français">FR</a>
+          <span class="lang-divider"></span>
+          <a href="../../it/projects/beech-purpleheart-cutting-board.html" class="lang-btn" hreflang="it" data-lang="it" title="Italiano">IT</a>
+          <span class="lang-divider"></span>
+          <a href="../../projects/beech-purpleheart-cutting-board.html" class="lang-btn" hreflang="en" data-lang="en" title="English">EN</a>
+        </div>
+
+        <button class="menu-toggle" aria-label="Navigationsmenü umschalten" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Project Header Hero -->
+  <div class="project-header-hero">
+    <div class="container container-narrow">
+      <div class="breadcrumb">
+        <a href="../index.html">ZuriForge</a>
+        <span>/</span>
+        <a href="../index.html#projects">Projekte</a>
+        <span>/</span>
+        <span>Rotbuche &amp; Amaranth Rautenbrett</span>
+      </div>
+
+      <div class="project-category">Projekt 01 • Hirnholz-Matrix</div>
+      <h1 class="project-page-title">Rauten-Schneidebrett aus Rotbuche &amp; Amaranth</h1>
+      <p class="project-page-subtitle">
+        Eine Schritt-für-Schritt-Dokumentation über den Bau eines 19 cm × 28 cm × 2,0 cm grossen Schachbrett-Schneidebretts mit 45°-Rautenausrichtung. Erkundung des Holzverhaltens, Spannstrategien bei Unterbaugruppen, Abrichten und das spektakuläre Anfeuern durch Öl.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <main class="container container-narrow" style="padding-top: 3rem;">
+
+    <!-- Master Specifications -->
+    <div class="specs-table-wrapper">
+      <h3 style="font-size: 1.35rem; margin-bottom: 1.25rem;">Projektspezifikationen &amp; Parameter</h3>
+      <table class="specs-table">
+        <tbody>
+          <tr>
+            <th>Endmasse</th>
+            <td><strong>19,0 cm</strong> Breite × <strong>28,0 cm</strong> Länge × <strong>2,0 cm</strong> Stärke (heruntergeschliffen von 22 mm)</td>
+          </tr>
+          <tr>
+            <th>Musteranordnung</th>
+            <td>Isometrisches 45°-Diagonal-Schachbrettmuster (Rautenraster)</td>
+          </tr>
+          <tr>
+            <th>Ausgangsmasse der Klötze</th>
+            <td><strong>30 mm × 30 mm × 22 mm</strong> (auf 30 mm × 22 mm gehobelt, auf 30 mm mit der Kappsäge abgelängt)</td>
+          </tr>
+          <tr>
+            <th>Holzarten</th>
+            <td>Europäische Rotbuche (<em>Fagus sylvatica</em>) &amp; Tropischer Amaranth / Purpleheart (<em>Peltogyne spp.</em>)</td>
+          </tr>
+          <tr>
+            <th>Leim / Klebstoff</th>
+            <td>Titebond III Ultimate (wasserfest, aliphatischer Harzleim, FDA-konform für indirekten Lebensmittelkontakt)</td>
+          </tr>
+          <tr>
+            <th>Maschinen &amp; Vorrichtungen</th>
+            <td>Dickenhobel (30 × 22 mm), Kappsäge mit Längenanschlag, Melamin-Führungsschienen mit Paketband</td>
+          </tr>
+          <tr>
+            <th>Schliff-Abfolge</th>
+            <td>Exzenterschliff über 80 → 120 → 180 → 240 (gewässert / water popped) → 320er-Körnung</td>
+          </tr>
+          <tr>
+            <th>Oberflächenbehandlung &amp; Versiegelung</th>
+            <td>Tiefensättigungsbad in lebensmittelechtem Mineralöl (USP), gefolgt von Bio-Bienenwachs-Holzbutter</td>
+          </tr>
+          <tr>
+            <th>Werkstatt-Standort</th>
+            <td>Zürich, Schweiz</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Before / After Finish Comparison Slider -->
+    <div class="comparison-section">
+      <div class="comparison-header">
+        <span class="section-subtitle">Interaktive Material-Transformation</span>
+        <h2 style="font-size: 1.85rem; margin-bottom: 0.5rem;">Roh geschliffenes Holz vs. Mineralöl-Finish</h2>
+        <p style="font-size: 0.95rem; max-width: 600px; margin: 0 auto;">
+          Ziehen Sie den Schieber in der Mitte, um zu sehen, wie das erste Auftragen von lebensmittelechtem Öl das blasse, trockene Holz in tiefes königliches Violett und goldenen Bernstein verwandelt.
+        </p>
+      </div>
+
+      <div class="comparison-container">
+        <!-- After image (background) -->
+        <img src="../../assets/images/projects/beech-purpleheart/13-finished-oil-pop.jpg" 
+             alt="Geöltes fertiges Schneidebrett" 
+             class="comparison-img" />
+
+        <!-- Before image (foreground overlay) -->
+        <div class="comparison-before">
+          <img src="../../assets/images/projects/beech-purpleheart/12-sanded-raw-wood.jpg" 
+               alt="Roh geschliffenes Schneidebrett vor dem Ölen" />
+        </div>
+
+        <!-- Slider input & UI handle -->
+        <input type="range" min="0" max="100" value="50" class="comparison-slider-input" aria-label="Schieberegler für Vorher-Nachher-Vergleich des Oberflächenfinishs">
+        <div class="comparison-handle">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </div>
+
+        <span class="comparison-badge badge-left">Roh geschliffen (Körnung 320)</span>
+        <span class="comparison-badge badge-right">Mineralöl &amp; Bienenwachs</span>
+      </div>
+    </div>
+
+    <!-- Step by Step Build Log -->
+    <section class="build-log-section">
+      <div class="section-header" style="margin-top: 4rem; margin-bottom: 2.5rem;">
+        <span class="section-subtitle">Prozessdokumentation</span>
+        <h2 class="section-title">Der vollständige Werkstatt-Baubericht</h2>
+        <p>Eine chronologische Reise durch Materialvorbereitung, Vorverleimung von Leisten, Herausforderungen beim Spannen und das abschliessende Finish.</p>
+      </div>
+
+      <!-- Step 01 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 01</span>
+          <span class="step-phase">Zuschnitt &amp; Präzisionsserien</span>
+        </div>
+        <h3 class="step-title">Hobelvorbereitung &amp; Ablängen an der Kappsäge</h3>
+        <p class="step-description">
+          Das Fundament dieses geometrischen Schneidebretts wurde an der Hobelmaschine gelegt: Die Kanteln aus Europäischer Rotbuche und Amaranth wurden sorgfältig auf einen exakten Querschnitt von <strong>30 mm × 22 mm</strong> ausgehobelt, um ebene, parallele Referenzflächen und exakte 90-Grad-Kanten zu gewährleisten. Anschliessend wurden die Leisten an der Kappsäge mit festem Anschlagklotz auf gleichmässige <strong>30 mm</strong> abgelängt, woraus exakt kalibrierte Klötze von <strong>30 mm × 30 mm × 22 mm</strong> entstanden.
+        </p>
+        <p class="step-description">
+          Das Mass von 22 mm diente als Rohstärke: Das gezielte Übermass von 2 mm war eine bewusste Entscheidung, damit das Brett nach dem Verleimen durch Planfräsen bzw. intensives Schleifen auf seine endgültige, vollkommen plane Stärke von <strong>20 mm (2,0 cm)</strong> kalibriert werden konnte.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/beech-purpleheart/01-raw-cut-blocks.jpg" 
+               alt="Ein Haufen zugeschnittener Buchen- und Amaranthklötze auf der Werkbank" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 01: Präzise abgelängte Hirnholzklötze aus Rotbuche und Amaranth auf der Werkbank vor dem Sortieren und Ausrichten.">
+          <div class="step-caption">
+            <span class="step-caption-text">Zugeschnittene Klötze auf der Werkbank vor dem Sortieren und Ausrichten zu Leisten.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+
+        <div class="callout-box">
+          <div class="callout-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Werkstatt-Tipp: Faserverlauf &amp; Ausrisse vermeiden
+          </div>
+          <p>
+            Amaranth ist mit 2'520 Janka ausserordentlich dicht und besitzt spröde, wechseldrehwüchsige Fasern, die am Sägeaustritt leicht splittern. Die Verwendung eines speziellen Feinschnitt-Kappsägeblatts (80 Zähne, Hi-ATB) in Verbindung mit einer opferbaren Holz-Führungskante ist unerlässlich, um Ausfransungen und Kantenausbrüche zuverlässig zu verhindern.
+          </p>
+        </div>
+      </article>
+
+      <!-- Step 02 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 02</span>
+          <span class="step-phase">Vorbereitung der Unterbaugruppen</span>
+        </div>
+        <h3 class="step-title">Lineare Leistenanordnung &amp; Verleimzulagen</h3>
+        <p class="step-description">
+          Der Versuch, Dutzende einzelner Klötze gleichzeitig in einer zweidimensionalen Matrix zu verleimen, führt unweigerlich zum Scheitern: Der Leim bindet zu schnell ab, die Klötze verrutschen unkontrolliert und der Spanndruck verteilt sich ungleichmässig. Die Lösung liegt im vorherigen Zusammenfügen zu linearen Streifen. Zwei Holz-Verleimzulagen wurden mit gewöhnlichem Polypropylen-Paketband umwickelt (Holzleim haftet nicht auf Paketband) und auf einer planen, weissen Melaminplatte fixiert. Die Klötze wurden im abwechselnden Muster ausgelegt und mit Leimpunkten versehen.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/beech-purpleheart/02-strip-glue-prep.jpg" 
+               alt="Linearer Holzklotz-Streifen mit Leimpunkten zwischen Führungsschienen" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 02: Auftragen des Leims auf einzelne Klötze, die zwischen abgeklebten Holz-Führungszulagen auf einer Melaminplatte liegen.">
+          <div class="step-caption">
+            <span class="step-caption-text">Melamin-Ausrichtvorrichtung mit abgeklebten Verleimzulagen für absolute Geradlinigkeit entlang der Längsachse.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 03 & 04 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 03</span>
+          <span class="step-phase">Leimauftrag &amp; Lamination</span>
+        </div>
+        <h3 class="step-title">Gleichmässiges Verstreichen mit Silikonpinseln</h3>
+        <p class="step-description">
+          Hirnholz- und Querholzflächen saugen den Leim durch Kapillarkräfte rasant auf. Wird der Klebstoff nur punktuell aufgetragen, entziehen die offenen Fasern dem Leim die Feuchtigkeit – es entsteht eine unterversorgte Leimfuge («starved joint»), die später zum Reissen neigt. Mit einem flexiblen Silikonpinsel wurde eine geschlossene, vollflächige Schicht auf alle Kontaktflächen der Buchen- und Amaranthklötze aufgetragen, bevor axialer Spanndruck ausgeübt wurde.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/beech-purpleheart/04-strip-assembly-brush.jpg" 
+               alt="Silikonpinsel verteilt Leim auf abwechselnden Holzklötzen" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 03: Sorgfältiges Verstreichen des Leims mit dem Silikonpinsel zur Vermeidung trockener Leimfugen an den Hirnholzkanten.">
+          <div class="step-caption">
+            <span class="step-caption-text">Silikonpinsel und Leimflasche neben bereits ausgehärteten und frisch verleimten Leistenabschnitten.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+
+        <div class="step-media" style="margin-top: 1.5rem;">
+          <img src="../../assets/images/projects/beech-purpleheart/03-glue-application.jpg" 
+               alt="Detailansicht der verleimten Klötze zwischen Führungsschienen" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 03 Detail: Gleichmässiger Leimfilm auf den vertikalen Klotzflächen im Führungskanal.">
+          <div class="step-caption">
+            <span class="step-caption-text">Dosierter Klebstoffauftrag minimiert übermässigen Leimaustritt bei gleichzeitig perfekter Faserbindung.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 05 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 04</span>
+          <span class="step-phase">Trockenpassung &amp; Mustervalidierung</span>
+        </div>
+        <h3 class="step-title">Auslegen der 45°-Rautenmatrix</h3>
+        <p class="step-description">
+          Nachdem die einzelnen linearen Streifen ausgehärtet waren und ausgetretene Leimtröpfchen vorsichtig mit der Ziehklinge abgezogen wurden, wurden die Leisten um jeweils eine Einheit versetzt angeordnet, um das diagonale 45-Grad-Rautenschachbrettmuster zu erzeugen. Eine komplette Trockenpassung auf der planen Melaminplatte diente zur Kontrolle. Mit Bleistift wurden Referenzpfeile über die Rückseite und die Stirnseiten gezogen, um die exakte Position jedes Streifens zu indexieren und ein versehentliches Verdrehen beim hektischen Hauptverleimen auszuschliessen.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/beech-purpleheart/05-dry-fit-alignment.jpg" 
+               alt="Trockenpassung des diagonalen Rauten-Schachbrettmusters" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 04: Trockenpassung des diagonalen Schachbrettmusters zur Kontrolle von Rechtwinkligkeit, Fugendichtheit und Faserverlauf.">
+          <div class="step-caption">
+            <span class="step-caption-text">Trockenpassung des gestuften Rautenmusters. Man beachte die gezackten Ränder vor dem finalen Besäumen.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+
+        <div class="step-media" style="margin-top: 1.5rem;">
+          <img src="../../assets/images/projects/beech-purpleheart/06-pattern-layout.jpg" 
+               alt="Vollständige Auslegung des Rautenmusters auf Melamin" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 04 Übersicht: Vollständiges diagonales Rautenraster im Trockentest. Bemerkenswert ist der natürliche Lavendelton des rohen Amaranths.">
+          <div class="step-caption">
+            <span class="step-caption-text">Komplettes Schachbrett-Layout auf Melamin. Rohes Amaranthholz zeigt seinen dezenten, hellen Pflaumen- und Lavendelton.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 06 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 05</span>
+          <span class="step-phase">Bändigen der Scherkräfte</span>
+        </div>
+        <h3 class="step-title">Teilbaugruppen &amp; diagonales Spannen</h3>
+        <p class="step-description">
+          Das Spannen einer gestuften Diagonalmatrix gehört zu den anspruchsvollsten Aufgaben im feinen Holzhandwerk. Da die Fugen in einem Winkel von 45 Grad zu den Aussenkanten verlaufen, erzeugt Spanndruck entlang der Länge einen Querschub: Der nasse Leim wirkt wie Schmierseife, wodurch die Streifen seitlich abdriften und aus dem Winkel rutschen. Um dieses Problem zu meistern, wurde das Brett zunächst in zwei getrennten dreieckigen Hälften verleimt.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/beech-purpleheart/07-sectional-clamping-1.jpg" 
+               alt="Zwei Teilbaugruppen mit Schraubzwingen auf Melamin gespannt" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 05: Verleimen des Brettes in zwei unabhängigen Teilbaugruppen, um dem seitlichen hydraulischen Verrutschen entgegenzuwirken.">
+          <div class="step-caption">
+            <span class="step-caption-text">Stufenweises Spannen: Zwei Teilbaugruppen werden getrennt mit schweren Schraubzwingen verpresst.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+
+        <div class="step-media" style="margin-top: 1.5rem;">
+          <img src="../../assets/images/projects/beech-purpleheart/08-sectional-clamping-2.jpg" 
+               alt="Nahaufnahme der beiden gespannten Hälften" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 05: Spanndruck wird über rote Schraubzwingen direkt entlang der Fugenvektoren eingeleitet.">
+          <div class="step-caption">
+            <span class="step-caption-text">Parallele Spannkräfte wirken exakt rechtwinklig auf die Leimfugen.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+
+        <div class="step-media" style="margin-top: 1.5rem;">
+          <img src="../../assets/images/projects/beech-purpleheart/09-multi-clamp-matrix.jpg" 
+               alt="Kombiniertes Spannsystem aus Schraub- und Einhandzwingen" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 05 Detail: Hybrides Spannsystem aus schweren Stahl-Schraubzwingen und seitlichen Schnellspannzwingen zur Stabilisierung.">
+          <div class="step-caption">
+            <span class="step-caption-text">Hybrides Spannen: Stahlschraubzwingen liefern den Hauptpressdruck, während Einhandzwingen die seitliche Ausrichtung sichern.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 07 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 06</span>
+          <span class="step-phase">Hauptverleimung</span>
+        </div>
+        <h3 class="step-title">Die finale Verleimung &amp; Kompression der Gesamtmatrix</h3>
+        <p class="step-description">
+          Nachdem die beiden Teilblöcke ausgehärtet und plan abgerichtet waren, wurde die mittlere Diagonalfuge frisch gefügt und die gesamte Matrix in der Hauptverleimung zusammengeführt. Vier schwere Korpuszwingen brachten den erforderlichen Anpressdruck entlang der Diagonalachse auf, während quer aufgelegte Zulagen verhinderten, dass sich die Platte unter der enormen Spannung nach oben oder unten durchbog.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/beech-purpleheart/10-full-board-clamping.jpg" 
+               alt="Gesamtes Brett diagonal unter hohem Druck eingespannt" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 06: Gesamte Baugruppe mit diagonalen Korpuszwingen und seitlichen Stabilisierungszulagen gespannt.">
+          <div class="step-caption">
+            <span class="step-caption-text">Hauptverleimung: Gleichmässiger Spanndruck entlang der 45-Grad-Achsen.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+
+        <div class="callout-box">
+          <div class="callout-title">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+            Leimaustritt richtig behandeln
+          </div>
+          <p>
+            Frischen Leim niemals mit einem nassen Schwamm von Hirnholz abwischen – dadurch wird verdünnter Leim tief in die offenen Poren gewaschen, was später helle Flecken hinterlässt, die kein Öl mehr aufnehmen. Warten Sie stattdessen etwa 20 Minuten, bis der Leimaustritt eine zähe, gummiartige Konsistenz annimmt, und stechen Sie ihn dann sauber mit einer scharfen Ziehklinge oder einem Stecheisen ab.
+          </p>
+        </div>
+      </article>
+
+      <!-- Step 08 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 07</span>
+          <span class="step-phase">Kalibrieren, Besäumen &amp; Schleifen</span>
+        </div>
+        <h3 class="step-title">Besäumen auf 19 × 28 cm &amp; Feinschliff</h3>
+        <p class="step-description">
+          Nach 24 Stunden Aushärtung wurden die gezackten Sägezahnkanten mit Präzisionswinkel und Anreisslineal markiert und anschliessend auf der Führungsschiene mit einem ultrafeinen Sägeblatt auf das Endmass von 19,0 cm × 28,0 cm sauber besäumt. Ausgehend von den ursprünglichen 22 mm starken Rohklötzen wurde die Oberfläche durch sorgfältiges Einebnen und progressiven Exzenterschliff auf beiden Seiten (Körnung 80 → 120 → 180 → 240) auf eine gleichmässige Endstärke von <strong>20 mm (2,0 cm)</strong> kalibriert. Bei Körnung 240 wurde das Brett mit warmem Wasser leicht eingenebelt («Wässern»), um komprimierte Holzfasern aufzustellen. Nach dem Trocknen folgte der finale Feinschliff mit 320er-Körnung bis zu einer haptischen Perfektion wie polierter Stein.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/beech-purpleheart/11-squaring-and-layout.jpg" 
+               alt="Verleimtes Brett mit rotem Präzisionswinkel und Zuschnittresten" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 07: Anreissen des Formats mit Präzisionslineal und 90°-Winkel vor dem Besäumen auf 19 × 28 cm.">
+          <div class="step-caption">
+            <span class="step-caption-text">Prüfung der Rechtwinkligkeit und Vorbereitung der Besäumschnitte mit Präzisions-Messwerkzeugen.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+
+        <div class="step-media" style="margin-top: 1.5rem;">
+          <img src="../../assets/images/projects/beech-purpleheart/12-sanded-raw-wood.jpg" 
+               alt="Geschliffenes rohes Schneidebrett mit heller Buche und Amaranth" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 07: Das besäumte, kalibrierte und bis Körnung 320 geschliffene Brett im trockenen Rohzustand vor dem Ölen.">
+          <div class="step-caption">
+            <span class="step-caption-text">Das besäumte und geschliffene Rohholzbrett (Körnung 320). Seidenglatt im Griff, bereit für die Ölsättigung.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Step 09 -->
+      <article class="build-step">
+        <div class="step-meta">
+          <span class="step-number">Schritt 08</span>
+          <span class="step-phase">Der Höhepunkt: Ölsättigung</span>
+        </div>
+        <h3 class="step-title">Das Anfeuern: Die Maserung erwacht</h3>
+        <p class="step-description">
+          Der schönste Lohn für die Arbeit mit edlen Harthölzern: das Auftragen von reinem, lebensmittelechtem Mineralöl. Die durstigen Hirnholzporen wirken wie mikroskopische Kapillaren und ziehen das Öl tief in das Zellgefüge hinein. Augenblicklich verwandelt sich das blasse Lavendel des Amaranths in ein royales, tief leuchtendes Magenta-Violett, während die helle Rotbuche einen warmen, honiggoldenen Bernsteinton annimmt. Zwei Flutungsdurchgänge mit Mineralöl wurden bis zur Sättigungsgrenze aufgetragen, gefolgt von einer einpolierten Schicht aus Bio-Bienenwachs und Mineralöl-Holzbutter für einen seidig matten Glanz und fühlbaren Schutz.
+        </p>
+
+        <div class="step-media">
+          <img src="../../assets/images/projects/beech-purpleheart/13-finished-oil-pop.jpg" 
+               alt="Fertig geöltes Schneidebrett auf der Werkbank" 
+               class="step-img"
+               data-lightbox
+               data-caption="Schritt 08: Das vollendete Meisterstück. Tief gesättigt mit lebensmittelechtem Mineralöl und versiegelt mit Bienenwachs-Holzbutter.">
+          <div class="step-caption">
+            <span class="step-caption-text">Das fertige Brett auf der Werkbank: Tiefviolettes Amaranth und strahlende Rotbuche im perfekten Hirnholzraster.</span>
+            <span class="step-zoom-hint">Klicken zum Vergrössern</span>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <!-- Complete Workshop Gallery Grid -->
+    <section class="gallery-section">
+      <div class="section-header">
+        <span class="section-subtitle">Werkstatt-Archiv</span>
+        <h2 class="section-title">Vollständige 13-teilige Galerie des Entstehungsprozesses</h2>
+        <p>Klicken Sie auf ein beliebiges Foto, um die hochauflösende Lightbox-Ansicht zu öffnen und die Holzverbindungen im Detail zu betrachten.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item" data-lightbox data-caption="01: Zugeschnittene Buchen- &amp; Amaranth-Hirnholzklötze bereit für die Montage." data-full="../../assets/images/projects/beech-purpleheart/01-raw-cut-blocks.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/01-raw-cut-blocks.jpg" alt="Rohe Klötze" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">01 • Rohe Klötze</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="02: Leimauftrag entlang der Führungszulagen." data-full="../../assets/images/projects/beech-purpleheart/02-strip-glue-prep.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/02-strip-glue-prep.jpg" alt="Zulagen-Aufbau" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">02 • Zulagen-Aufbau</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="03: Leimauftrag auf die linearen Klotzstreifen." data-full="../../assets/images/projects/beech-purpleheart/03-glue-application.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/03-glue-application.jpg" alt="Leimauftrag" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">03 • Leimauftrag</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="04: Silikonpinsel verteilt Titebond III auf den Hirnholzflächen." data-full="../../assets/images/projects/beech-purpleheart/04-strip-assembly-brush.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/04-strip-assembly-brush.jpg" alt="Fugen benetzen" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">04 • Fugen benetzen</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="05: Trockenpassung des Rautenmusters." data-full="../../assets/images/projects/beech-purpleheart/05-dry-fit-alignment.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/05-dry-fit-alignment.jpg" alt="Trockenpassung" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">05 • Trockenpassung</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="06: Vollständiges Schachbrettmuster auf Melamin." data-full="../../assets/images/projects/beech-purpleheart/06-pattern-layout.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/06-pattern-layout.jpg" alt="Rauten-Layout" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">06 • Rauten-Layout</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="07: Verleimen der beiden dreieckigen Teilbaugruppen." data-full="../../assets/images/projects/beech-purpleheart/07-sectional-clamping-1.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/07-sectional-clamping-1.jpg" alt="Teilbaugruppen spannen" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">07 • Teilbaugruppen spannen</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="08: Zwei getrennte Spannabschnitte auf der Werkbank." data-full="../../assets/images/projects/beech-purpleheart/08-sectional-clamping-2.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/08-sectional-clamping-2.jpg" alt="Parallele Pressung" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">08 • Parallele Pressung</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="09: Durchdachtes Mehrfach-Spannsystem mit Zwingenmatrix." data-full="../../assets/images/projects/beech-purpleheart/09-multi-clamp-matrix.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/09-multi-clamp-matrix.jpg" alt="Zwingenmatrix" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">09 • Zwingenmatrix</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="10: Finale Hauptverleimung mit diagonalen Korpuszwingen." data-full="../../assets/images/projects/beech-purpleheart/10-full-board-clamping.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/10-full-board-clamping.jpg" alt="Hauptverleimung" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">10 • Hauptverleimung</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="11: Anreissen der Kanten mit Präzisions-Anschlagwinkel." data-full="../../assets/images/projects/beech-purpleheart/11-squaring-and-layout.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/11-squaring-and-layout.jpg" alt="Präzisions-Besäumen" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">11 • Präzisions-Besäumen</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="12: Vollständig abgerichtetes und bis Körnung 320 geschliffenes Rohholzbrett." data-full="../../assets/images/projects/beech-purpleheart/12-sanded-raw-wood.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/12-sanded-raw-wood.jpg" alt="Feinschliff 320" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">12 • Feinschliff 320</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-lightbox data-caption="13: Vollendetes Schneidebrett mit lebensmittelechtem Öl und Bienenwachs." data-full="../../assets/images/projects/beech-purpleheart/13-finished-oil-pop.jpg">
+          <img src="../../assets/images/projects/beech-purpleheart/13-finished-oil-pop.jpg" alt="Finales Öl-Finish" class="gallery-thumb" loading="lazy">
+          <div class="gallery-overlay">
+            <span class="gallery-item-title">13 • Finales Öl-Finish</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cutting Board Care & Longevity -->
+    <section class="section" style="padding-top: 2rem;">
+      <div class="section-header">
+        <span class="section-subtitle">Kulinarisches Erbstück</span>
+        <h2 class="section-title">Pflege- &amp; Instandhaltungsprotokoll</h2>
+        <p>So pflegen Sie ein Hirnholz-Schneidebrett, damit es über Generationen hinweg wie neu bleibt.</p>
+      </div>
+
+      <div class="care-grid">
+        <div class="care-card">
+          <h4>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#2ecc71" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Was Sie tun sollten
+          </h4>
+          <ul>
+            <li>Beide Seiten sofort nach Gebrauch von Hand mit warmem Wasser und mildem Spülmittel reinigen.</li>
+            <li>Gründlich mit einem Tuch abtrocknen und hochkant aufstellen, damit alle Seiten gleichmässig an der Luft trocknen können.</li>
+            <li>Einmal im Monat – oder sobald das Holz trocken wirkt oder blass wird – lebensmittelechtes Mineralöl auftragen.</li>
+            <li>Alle 3 bis 4 Monate Bio-Bienenwachs-Holzbutter einmassieren, um den feuchtigkeitsabweisenden Schutz zu erneuern.</li>
+          </ul>
+        </div>
+
+        <div class="care-card">
+          <h4>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#e74c3c" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+            Was Sie niemals tun sollten
+          </h4>
+          <ul>
+            <li><strong>Niemals in die Spülmaschine geben</strong>: Extreme Hitze und Dampf lösen die Leimfugen auf und verziehen das Holz irreparabel.</li>
+            <li>Niemals im Spülbecken einweichen oder unter Wasser stehen lassen.</li>
+            <li>Niemals flach liegend auf der Arbeitsplatte trocknen lassen (eingeschlossene Restfeuchte führt zum Schüsseln).</li>
+            <li>Niemals Speiseöle wie Oliven- oder Sonnenblumenöl verwenden (diese werden ranzig und fangen an unangenehm zu riechen).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Navigation between projects -->
+    <div style="margin: 4rem 0 2rem; padding: 2rem; background: var(--bg-card); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem;">
+      <div>
+        <span class="spec-label">Vorheriges Projekt</span>
+        <h4 style="font-size: 1.25rem;"><a href="walnut-endgrain-cutting-board.html" style="color: var(--text-highlight);">← Massives Nussbaum-Hirnholz-Schneidebrett</a></h4>
+      </div>
+      <div>
+        <span class="spec-label">Nächstes Projekt</span>
+        <h4 style="font-size: 1.25rem;"><a href="3d-cubes-board.html" style="color: var(--text-highlight);">3D-Würfel Optisches Täuschungsbrett (45 × 24 × 2,5 cm) →</a></h4>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Lightbox Container -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Bilder-Lightbox">
+    <button class="lightbox-close" aria-label="Bild schliessen">&times;</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Vorheriges Bild">&#10094;</button>
+    <button class="lightbox-nav lightbox-next" aria-label="Nächstes Bild">&#10095;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" class="lightbox-img" src="" alt="">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="../index.html" class="brand-logo">
+            <img src="../../assets/images/logo.png" alt="ZuriForge Logo" class="brand-icon" width="40" height="40">
+            <span class="brand-name">ZuriForge</span>
+          </a>
+          <p class="footer-brand-desc">
+            Ein Werkstatt-Journal zur Dokumentation massgefertigter Holzarbeiten, geometrischer Hirnholz-Laminierungen und feiner Holzbearbeitungstechniken in Zürich, Schweiz.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Dokumentation</h4>
+          <ul class="footer-links">
+            <li><a href="beech-purpleheart-cutting-board.html">Rotbuche &amp; Amaranth Brett</a></li>
+            <li><a href="3d-cubes-board.html">3D-Würfel-Illusion Brett</a></li>
+            <li><a href="purpleheart-heart-serving-board.html">Amaranth-Herzbrett</a></li>
+            <li><a href="epoxy-olive-board.html">Olive &amp; Epoxid River-Board</a></li>
+            <li><a href="walnut-endgrain-cutting-board.html">Nussbaum-Hirnholzbrett</a></li>
+            <li><a href="../index.html#timber">Holzarten-Eigenschaften</a></li>
+            <li><a href="../about.html">Über die Werkstatt</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Werkstatt-Ethos</h4>
+          <ul class="footer-links">
+            <li><span style="color: var(--text-dim);">Rein nicht-kommerziell</span></li>
+            <li><span style="color: var(--text-dim);">Open-Source-Bauberichte</span></li>
+            <li><span style="color: var(--text-dim);">Nachhaltige Schweizer &amp; Edelhölzer</span></li>
+            <li><a href="https://github.com/andrei-alpha/andrei-alpha.github.io" target="_blank" rel="noopener">GitHub Repository</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 ZuriForge • Andrei Antonescu • Zürich, Schweiz</div>
+        <div>Gefertigt mit Präzision &amp; Hobelspänen</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js?v=1.1"></script>
+  <!-- Slide-Out Workshop Build Archive Drawer -->
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+  <aside class="workshop-drawer" id="workshop-drawer" aria-hidden="true" role="dialog" aria-labelledby="drawer-title">
+    <div class="drawer-header">
+      <div class="drawer-header-top">
+        <div class="drawer-title-group">
+          <span class="drawer-badge">Werkstatt-Index</span>
+          <h2 id="drawer-title" class="drawer-title">Werkstatt-Journal</h2>
+        </div>
+        <button class="drawer-close" id="drawer-close-btn" aria-label="Journal schliessen">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <p class="drawer-subtitle">
+        Dokumentation geometrischer Verbindungen, Vorrichtungen und Holzcharakteristika aus 5 Projekten der Werkstatt in Zürich.
+      </p>
+      <div class="drawer-filters">
+        <button class="drawer-filter-btn active" data-filter="all">Alle (5)</button>
+        <button class="drawer-filter-btn" data-filter="endgrain">Hirnholz (3)</button>
+        <button class="drawer-filter-btn" data-filter="epoxy">Naturkante / Epoxid (1)</button>
+        <button class="drawer-filter-btn" data-filter="art">Kunsthandwerk (1)</button>
+      </div>
+    </div>
+
+    <div class="drawer-body">
+      <!-- Project 1: Walnut End-Grain -->
+      <a href="walnut-endgrain-cutting-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/walnut-endgrain/07-walnut-cutting-board-knife.jpg" alt="Massives Nussbaum-Hirnholz-Schneidebrett" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Traditionelles Hirnholz</span>
+            <span class="drawer-date">Okt. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Massives Nussbaum-Hirnholzbrett</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Schweizer Nussbaum</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>450 × 270 × 25 mm</span>
+            <span>•</span>
+            <span>Saftrille</span>
+            <span>•</span>
+            <span>Mineralöl</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 2: Beech & Purpleheart -->
+      <a href="beech-purpleheart-cutting-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/beech-purpleheart/13-finished-oil-pop.jpg" alt="Geometrisches Rotbuchen- &amp; Amaranth-Brett" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Präzisionsraster</span>
+            <span class="drawer-date">Okt. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Rotbuche &amp; Amaranth Brett</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Europäische Rotbuche</span>
+            <span class="timber-chip">Amaranth</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>420 × 285 × 42 mm</span>
+            <span>•</span>
+            <span>Massiver Block</span>
+            <span>•</span>
+            <span>Bienenwachs-Politur</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 3: 3D Cubes Illusion -->
+      <a href="3d-cubes-board.html" class="drawer-project-card" data-category="endgrain">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/3d-cubes/raw/CBE460FA-1CD5-4886-A3C1-9EAA979465CC.JPG" alt="3D-Würfel-Illusion-Schneidebrett" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Optische Illusion</span>
+            <span class="drawer-date">Okt. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">3D-Würfel-Illusion Brett</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Nussbaum</span>
+            <span class="timber-chip">Fichte</span>
+            <span class="timber-chip">Rotbuche</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>380 × 260 × 38 mm</span>
+            <span>•</span>
+            <span>60°-Rauten</span>
+            <span>•</span>
+            <span>Walnussöl</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 4: Epoxy Olive Board -->
+      <a href="epoxy-olive-board.html" class="drawer-project-card" data-category="epoxy">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/epoxy-olive-board/10-finished-olive-epoxy-board.jpg" alt="Mediterranes Olivenholz &amp; Epoxid-River-Board" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Naturkanten-Hybrid</span>
+            <span class="drawer-date">Sep. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Olive &amp; Epoxid River-Board</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Hundertjährige Olive</span>
+            <span class="timber-chip">Cerulean-Harz</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>480 × 240 × 32 mm</span>
+            <span>•</span>
+            <span>12'000er Hochglanzpolitur</span>
+            <span>•</span>
+            <span>Odie's Oil</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- Project 5: Purpleheart Heart -->
+      <a href="purpleheart-heart-serving-board.html" class="drawer-project-card" data-category="art">
+        <div class="drawer-thumb-wrap">
+          <img src="../../assets/images/projects/purpleheart-heart/06-finished-heart-board.jpg" alt="Amaranth-Herz-Servierbrett" class="drawer-thumb" loading="lazy">
+        </div>
+        <div class="drawer-card-info">
+          <div class="drawer-card-meta">
+            <span class="drawer-cat-tag">Individuelles Kunstwerk</span>
+            <span class="drawer-date">Okt. 2024</span>
+          </div>
+          <h3 class="drawer-card-title">Amaranth-Herzbrett</h3>
+          <div class="drawer-timber-tags">
+            <span class="timber-chip">Guyana-Amaranth</span>
+            <span class="timber-chip">Rotbuchen-Akzent</span>
+          </div>
+          <div class="drawer-specs-line">
+            <span>310 × 290 × 35 mm</span>
+            <span>•</span>
+            <span>Thermische Aktivierung</span>
+            <span>•</span>
+            <span>Holz-Butter</span>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="drawer-footer">
+      <div class="drawer-footer-stats">
+        <span>5 vollendete Projekte</span>
+        <span>•</span>
+        <span>Werkstatt Zürich</span>
+      </div>
+      <a href="../index.html#projects" class="btn btn-outline drawer-view-all-btn">
+        <span>Gesamte Werkschau ansehen</span>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+      </a>
+    </div>
+  </aside>
+
+</body>
+</html>
