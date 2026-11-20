@@ -224,7 +224,7 @@ function initWorkshopDrawer() {
       const filter = btn.getAttribute('data-filter');
 
       projectCards.forEach(card => {
-        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+        if (filter === 'all' || (card.getAttribute('data-category') || '').split(/\s+/).includes(filter)) {
           card.style.display = 'flex';
         } else {
           card.style.display = 'none';
